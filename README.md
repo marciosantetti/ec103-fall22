@@ -1,6 +1,6 @@
 # EC 103&mdash;002: Introduction to Macroeconomics, Fall 2022
 
-Welcome to EC 103&mdash;002: Introduction to Macroeconomics!
+Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
 *Fall 2022 - Marcio Santetti*
 
 ## Course Details

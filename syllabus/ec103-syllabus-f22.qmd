@@ -1,0 +1,248 @@
+---
+title: "**EC 103--002: Introduction to Macroeconomics**"
+subtitle: "Fall 2022 -- Course Syllabus"
+author: "Marcio Santetti"
+date: "Economics Department | Skidmore College"
+format:
+  pdf: 
+    pdf-engine: pdflatex
+    documentclass: article
+    toc: false
+    number-sections: false
+    geometry:
+      - top=35mm
+      - bottom=35mm
+      - left=25mm
+      - right=25mm
+      - heightrounded
+    colorlinks: true
+    linestretch: "1"
+    # fontfamily: libertine
+    header-includes: |
+      \usepackage{fontawesome}
+      \usepackage[T1]{fontenc}
+      \usepackage{newpxtext,eulerpx}
+---
+
+------------------------------------------------------------------------
+
+
+\vspace{.4cm}
+
+
+\begin{tabular}{ll|l} 
+	\textbf{When:} & \multicolumn{2}{l}{M 1:25--2:20 PM \& TR 2:10--3:30 PM} \\
+	\textbf{Where:} & \multicolumn{2}{l}{CIS 328 (\href{https://www.skidmore.edu/directions/maps.php}{\texttt{map}})} \\
+	\textbf{Who:} & \, \faMortarBoard \,  Marcio Santetti, Ph.D. (\textit{he/him}) & \, \faEnvelopeO \, \href{mailto:msantetti@skidmore.edu}{\texttt{msantetti@skidmore.edu}} \\
+	& \, \faHourglassHalf \, TR 12:30--2:00 PM$^*$ & \, \faUniversity \, Filene 207 \\
+	\textbf{Web:} & \, \faPencil \, \href{https://www.skidmore.edu/directions/maps.php}{\texttt{Course GitHub Repository}} \\
+\end{tabular}
+
+$^*$ _Or by appointment, via Zoom._
+
+
+------------------------------------------------------------------------
+
+
+# Overview
+
+This course covers basic terminologies, models, and problems in modern Macroeconomics. How does the macroeconomy work? What theories encapsulate the main macroeconomic variables? How can macroeconomic information be treated and presented in an informative way? These are some of the questions lectures will cover, providing students with theoretical and empirical tools to critically analyze real economic phenomena.
+
+Tuesday and Thursday (TR) meetings will cover the programmed content, in a lecture/discussion format. Monday (M) sessions will be called "lab sessions," (where you should bring your own devices) dedicated to treating, analyzing, and visualizing macroeconomic data, preparing students for future assignments and projects which will benefit them beyond this course. 
+
+# Course Content Organization
+
+Lecture notes and assignments will be posted on the Course's [`GitHub repository`](https://github.com/marciosantetti). Additional readings, answer keys, and data files will be uploaded to `theSpring`. Students will also use `theSpring` to submit all assignments.
+
+# Outcomes
+
+At the completion of the course, you will be able to:
+
+1. Develop the most important vocabulary pieces of Macroeconomics;
+
+2. Treat, analyze and present macroeconomic data in an informative way;
+
+3. Critically think about current macroeconomic problems, from a theoretical and applied perspective;
+
+4. Obtain the necessary toolkit to consciously read pieces in the Wall Street Journal, Financial TImes, etc.
+
+# Main References
+
+We will use two textbooks throughout the semester. Both are *freely* available online. In case students prefer, they may order physical copies directly through their websites. Keep in mind that lecture notes and content are not simple "copying-and-pasting" from these references. These serve as inspiration for what will be covered in class.
+
+### Required Textbooks
+
+* S. Greenlaw and D. Shapiro, *Principles of Macroeconomics*, 2nd edition, OpenStax College, Rice University. Available at [`https://openstax.org/details/books/principles-macroeconomics-2e`](https://openstax.org/details/books/principles-macroeconomics-2e).
+
+* The CORE team, *The Economy*. Available at [`https://www.core-econ.org/the-economy/en/`](https://www.core-econ.org).
+
+### Other readings
+
+* The New York Times, Financial Times, Wall Street Journal, Project Syndicate, among others.
+
+# Software Requirements
+
+Monday sessions will make use of $\textsf{R}$, an open-source and completely *free* statistical/programming language, with the $\textsf{R}$Studio IDE (Integrated Development Environment), also freely available. 
+
+In addition, having a spreadsheet editor (e.g., Excel) is strongly recommended. Skidmore students should have free access to Microsoft Office programs through [`Office 365`](https://leds.domains.skidmore.edu/useful-info/computing-software/).
+
+No previous knowlegde in $\textsf{R}$ is required. The instructor will guide students through every step in the applied lectures.
+
+- Download $\textsf{R}$: [`https://cloud.r-project.org/`](https://cloud.r-project.org/)
+- Download $\textsf{R}$Studio: [`https://rstudio.com/products/rstudio/`](https://rstudio.com/products/rstudio/)
+
+# Assignments, Exams, & Grading
+
+This course will have **no exams**. Instead, we will work through several assignments throughout the semester.
+
+In addition to 5 *short* problem sets, in which students will work out specific concepts studied in class, we will have **3 long assignments**---two "mid-term" and one "term" project---, which will be detailed in class.
+
+\bigskip
+
+Grading details:
+
+  * *Short* problem sets (30%);
+  
+  * *Long* assignments (70%);
+  
+  * Attendance and participation: Your grade will fall one letter grade if you miss more than five lectures. By missing any additional classes, you will lose a partial letter grade. Coming to class late will count as half of an absence.
+
+
+# Letter Grade Distribution
+
+***Performance***                                   ***Letter Grade***
+-------------------------------        -----------------------------------------------
+Excellent, superior performance                 A (90--100\%)
+Good performance                                B (80--90\%)
+Standard performance                            C (70--80\%)
+Substandard performance                         D (60--70\%)
+Unsatisfactory performance                      F (0--60\%)
+* *Plus/minus where applicable*.
+----------- -------------------        -----------------------------------------------
+
+
+# Important Dates
+
+* **Sep 12**: "Add" deadline
+* **Oct 10**: Study Day
+* **Oct 14--16**: Celebration Weekend
+* **Nov 10**: Course withdrawal deadline
+* **Nov 23--27**: Thanksgiving break
+* **Dec 9**: Last day of classes
+* ***Dec 15, 9:00 AM --- 12:00 PM***: Final Presentations, at our classroom.
+
+
+
+# Class Policies
+
+You can expect me to:
+
+* Grade and provide feedback on assignments within one week from the due date;
+
+* Reply to emails/messages within 24 hours during the week and within 48 hours on weekends and holidays;
+
+  * *I try to relax and have fun on weekends. You should, too.*
+  
+* Hold weekly office hours, where students can ask every question and talk about any issues/concerns relative to our course.
+
+I expect students to:
+
+* Come to class in time;
+
+* Turn in assignments on the specified dates. No make-ups will be allowed;
+
+* Be honest, be nice---and, please, **no cheating**;
+
+* Respectfully participate in in-class discussions and activities;
+
+* Immediately notify me in the event of an emergency that prevents you from completing the course;
+
+* Ask questions if any expectations or assignments are unclear.
+
+\newpage
+
+
+# Classroom Procedures -- COVID-19
+
+Skidmore College is committed to the health and safety of all members of our community
+and has implemented protocols based on recommendations from the CDC, New York State
+Department of Health, and Saratoga County Department of Health. During periods of **high**
+transmission, we must all wear masks in the classroom. During periods of **low/moderate**
+transmission, the College is not requiring vaccinated individuals to wear a mask indoors.
+You are, of course, allowed to wear a mask if you so choose, and if anyone would like to ask
+that we all wear a mask at all times in our classroom, please speak with me outside of class,
+or contact me via email.
+
+That noted, **I strongly recommend/encourage you to wear a mask in class**, regardless of your vaccination status.
+
+In case you test positive for COVID-19, the *priority* is for you to recover well, stay safe, and protect our course and college community. As you will not be able to attend class, please ask your classmates to share notes and impressions with you, as I will not stream lectures via Zoom nor teach the same lecture twice. After you grab the materials from your missed class(es), I am happy to see you during my office hours or going over any potential questions/concerns via Zoom. Once again, my *priority* is for you to recover and stay safe; you will be able to catch up with the content with no major problems!
+
+# Tentative Course Schedule
+
+\begin{center}
+ \textit{TR sessions}  |  \textit{M sessions} 
+\end{center}
+
+\bigskip
+
+* **Week 1**: Course introduction; all-things capitalism  |  Introduction to \textsf{R} and \textsf{R}Studio 
+
+* **Week 2**:  Technology, population, and growth  |  Types of data; manipulating data in the `tidyverse` I
+
+* **Week 3**:  The macroeconomic perspective |  Manipulating data in the `tidyverse` II 
+
+* **Week 4**:  Economic Growth I |  The "grammar of graphics" 
+
+* **Week 5**:  Economic Growth II |  Computing growth rates 
+
+* **Week 6**:  Unemployment I |  Visualizing time series I 
+
+* **Week 7**:  Unemployment II |  Visualizing time series II
+
+* **Week 8**:  Inflation I |  Visualizing time series II 
+
+* **Week 9**:  Inflation II |  Trends + Seasonality 
+
+* **Week 10**: Globalization and protectionism  |  Visualizing relationships I 
+
+* **Week 11**:  International trade |  Visualizing relationships II 
+
+* **Week 12**:  Money and banking  |  Visualizing financial data 
+
+* **Week 13**: The Macroeconomics of climate change   |  Term project Q&A I 
+
+* **Week 14**:  Final thoughts and course wrap-up  |  Term project Q&A II 
+
+# Important Note
+
+This syllabus is meant to serve as an outline and guide for our course. Please note that I may modify it with reasonable notice to you. I may also modify the Course Schedule to accommodate the needs of our course.
+
+
+# Institutional Policies and Procedures
+
+## Honor Code
+
+You are expected to fully abide by the Skidmore [`Honor Code`](https://www.skidmore.edu/adofsaa/documents/Academic-Integrity-Handbook.pdf).
+
+
+## Academic Accommodation
+
+If you are a student with a disability and believe you will need academic accommodation, you must formally request accommodation from Meg Hegener, Coordinator of Student Access Services (`mhegener@skidmore.edu`). You will also need to provide documentation which verifies the existence of a disability and supports your request. For further information, please call 580-8150 to contact Student Academic Services in Starbuck Center.
+
+## Title IX
+
+Skidmore College considers sexual and gender-based misconduct to be one of the most serious violations of the values and standards of the College. Unwelcome sexual contact of any form is a violation of students’ personal integrity and their right to a safe environment and therefore violates Skidmore’s values. Sexual and gender-based misconduct is also prohibited by federal and state regulations. Skidmore College faculty are committed to supporting our students and upholding gender equity laws as outlined by Title IX. If a student chooses to confide in a member of Skidmore’s faculty or staff regarding an issue of sexual or gender-based misconduct, that faculty or staff member is obligated to tell Skidmore’s Title IX Coordinator or Title IX Deputy Coordinator. The Title IX Coordinator or Deputy Coordinator will assist the student in connecting with all possible resources for support and options for reporting both on and off campus. Identities and details will be shared only with those who need to know to support the student and to address the situation through the college’s processes. If the student wishes to confide in a confidential resource, the Counseling Center Staff, Health Services, and Victim Advocates (anonymous) are all options available.
+
+More information can be found at the Sexual and Gender-Based Misconduct website or by contacting the Title IX Coordinator, Joel Aure (`jaure@skidmore.edu`), 580-5708, or Deputy Coordinator for Student Affairs, Gabriela Melillo (`gmelillo@skidmore.edu`), 580-5022.
+
+## Conscientious Religious Observance Policy
+
+If religious observances cause absence from class, campus employment, athletic practice, and/or game days or necessitates accommodations, students should notify their faculty, coaches, or supervisors prior to the date(s) of their absence. New York State policy and Skidmore College policy mandates that students be allowed to make up academic work and/or campus employment requirements without penalty. These accommodations should not reduce the overall expectations of a course nor unduly burden the student requesting accommodation. Faculty must permit students to take a makeup examination without any penalty if they have to miss an examination due to religious observances. Similarly, faculty must permit students to submit missed assignments by an agreed upon due date, without penalty.
+
+Although not required, the College highly recommends that students submit written notification of the pending religious observances at the start of the semester or at least one week before the date.. As an option, students may use this [`form`](https://www.skidmore.edu/religious-life/CROformSummer2020.pdf). Distributing the written notification during the first week of classes, campus employment, or the start of the athletic season gives students, faculty, coaches, or supervisors time to prepare for the absence.
+
+If a student, supervisor, coach, or faculty member feels the policy is being violated, they should contact the Dean of Faculty Office at 518-580-5705 (Palamountain 416), the Dean of Students Office at 518-580-5760 (Case Center 313), or Human Resources at 518-580-5800 (Barrett Center first floor).
+
+## Diversity and Inclusion
+
+Skidmore College is committed to fostering a diverse and inclusive community in which members develop their abilities to live in a complex and interconnected world. Consistent with our educational mission, we recognize ourselves as a community that respects individual identities based on varying sociocultural characteristics such as race, ethnicity, gender identity and expression, sexual orientation, national origin, first language, religious and spiritual tradition, age, ability, socioeconomic status and learning style. We strive to create a socially just world that honors the dignity and worth of each individual, and we seek to build a community centered on mutual respect and openness to ideas—one in which individuals value cultural and intellectual diversity and share the responsibility for creating a welcoming, safe and inclusive environment. We recognize that our community is most inclusive when all members participate to their full capacity in the spirited and sometimes challenging conversations that are at the center of the college's educational mission.

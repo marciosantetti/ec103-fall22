@@ -1,7 +1,7 @@
 # EC 103&mdash;002: Introduction to Macroeconomics, Fall 2022
 
 Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
-*Fall 2022 - Marcio Santetti*
+*Fall 2022 - Marcio Santetti - [Economics Department](https://www.skidmore.edu/economics/), [Skidmore College](https://www.skidmore.edu/)*
 
 
 ## Course Syllabus
@@ -47,5 +47,5 @@ Note: Lab session slides created using [Quarto](https://quarto.org/), with templ
 
 - [R for Data Science](https://r4ds.had.co.nz/)
 - [`ggplot2`: Elegant Graphics for Data Analysis](https://ggplot2-book.org/index.html)
--[COREEcon: Economics for a changing world](https://www.core-econ.org/)
+- [COREEcon: Economics for a changing world](https://www.core-econ.org/)
 

@@ -23,7 +23,7 @@ Note: Slides and assignment files created with the `xaringan` *R* package, with 
 
 ## Lab Session notes/slides
 
-Note: Lab session slides created using [Quarto](https://quarto.org/), with templates mainly inspired by [Mine Çetinkaya-Rundel]'s(https://mine-cr.com/) SCSS file.
+Note: Lab session slides created using [Quarto](https://quarto.org/), with templates mainly inspired by [Mine Çetinkaya-Rundel](https://mine-cr.com/)'s SCSS file.
 
 **Lab 1**: Introduction to `R`, `RStudio`, and the `tidyverse`
 

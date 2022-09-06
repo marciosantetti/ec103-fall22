@@ -6,7 +6,7 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
 
 ## Course Syllabus
 
-[EC 103--002 Syllabus](https://raw.githack.com/marciosantetti/ec103-fall22/main/syllabus/ec103-syllabus-f22.pdf)
+[EC 103&mdash;002 Syllabus](https://raw.githack.com/marciosantetti/ec103-fall22/main/syllabus/ec103-syllabus-f22.pdf)
 
 
 ## Lecture notes/slides

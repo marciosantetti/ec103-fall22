@@ -31,7 +31,7 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
 
 **Lab 1**: Introduction to `R`, `RStudio`, and the `tidyverse`
 
-  - [Slides (html)]()
+  - [Slides (html)](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/001-tidyverse/001-tidyverse.html)
 
 ## Assignments
 

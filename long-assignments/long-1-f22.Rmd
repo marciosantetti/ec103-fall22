@@ -28,7 +28,8 @@ The most relevant thing from this assignment is for you to evaluate how a *macro
 
 <br>
 
-.hi[`Assignment due September 26 (M), before class`].
+.hi[`Assignment due September 26 (M), before class`]. <br>
+.hi[`Points Possible: 40`]
 
 
 
@@ -45,16 +46,26 @@ The most relevant thing from this assignment is for you to evaluate how a *macro
 > *"I hereby accept membership in the Skidmore College community and, with full realization of the responsibilities inherent in membership, do agree to adhere to honesty and integrity in all relationships, to be considerate of the rights of others, and to abide by the college regulations."*
 
 
-<br><br><br><br>
+<br><br><br>
 
 
 .right[.hi[Have fun!]]
 
 
 
+---
+class: clear
 
+<br><br><br><br>
 
+.hi[QUICK RUBRIC]:
 
+<br>
+
+  - Clear writing, no "copying+pasting" from unnamed sources: `20` points
+  - Focus on macroeconomic issues (e.g., supply chain, employment, inflation, migration, etc.): `10` points
+  - Links to sources used and cited throughout the text: `10` points
+    - Please don't use lengthy URL links for your references. Wrap them in words (see a [quick tutorial](https://support.microsoft.com/en-us/office/create-or-edit-a-hyperlink-5d8c0804-f998-4143-86b1-1199735e07bf#:~:text=Select%20the%20text%20or%20picture,link%20in%20the%20Address%20box.))
 
 ---
 exclude:true

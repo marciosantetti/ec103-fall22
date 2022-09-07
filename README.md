@@ -17,11 +17,13 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
 
 **Lecture 1: What are we doing here?**
 
-  - [Slides (pdf)]()
+  - Slides: [html](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/001-capitalism/000-why-are-we-here.html) | [pdf](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/001-capitalism/000-why-are-we-here.pdf)
   
 **Lecture 2: All things "capitalism"**
 
-  - [Slides (pdf)]()
+  
+**Lecture 3: Technology**
+
 
 ## Lab Session notes/slides
 
@@ -31,7 +33,7 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
 
 **Lab 1**: Introduction to `R`, `RStudio`, and the `tidyverse`
 
-  - [Slides (html)](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/001-tidyverse/001-tidyverse.html)
+  - Slides: [html](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/001-tidyverse/001-tidyverse.html) | [pdf](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/001-tidyverse/001-tidyverse.pdf)
 
 ## Assignments
 
@@ -43,7 +45,7 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
 
 ### Long Assignments
 
-
+  - [Long Assignment 1](https://raw.githack.com/marciosantetti/ec103-fall22/main/long-assignments/long-1-f22.pdf) (due 09/26, before class)
 
 
 
@@ -51,6 +53,6 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
 
 - [R for Data Science](https://r4ds.had.co.nz/)
 - [`ggplot2`: Elegant Graphics for Data Analysis](https://ggplot2-book.org/index.html)
-- [Cédric Scherer's comprehensive `ggplot2` tutorial](https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/
-- [COREEcon: Economics for a changing world](https://www.core-econ.org/)
+- [Cédric Scherer's comprehensive `ggplot2` tutorial](https://www.cedricscherer.com/2019/08/05/a-ggplot2-tutorial-for-beautiful-plotting-in-r/)
+
 

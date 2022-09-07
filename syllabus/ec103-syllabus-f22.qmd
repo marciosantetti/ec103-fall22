@@ -35,7 +35,7 @@ format:
 	\textbf{Where:} & \multicolumn{2}{l}{CIS 328 (\href{https://www.skidmore.edu/directions/maps.php}{\texttt{map}})} \\
 	\textbf{Who:} & \, \faMortarBoard \,  Marcio Santetti, Ph.D. (\textit{he/him}) & \, \faEnvelopeO \, \href{mailto:msantetti@skidmore.edu}{\texttt{msantetti@skidmore.edu}} \\
 	& \, \faHourglassHalf \, TR 12:30--2:00 PM$^*$ & \, \faUniversity \, Filene 207 \\
-	\textbf{Web:} & \, \faPencil \, \href{https://www.skidmore.edu/directions/maps.php}{\texttt{Course GitHub Repository}} \\
+	\textbf{Web:} & \, \faPencil \, \href{https://github.com/marciosantetti/ec103-fall22}{\texttt{Course GitHub Repository}} \\
 \end{tabular}
 
 $^*$ _Or by appointment, via Zoom._
@@ -52,7 +52,7 @@ Tuesday and Thursday (TR) meetings will cover the programmed content, in a lectu
 
 # Course Content Organization
 
-Lecture notes and assignments will be posted on the Course's [`GitHub repository`](https://github.com/marciosantetti). Additional readings, answer keys, and data files will be uploaded to `theSpring`. Students will also use `theSpring` to submit all assignments.
+Lecture notes and assignments will be posted on the Course's [`GitHub repository`](https://github.com/marciosantetti/ec103-fall22). Additional readings, answer keys, and data files will be uploaded to `theSpring`. Students will also use `theSpring` to submit all assignments.
 
 # Outcomes
 

@@ -1,0 +1,60 @@
+---
+title: ".hi[EC 103--002]"
+subtitle: ".b[Long Assignment 1]"
+author: ".b[Marcio Santetti] <br> Fall 2022"
+output:
+  xaringan::moon_reader:
+    css: ['default', 'metropolis', 'metropolis-fonts', 'a-css.css']
+    # self_contained: true
+    nature:
+      ratio: '8.5:11'
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+layout: true
+class: clear
+---
+
+<br><br><br><br><br><br><br><br><br><br><br>
+
+.hi[.mono[INSTRUCTIONS]]: it is still quite early in the semester, and we have many topics to cover. However, this first "long" assignment's purpose is to explore your growing macroeconomic perceptions. <br>
+Inspired by this [`Washington Post article`](https://www.washingtonpost.com/nation/2022/02/03/maine-houlton-chocolate-milk/), you are asked to evaluate how your .hi[home town]'s economy has dealt (and been dealing with) with the COVID-19 pandemic. <br>
+It is extremely likely that this crisis has affected its economy in some way, and in this assignment you will evaluate that from a *macroeconomic* perspective. <br>
+Talk to people, consult local newspapers, the local news, and critically evaluate how the last two years have affected your town's *employment*, *migration* and *population*, *business*, and whatever other patterns that you see fit for the purposes of our course. <br>
+Write an `essay`&mdash;`between 3 and 5 pages, double-spaced`&mdash;, and let our entire course community know the main challenges faced by your city over this critical period.
+
+The most relevant thing from this assignment is for you to evaluate how a *macroeconomic* event can have *local* effects. This way, analyzing your home town can make it easier. Concentrate on the *stories*, not so much on *theoretical* rigor!
+
+<br>
+
+.hi[`Assignment due September 26 (M), before class`].
+
+
+
+<br><br>
+
+
+- Be honest. Don't cheat.
+
+- As a Skidmore student, always recall your votes of academic integrity, and the .hi[`Honor Code`] you have abided by:
+
+<br>
+
+
+> *"I hereby accept membership in the Skidmore College community and, with full realization of the responsibilities inherent in membership, do agree to adhere to honesty and integrity in all relationships, to be considerate of the rights of others, and to abide by the college regulations."*
+
+
+<br><br><br><br>
+
+
+.right[.hi[Have fun!]]
+
+
+
+
+
+
+
+---
+exclude:true

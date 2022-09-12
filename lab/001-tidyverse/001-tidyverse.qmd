@@ -16,7 +16,6 @@ execute:
   freeze: auto
 ---
 
-
 ```{r}
 #| include: false
 # figure options
@@ -32,7 +31,6 @@ knitr::opts_chunk$set(
 
 ## What is R?
 
-
 `R` is an open source (i.e., *free!*) statistical/programming language that serves **multiple purposes**.
 
 . . .
@@ -45,13 +43,11 @@ The purpose of using `R` in our course is to *manipulate* and *visualize* econom
 
 If this will be your first experience with **coding**, welcome!
 
-  - We'll help each other out!
-  
-
+-   We'll help each other out!
 
 ## What is R?
 
-`R` works by the users typing **functions**, which come from **packages**
+`R` works by the users typing **functions**, which come from **packages.**
 
 . . .
 
@@ -65,10 +61,9 @@ This is done by using the `install.packages()` function:
 
 <br>
 
-:::small
+::: small
 > `install.packages("name of the desired package")`
 :::
-
 
 ## What is R?
 
@@ -76,11 +71,9 @@ And whenever we wish to use functions from a certain package, we first call the 
 
 <br>
 
-:::small
+::: small
 > `library(name of the desired package)`
 :::
-
-
 
 ```{r}
 #| echo: false
@@ -93,16 +86,15 @@ library(hrbrthemes)
 theme_set(theme_ipsum_rc())
 ```
 
-
 # What is RStudio?
 
 ## What is RStudio?
 
 `R`Studio is the **IDE** (Integrated Development Environment) we will use to run the `R` language.
 
-. . . 
+. . .
 
-It is a very convenient space, where we can write our nscripts, look up our data, and visualize it!
+It is a very convenient space, where we can write our scripts, look up our data, and visualize it!
 
 . . .
 
@@ -120,23 +112,10 @@ The `tidyverse` is a *metapackage* (i.e., a set of packages) that allows us to i
 
 <br><br><br>
 
-
 <https://www.tidyverse.org/>
 
 ## What is the `tidyverse`?
 
-
-
 <br><br><br>
 
-
 Let us install it properly and play around with some of its functions now.
-
-
-
-
-
-
-
-
-

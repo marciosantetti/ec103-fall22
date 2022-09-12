@@ -24,7 +24,7 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
   - Slides: [html](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/001-capitalism/001-capitalism.html) | [pdf](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/001-capitalism/001-capitalism.pdf)
 
   
-**Lecture 3: Technology**
+**Lecture 3: Technology, population, and growth**
 
 
 ## Lab Session notes/slides

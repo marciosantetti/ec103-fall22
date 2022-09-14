@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>.b[Technology, population, and growth]</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Marcio Santetti" />
+    <script src="002-technology_files/header-attrs/header-attrs.js"></script>
+    <link href="002-technology_files/remark-css/default.css" rel="stylesheet" />
+    <link href="002-technology_files/remark-css/metropolis.css" rel="stylesheet" />
+    <link href="002-technology_files/remark-css/metropolis-fonts.css" rel="stylesheet" />
+    <script src="002-technology_files/kePrint/kePrint.js"></script>
+    <link href="002-technology_files/lightable/lightable.css" rel="stylesheet" />
+    <link rel="stylesheet" href="skid-css.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# .b[Technology, population, and growth]
+]
+.subtitle[
+## .b[.green[EC 103–002]]
+]
+.author[
+### Marcio Santetti
+]
+.date[
+### Fall 2022
+]
+
+---
+
+class: inverse, middle
+
+
+
+
+
+# Motivation
+
+
+
+---
+
+# Housekeeping
+
+
+&lt;br&gt;
+
+* .b[Required reading]:
+
+  * `CORE`, ch. 2.
+  
+&lt;br&gt;&lt;br&gt;
+
+* .b[Optional reading]:
+
+  * `Heilbroner &amp; Milberg`, ch. 5.
+  
+  
+---
+
+# Last time
+
+Last week, we refined the term .green[*capitalism*] to better serve our course purposes.
+
+--
+
+Not only did we define it as a social and economic system, but also went through its historical origins, as well as positive and negative features.
+
+--
+
+&lt;br&gt;
+
+Recall the "*.green[hockey stick]*" figures from last time&amp;mdash;reflecting how income per capita has increased since the advent of capitalism.
+
+--
+
+Now we turn our attention to the following question:
+
+  * How .hi[(un)sustainable] is such growth over time?
+  
+  * *Regardless* of the answer, what are the .hi-orange[relevant factors] impacting that?
+
+
+
+---
+layout: false
+class: inverse, middle
+
+# The *Malthusian* trap
+
+
+---
+
+# The *Malthusian* trap
+
+
+[Some biographical points on Malthus]
+
+
+---
+
+# The *Malthusian* trap
+
+One of the most celebrated theories contained in Malthus' writings is known as the .hi[theory of population growth], in which the growth rates of population and food supply would be .hi-orange[inconsistent] with sustained economic growth.
+
+--
+
+&lt;br&gt;
+
+
+  * What is the .orange[*logic*] of this theory?
+  
+--
+
+According to Malthus,  [fill here].
+
+
+---
+
+# The *Malthusian* trap
+
+
+[explain the flat part of the hockey stick]
+
+
+---
+
+# The *Malthusian* trap
+
+To put Malthus' arguments into a *modeling* perspective, let us assume the following scenario:
+
+--
+
+  * A fully agricultural economy, producing only 1 good: *grains*.
+  
+  * Grains are produced by farmers working on farms.
+  
+  * We may generalize the farmers and the farms to .hi[labor] and .hi[land], respectively.
+  
+  * Thus, labor and land are the .hi-orange[factors of production] (inputs) used to produce grains (output).
+  
+--
+
+&lt;br&gt;
+
+To simplify even more, also assume that the land space is .hi[fixed]: 800 farms, each worked by a .hi[single] farmer.
+
+--
+
+Suppose that the total .hi[output] of this economy adds up to 500,000 kg of grain.
+
+--
+
+  * What is the .hi-orange[average productivity] of a farmer's labor of this economy?
+  
+  
+---
+
+# The *Malthusian* trap
+
+The average productivity of labor in this economy, we simply take the *total output*, and divide it by the *amount of labor* employed:
+
+$$
+`\begin{aligned}
+\text{Average productivity of labor} = \dfrac{\text{Total output}}{\text{Number of labor units}} = \dfrac{500,000}{800} = \text{625 kg/farmer}
+\end{aligned}`
+$$
+
+--
+
+&lt;br&gt;
+
+Recall our previous assumption of .hi-orange[fixed land space]. 
+
+  * What happens if, say, some of the farmers' children are old enough to start helping them out on working the land?
+
+
+--
+
+Assume that 200 new farmers come into this economy, so that total output can be increased to 570,000 kg of grain.
+
+--
+
+What is the average productivity of labor now?
+
+
+---
+
+# The *Malthusian* trap
+
+The following table extends the exercise to a few more increments in labor on the given land:
+
+&lt;table class="table" style="margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:right;"&gt; # Workers &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Output (kg) &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Average productivity &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 800 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 500000 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 625 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 1000 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 570000 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 570 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 1200 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 630000 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 525 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 1400 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 684000 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 490 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+--
+
+&lt;br&gt;&lt;br&gt;
+
+.right[
+What is happening here?
+]
+
+---
+
+# The *Malthusian* trap
+
+&lt;img src="002-technology_files/figure-html/unnamed-chunk-2-1.png" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+# The *Malthusian* trap
+
+
+The previous figure visually illustrates the .hi[production function] of our fictitious economy.
+
+--
+
+We can see that, the more farmers employed, the more the economy produces.
+
+--
+
+  * However, there are .hi-orange[limits]!
+  
+  * And these limits are easily seen by the .hi[diminishing behavior of the average productivity of labor].
+  
+--
+
+&lt;br&gt;
+
+Thus, this economy was able to experience an increase in living standards (with an increase in its only output), but such increase was not sustainable, since the more workers employed in a fixed amount of land, the less productive they are over time.
+
+--
+
+  * And such increase in living standards is the .hi-orange[very reason] why population has increased!
+
+---
+
+# The *Malthusian* trap
+
+In Malthus's (1830) own words,
+
+
+&gt; "*Elevated as man is above all other animals by his intellectual facilities, it is not to be supposed that the physical laws to which he is subjected should be essentially different from those which are observed to prevail in other parts of the animated nature*."
+
+--
+
+&lt;br&gt;
+
+Malthus' point is that human beings are not that different from other animals in the sense that, as soon as they experience better living conditions, they will multiply.
+
+--
+
+However, given the limitations in good lands, this process cannot go on indefinitely.
+
+--
+
+As a consequence, there will be a point where an .hi[equilibrium] will be reached at the .hi-orange[subsistence level].
+
+
+
+.red[[Assignment suggestion: we learned averages here, so introduce marginsals in a similar exercise.]]
+
+---
+
+layout: false
+class: inverse, middle
+
+# Was Malthus right?
+
+
+---
+
+
+# Was Malthus right?
+
+The answer is quite obvious, isn't it?
+
+--
+
+Our "hockey stick" graph clearly shows that something happened after the 1700s that changed the stagnant pattern envisioned by Malthus.
+
+--
+
+The .hi[Industrial Revolution] defined a period of .hi-orange[labor productivity] growing at a *faster* rate than .hi-orange[population growth], something absent from Malthus' model and from the real world so far.
+
+--
+
+  * This fact helped to .hi[offset] the diminishing behavior of average labor productivity.
+  
+--
+
+Around 1800, the first innovations of the Industrial Revolution were being implemented in the productive processes.
+
+--
+
+  * However, permanent technological improvements are not .hi[sufficient] to guarantee sustained economic growth.
+  
+--
+
+  * What is the *missing piece*?
+  
+
+---
+
+# Was Malthus right?
+
+
+The answer lies on .hi[real wages].
+
+&gt; [`CORE, Figure 2.21`](https://www.core-econ.org/the-economy/book/text/02.html#figure-2-21)
+
+
+--
+
+&lt;br&gt;
+
+Let us better understand this process from a .hi[historical] perspective.
+
+
+---
+
+# Was Malthus right?
+
+[.red[For a final slide, acknowledge that the Industrial Rev set the stage for capitalism and the market economy we are familiar with. And that is how we can start studying macroeconomics per se.]]
+
+
+---
+
+layout: false
+class: inverse, middle
+
+# Next time: The macroeconomic perspective
+
+
+---
+exclude: true
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

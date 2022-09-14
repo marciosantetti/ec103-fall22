@@ -1,0 +1,377 @@
+---
+title: ".b[Technology, population, and growth]"
+subtitle: ".b[.green[EC 103--002]]"
+author: "Marcio Santetti"
+date: "Fall 2022"
+output:
+  xaringan::moon_reader:
+    css: ['default', 'metropolis', 'metropolis-fonts', 'skid-css.css']
+    # self_contained: true
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      ratio: "16:9"
+      countIncrementalSlides: false
+---
+class: inverse, middle
+
+```{r Setup, include = F}
+options(htmltools.dir.version = FALSE)
+library(pacman)
+p_load(broom, latex2exp, ggplot2, ggthemes, ggforce, viridis, dplyr, magrittr, knitr, parallel, xaringanExtra, tidyverse, sjPlot, showtext, mathjaxr, ggforce, furrr, kableExtra, wooldridge, hrbrthemes, scales, ggeasy, patchwork)
+
+
+
+
+# Knitr options
+opts_chunk$set(
+  comment = "#>",
+  fig.align = "center",
+  fig.height = 7,
+  fig.width = 10.5,
+  warning = F,
+  message = F,
+  dpi=300
+)
+
+theme_set(theme_ipsum_rc())
+
+```
+
+
+
+# Motivation
+
+
+
+---
+
+# Housekeeping
+
+
+<br>
+
+* .b[Required reading]:
+
+  * `CORE`, ch. 2.
+  
+<br><br>
+
+* .b[Optional reading]:
+
+  * `Heilbroner & Milberg`, ch. 5.
+  
+  
+---
+
+# Last time
+
+Last week, we refined the term .green[*capitalism*] to better serve our course purposes.
+
+--
+
+Not only did we define it as a social and economic system, but also went through its historical origins, as well as positive and negative features.
+
+--
+
+<br>
+
+Recall the "*.green[hockey stick]*" figures from last time&mdash;reflecting how income per capita has increased since the advent of capitalism.
+
+--
+
+Now we turn our attention to the following question:
+
+  * How .hi[(un)sustainable] is such growth over time?
+  
+  * *Regardless* of the answer, what are the .hi-orange[relevant factors] impacting that?
+
+
+
+---
+layout: false
+class: inverse, middle
+
+# The *Malthusian* trap
+
+
+---
+
+# The *Malthusian* trap
+
+
+[Some biographical points on Malthus]
+
+
+---
+
+# The *Malthusian* trap
+
+One of the most celebrated theories contained in Malthus' writings is known as the .hi[theory of population growth], in which the growth rates of population and food supply would be .hi-orange[inconsistent] with sustained economic growth.
+
+--
+
+<br>
+
+
+  * What is the .orange[*logic*] of this theory?
+  
+--
+
+According to Malthus,  [fill here].
+
+
+---
+
+# The *Malthusian* trap
+
+
+[explain the flat part of the hockey stick]
+
+
+---
+
+# The *Malthusian* trap
+
+To put Malthus' arguments into a *modeling* perspective, let us assume the following scenario:
+
+--
+
+  * A fully agricultural economy, producing only 1 good: *grains*.
+  
+  * Grains are produced by farmers working on farms.
+  
+  * We may generalize the farmers and the farms to .hi[labor] and .hi[land], respectively.
+  
+  * Thus, labor and land are the .hi-orange[factors of production] (inputs) used to produce grains (output).
+  
+--
+
+<br>
+
+To simplify even more, also assume that the land space is .hi[fixed]: 800 farms, each worked by a .hi[single] farmer.
+
+--
+
+Suppose that the total .hi[output] of this economy adds up to 500,000 kg of grain.
+
+--
+
+  * What is the .hi-orange[average productivity] of a farmer's labor of this economy?
+  
+  
+---
+
+# The *Malthusian* trap
+
+The average productivity of labor in this economy, we simply take the *total output*, and divide it by the *amount of labor* employed:
+
+$$
+\begin{aligned}
+\text{Average productivity of labor} = \dfrac{\text{Total output}}{\text{Number of labor units}} = \dfrac{500,000}{800} = \text{625 kg/farmer}
+\end{aligned}
+$$
+
+--
+
+<br>
+
+Recall our previous assumption of .hi-orange[fixed land space]. 
+
+  * What happens if, say, some of the farmers' children are old enough to start helping them out on working the land?
+
+
+--
+
+Assume that 200 new farmers come into this economy, so that total output can be increased to 570,000 kg of grain.
+
+--
+
+What is the average productivity of labor now?
+
+
+---
+
+# The *Malthusian* trap
+
+The following table extends the exercise to a few more increments in labor on the given land:
+
+```{r, echo=F}
+
+df <- tibble(
+  "# Workers" = c(800, 1000, 1200, 1400),
+  `Output (kg)` = c(500000, 570000, 630000, 684000),
+  `Average productivity`= c(625, 570, 525, 490)
+)
+
+
+df %>%
+  kbl() %>%
+  kable_styling()
+
+  
+
+```
+
+--
+
+<br><br>
+
+.right[
+What is happening here?
+]
+
+---
+
+# The *Malthusian* trap
+
+```{r, echo=FALSE, fig.height=5}
+dat <- tibble(
+  x = seq(1:2800),
+  y = seq(1:2800),
+  lx = log(x),
+  xsq = x^2
+)
+
+
+
+dat %>% 
+  ggplot(aes(x = x, y = lx)) +
+  geom_line(color = "#408480", alpha = 0.5, size = 0.9) +
+  labs(x = 'Number of farmers', y = 'kg of grains (100,000)') +
+  scale_x_continuous(labels = scales::comma) +
+  easy_x_axis_labels_size(13) +
+  easy_x_axis_title_size(13) +
+  easy_y_axis_labels_size(13) +
+  easy_y_axis_title_size(13)
+```
+
+
+---
+
+# The *Malthusian* trap
+
+
+The previous figure visually illustrates the .hi[production function] of our fictitious economy.
+
+--
+
+We can see that, the more farmers employed, the more the economy produces.
+
+--
+
+  * However, there are .hi-orange[limits]!
+  
+  * And these limits are easily seen by the .hi[diminishing behavior of the average productivity of labor].
+  
+--
+
+<br>
+
+Thus, this economy was able to experience an increase in living standards (with an increase in its only output), but such increase was not sustainable, since the more workers employed in a fixed amount of land, the less productive they are over time.
+
+--
+
+  * And such increase in living standards is the .hi-orange[very reason] why population has increased!
+
+---
+
+# The *Malthusian* trap
+
+In Malthus's (1830) own words,
+
+
+> "*Elevated as man is above all other animals by his intellectual facilities, it is not to be supposed that the physical laws to which he is subjected should be essentially different from those which are observed to prevail in other parts of the animated nature*."
+
+--
+
+<br>
+
+Malthus' point is that human beings are not that different from other animals in the sense that, as soon as they experience better living conditions, they will multiply.
+
+--
+
+However, given the limitations in good lands, this process cannot go on indefinitely.
+
+--
+
+As a consequence, there will be a point where an .hi[equilibrium] will be reached at the .hi-orange[subsistence level].
+
+
+
+.red[[Assignment suggestion: we learned averages here, so introduce marginsals in a similar exercise.]]
+
+---
+
+layout: false
+class: inverse, middle
+
+# Was Malthus right?
+
+
+---
+
+
+# Was Malthus right?
+
+The answer is quite obvious, isn't it?
+
+--
+
+Our "hockey stick" graph clearly shows that something happened after the 1700s that changed the stagnant pattern envisioned by Malthus.
+
+--
+
+The .hi[Industrial Revolution] defined a period of .hi-orange[labor productivity] growing at a *faster* rate than .hi-orange[population growth], something absent from Malthus' model and from the real world so far.
+
+--
+
+  * This fact helped to .hi[offset] the diminishing behavior of average labor productivity.
+  
+--
+
+Around 1800, the first innovations of the Industrial Revolution were being implemented in the productive processes.
+
+--
+
+  * However, permanent technological improvements are not .hi[sufficient] to guarantee sustained economic growth.
+  
+--
+
+  * What is the *missing piece*?
+  
+
+---
+
+# Was Malthus right?
+
+
+The answer lies on .hi[real wages].
+
+> [`CORE, Figure 2.21`](https://www.core-econ.org/the-economy/book/text/02.html#figure-2-21)
+
+
+--
+
+<br>
+
+Let us better understand this process from a .hi[historical] perspective.
+
+
+---
+
+# Was Malthus right?
+
+[.red[For a final slide, acknowledge that the Industrial Rev set the stage for capitalism and the market economy we are familiar with. And that is how we can start studying macroeconomics per se.]]
+
+
+---
+
+layout: false
+class: inverse, middle
+
+# Next time: The macroeconomic perspective
+
+
+---
+exclude: true

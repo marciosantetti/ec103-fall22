@@ -23,8 +23,12 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
 
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/001-capitalism/001-capitalism.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/001-capitalism/001-capitalism.pdf)
 
+
+**Lecture 3: All things "capitalism," pt. II**
+
+  - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/001-capitalism/001-capitalism-2.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/001-capitalism/001-capitalism-2.pdf)
   
-**Lecture 3: Technology, population, and growth**
+**Lecture 4: Technology, population, and growth**
 
 
 ## Lab Session notes/slides
@@ -37,6 +41,11 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
 
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/001-tidyverse/001-tidyverse.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/001-tidyverse/001-tidyverse.pdf)
   - Data: [`toy_data.csv`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/001-tidyverse/toy_data.csv)
+  
+ **Lab 2**: Manipultaing data in the `tidyverse`
+ 
+  - Slides: `html` | `pdf`
+  
 
 ## Assignments
 

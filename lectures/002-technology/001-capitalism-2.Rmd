@@ -203,7 +203,7 @@ And the .hi-orange[strategy] to distribute output must keep individuals constant
 
 --
 
-Throughout History, we have experiences .hi[three] main types of .hi-orange[solutions] to the production and distribution issues.
+Throughout History, we have experienced .hi[three] main types of .hi-orange[solutions] to the production and distribution issues.
 
 --
 

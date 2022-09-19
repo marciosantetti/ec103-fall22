@@ -1,0 +1,335 @@
+---
+title: "Manipulating data the `tidyverse`"
+subtitle: "EC 103--02"
+author: "Marcio Santetti"
+footer: "EC 103--02"
+format: 
+  revealjs:
+    theme: lab.scss
+    multiplex: true
+    transition: fade
+    slide-number: true
+    incremental: true 
+    chalkboard: true
+editor: visual
+execute:
+  freeze: auto
+---
+
+```{r}
+#| include: false
+# figure options
+knitr::opts_chunk$set(
+  fig.width = 10, fig.asp = 0.618,
+  fig.retina = 3, dpi = 300, fig.align = "center"
+)
+```
+
+# RStudio cloud
+
+## RStudio cloud
+
+For students struggling with installing RStudio, *RStudio cloud* may be an alternative:
+
+<br>
+
+<https://rstudio.cloud/>
+
+<br>
+
+
+Set up an account and you can start working with RStudio from your browser.
+
+
+# Some important `tidyverse` functions
+
+## Some important `tidyverse` functions
+
+<br>
+
+Data wrangling and manipulation are common tasks when doing empirical work.
+
+. . .
+
+Even though it has been easier and easier to access high-quality data, we may need to perform some *cleaning*, *filtering*, and *organizing* before we proceed.
+
+. . .
+
+The `tidyverse` has a wide array of functions, of which we will study a few.
+
+## Some important `tidyverse` functions
+
+<br>
+
+To see these functions in practice, let us keep working on the "toy" data set we saw in the last session.
+
+. . .
+
+<br>
+
+Recall:
+
+<br>
+
+```{r}
+#| message: false
+#| warning: false
+#| echo: true
+library(tidyverse)
+
+my_data <- read_csv("toy_data.csv")
+```
+
+## Some important `tidyverse` functions
+
+<br>
+
+```{r}
+#| message: false
+#| warning: false
+#| echo: true
+
+
+my_data
+```
+
+# The **pipe** operator
+
+## The **pipe** operator
+
+<br>
+
+The tidyverse has a very useful operator, known as the **pipe** operator, that facilitates data wrangling.
+
+-   `%>%`
+
+. . .
+
+If you are using RStudio, you can use the pipe operator using the following keyboard shortcut:
+
+-   `Cmd+Shift+M` (macOS);
+-   `Ctrl+Shift+M` (Windows).
+
+# The `select()` function
+
+## The `select()` function
+
+The first function we will look at is the `select()` function.
+
+In practice:
+
+<br>
+
+```{r}
+#| echo: true
+
+
+my_data %>% 
+  select(name, movie)
+```
+
+## The `select()` function
+
+<br>
+
+```{r}
+#| echo: true
+
+
+my_data %>% 
+  select(name, age, weight)
+```
+
+## The `select()` function
+
+<br>
+
+When working with a pipeline, R will not automatically update your data set.
+
+. . .
+
+<br>
+
+In case you want to **store** a modified data set, you simply assign your pipeline to a **new object**.
+
+<br>
+
+```{r}
+#| echo: true
+
+
+my_data_subset <- my_data %>% 
+  select(name, age, weight)
+```
+
+# The `filter()` function
+
+## The `filter()` function
+
+<br>
+
+In practice:
+
+<br>
+
+```{r}
+#| echo: true
+
+
+my_data %>% 
+  filter(movie %in% "drama")
+```
+
+## The `filter()` function
+
+<br>
+
+In practice:
+
+<br>
+
+```{r}
+#| echo: true
+
+
+my_data %>% 
+  filter(age > 20)
+```
+
+## The `filter()` function
+
+<br>
+
+In practice:
+
+<br>
+
+```{r}
+#| echo: true
+
+
+my_data %>% 
+  filter(tip < 5)
+```
+
+## The `filter()` function
+
+<br>
+
+In practice:
+
+<br>
+
+```{r}
+#| echo: true
+
+
+my_data %>% 
+  filter(name %in% "Anna" | name %in% "David")   # or
+```
+
+## The `filter()` function
+
+<br>
+
+In practice:
+
+<br>
+
+```{r}
+#| echo: true
+
+
+my_data %>% 
+  filter(name %in% "Anna" & tip > 5)  # and
+```
+
+## The `filter()` function
+
+<br>
+
+In case you want to store a modified data set, just assign to a new object:
+
+<br>
+
+```{r}
+#| echo: true
+
+
+my_data_filter <- my_data %>% 
+  filter(name %in% "Anna" & tip > 5)
+```
+
+# The `mutate()` function
+
+## The `mutate()` function
+
+<br>
+
+In practice:
+
+```{r}
+#| echo: true
+
+
+my_data %>% 
+  mutate(age_months = age * 12)
+```
+
+## The `mutate()` function
+
+<br>
+
+In practice:
+
+```{r}
+#| echo: true
+
+
+my_data %>% 
+  mutate(weight_kg = weight * 0.453592)
+```
+
+## The `mutate()` function
+
+A way of mutating, but adding new columns:
+
+```{r}
+#| echo: true
+
+fav_birds <- c("kestrel", "quail", "albatross", "hummingbird", 
+               "american robin", "eastern bluebird", "hummingbird",
+               "california quail", "blue jay")
+
+my_data %>% 
+  add_column(fav_birds)
+```
+
+## A pipeline
+
+<br>
+
+```{r}
+#| echo: true
+
+
+my_data %>% 
+  add_column(fav_birds) %>% 
+  filter(fav_birds %in% "hummingbird") %>% 
+  select(name)
+```
+
+# The `group_by()` function
+
+## The `group_by()` function
+
+<br>
+
+```{r}
+#| echo: true
+
+
+my_data %>% 
+  group_by(name) %>% 
+  summarize(mean_tip = mean(tip)) # compute average tip ($) given
+```

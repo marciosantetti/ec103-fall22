@@ -31,7 +31,7 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
   
 **Lecture 4: The macroeconomic perspective**
 
-  - Slides: `html` | `pdf`
+  - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/003-macro-perspective/003-macro-perspective.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/003-macro-perspective/003-macro-perspective.pdf)
 
 
 ## Lab Session notes/slides

@@ -43,7 +43,7 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
 **Lab 1**: Introduction to `R`, `RStudio`, and the `tidyverse`
 
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/001-tidyverse/001-tidyverse.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/001-tidyverse/001-tidyverse.pdf)
-  - Data: [`toy_data.csv`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/001-tidyverse/toy_data.csv)
+  - Data: [`toy_data.csv`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/001-tidyverse/toy_data.csv) | Data can also be downloaded at `theSpring`
   
  **Lab 2**: Manipulating data in the `tidyverse`
  

@@ -61,7 +61,7 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
 **Lab 3**: Computing economic aggregates in the `tidyverse`
 
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/003-data-manipulation-2/003-data-manipulation-2.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/003-data-manipulation-2/003-data-manipulation-2.pdf)
-  - Data: [`gdp-data.csv`](https://raw.githubusercontent.com/marciosantetti/ec103-fall22/main/lab/003-data-manipulation-2/gdp-data.csv) | Data can also be downloaded on `theSpring`
+  - Data: [`gdp-data.csv`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/003-data-manipulation-2/gdp-data.csv) | Data can also be downloaded on `theSpring`
 
 **Lab 4**: The "grammar of graphics"
   

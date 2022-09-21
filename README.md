@@ -60,7 +60,7 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
 
 **Lab 3**: Computing economic aggregates in the `tidyverse`
 
-  - Slides: `html` | `pdf`
+  - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/003-data-manipulation-2/003-data-manipulation-2.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/003-data-manipulation-2/003-data-manipulation-2.pdf)
 
 **Lab 4**: The "grammar of graphics"
   

@@ -58,7 +58,7 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
  
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/002-data-manipulation/002-data-manipulation.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/002-data-manipulation/002-data-manipulation.pdf)
 
-**Lab 3**: Types of data; computing economic aggregates
+**Lab 3**: Computing economic aggregates in the `tidyverse`
 
   - Slides: `html` | `pdf`
 

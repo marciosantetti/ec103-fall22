@@ -32,6 +32,15 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
 **Lecture 4: The macroeconomic perspective**
 
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/003-macro-perspective/003-macro-perspective.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/003-macro-perspective/003-macro-perspective.pdf)
+  
+**Lecture 5: GDP: Different shapes and forms**
+
+  - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/003-macro-perspective/004-gdp.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/003-macro-perspective/004-gdp.pdf)
+  
+  
+ **Lecture 6: Economic growth**
+
+  - Slides: `html` | `pdf`
 
 
 ## Lab Session notes/slides
@@ -49,7 +58,7 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
  
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/002-data-manipulation/002-data-manipulation.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/002-data-manipulation/002-data-manipulation.pdf)
 
-**Lab 3**: Types of data; computing economic aggregates
+**Lab 3**: Computing economic aggregates in the `tidyverse`
 
   - Slides: `html` | `pdf`
 
@@ -67,7 +76,7 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
 
 ### Long Assignments
 
-  - [`Long Assignment 1`](https://raw.githack.com/marciosantetti/ec103-fall22/main/long-assignments/long-1-f22.pdf) (due 09/26, before class)
+  - [`Long Assignment 1`](https://raw.githack.com/marciosantetti/ec103-fall22/main/long-assignments/long-1-f22.pdf) (due 09/26, before class) | submission through `theSpring`
 
 
 

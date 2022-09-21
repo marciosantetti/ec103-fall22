@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>.b[GDP: Different shapes and forms]</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Marcio Santetti" />
+    <script src="004-gdp_files/header-attrs/header-attrs.js"></script>
+    <link href="004-gdp_files/remark-css/default.css" rel="stylesheet" />
+    <link href="004-gdp_files/remark-css/metropolis.css" rel="stylesheet" />
+    <link href="004-gdp_files/remark-css/metropolis-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="skid-css.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# .b[GDP: Different shapes and forms]
+]
+.subtitle[
+## .b[.hi[EC 103–02]]
+]
+.author[
+### Marcio Santetti
+]
+.date[
+### Fall 2022
+]
+
+---
+
+class: inverse, middle
+
+
+
+
+
+# Motivation
+
+
+
+---
+
+# Housekeeping
+
+ .b[Required readings]:
+ 
+
+&lt;br&gt;
+
+  * [`OpenStax, ch. 6`](https://openstax.org/books/principles-macroeconomics-2e/pages/6-introduction-to-the-macroeconomic-perspective).
+
+---
+layout: false
+class: inverse, middle
+
+# Nominal vs. Real
+
+
+---
+
+# Nominal vs. Real
+
+A .hi[crucial] distinction in Economics is between .hi-orange[real] and .hi-orange[nominal] values.
+
+--
+
+For the case of GDP, this is especially important when .hi[inflation] is such an important component of the economy.
+
+--
+
+&gt; .hi-orange[Inflation] is a *sustained* increase in an economy's price level.
+
+--
+  
+&lt;br&gt;&lt;br&gt;
+  
+The .hi[nominal] value of any economic measure implies a statistic in terms of .hi-orange[actual prices] that exist at the time. 
+
+--
+  
+On the other hand, .hi[real] values refer to the *same* statistic after it has been .hi-orange[adjusted for inflation]. 
+
+
+
+---
+
+# Nominal vs. Real
+
+
+Reality check...
+
+
+&lt;br&gt;&lt;br&gt;
+
+[`US Nominal Gross Domestic Product`](https://fred.stlouisfed.org/series/GDP#0)
+
+
+
+---
+
+# Nominal vs. Real
+
+Simply looking at *nominal* values when evaluating economic statistics may be .hi[misleading].
+
+--
+  
+Consider the number of .it[cars sold], for instance.
+
+--
+  
+  * Does an SUV have the *same* price today, relative to, say, 1985?
+  
+--
+  
+&lt;br&gt;
+  
+  
+  
+Thus, to have a more .hi-orange[*accurate*] basis for evaluating economic growth, economists prefer .hi[real] measures, as they account for inflation.
+
+--
+  
+For the case of GDP, we use the .hi-orange[GDP deflator] to .hi[*normalize*] nominal GDP values.
+
+--
+
+  &gt; The .hi[GDP deflator] is a price index measuring the average prices of all final goods and services included in the economy.
+
+
+
+---
+
+# Nominal vs. Real
+
+&lt;br&gt;
+
+Before we move on...
+
+--
+
+  * What is a .hi[price index]?
+
+--
+
+An .hi-orange[index] is a number that allows for comparisons across different points in time or different entities.
+
+--
+
+For our purposes, a .hi[price index] is a reference number that allows us to compare economic statistics at different points in time, serving as an *overall average change in relative prices over time*.
+
+--
+
+Over time, the amount of goods and services produced by an economy .hi[increases], and so do .hi-orange[their prices].
+
+--
+
+To that end, the .hi[GDP deflator] is a price index that includes .hi-orange[all] goods and services that are counted in GDP through a *weighted average* methodology.
+
+
+---
+
+# Nominal vs. Real
+
+Suppose a "toy" economy, with .hi[no] government and .hi[no] interactions with the foreign sector, that only produces .hi[apples].
+
+--
+
+In this case, its .hi-orange[GDP] will simply be the price of apples multiplied by the amount of apples sold.
+
+--
+
+And a few periods:
+
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:right;"&gt; Year &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Current Price (per unit) &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Quantity sold &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Nominal GDP &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 2015 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.00 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 200 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 200.0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 2016 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.10 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 250 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 275.0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 2017 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.15 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 230 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 264.5 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;br&gt;
+
+--
+
+In case we want to calculate this economy's .hi[real GDP], we first need to set a .hi-orange[base year].
+
+  - Meaning: we will select a year whose .hi[price level] will be the reference for all years.
+
+
+---
+
+# Nominal vs. Real
+
+Suppose we set our .hi[base year] to 2016.
+
+--
+
+What we need to do is multiply the .hi[quantities produced] each year by the .hi[base-year price].
+
+--
+
+
+Then, 
+
+
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:right;"&gt; Year &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Constant Price (per unit) &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Quantity sold &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Real GDP &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 2015 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 200 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 220 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 2016 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 250 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 275 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 2017 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 230 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 253 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+---
+# Nominal vs. Real
+
+&lt;br&gt;&lt;br&gt;
+
+Comparing:
+
+
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:right;"&gt; Nominal GDP &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Real GDP (Constant 2016 prices) &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 200.0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 220 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 275.0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 275 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 264.5 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 253 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+---
+
+# Nominal vs. Real
+
+Reality is way more complicated than our "toy" economy from the previous example.
+
+--
+
+However, the intuition about the .hi[indexing] procedure remains the same.
+
+--
+
+What the [`Bureau of Economic Analysis (BEA)`](https://www.bea.gov/) does is computing a GDP deflator with the .hi-orange[average prices] of all goods and services included in the economy.
+
+--
+
+&lt;br&gt;
+
+And we obtain real GDP values applying the formula below:
+
+&lt;br&gt;
+
+
+$$
+`\begin{aligned}
+\text{Real GDP} = \dfrac{\text{Nominal GDP}}{\text{GDP Deflator}}
+\end{aligned}`
+$$
+
+---
+
+# Nominal vs. Real
+
+
+Reality check...
+
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+
+[`The US GDP price deflator`](https://fred.stlouisfed.org/series/A191RI1Q225SBEA)
+
+---
+
+# Nominal vs. Real
+
+Consider the following data (in US$ billions) for the US, between 2008q1 and 2009q4 (base year = 2005):
+
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Quarter &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Nominal GDP &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; GDP deflator &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 2008q1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 14373.9 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.08 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 2008q2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 14497.8 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.08 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 2008q3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 14546.7 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.09 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 2008q4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 14347.3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.09 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 2009q1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 14178.0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.10 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 2009q2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 14151.2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.10 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 2009q3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 14242.1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.10 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 2009q4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 14453.8 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.10 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;br&gt;
+
+--
+
+  - Calculate the .hi[Real GDP] for the US economy over this period.
+
+
+---
+layout: false
+class: inverse, middle
+
+# Domestic vs. National
+
+
+---
+
+# Domestic vs. National
+
+A close "cousin" of GDP is the .hi[Gross National Product] (GNP).
+
+--
+
+The main .hi-orange[difference] between the two is that, while GDP only includes what a country produces .hi[within its borders], GNP *adds* what domestic businesses and labor .hi[abroad] produce, and *subtracts* any payments that foreign labor and businesses located in the local country send home to other countries.
+
+--
+
+  - In other words, GNP is based more on what a country's citizens and firms produce, *wherever* they are located, and GDP is based on what happens within a certain country's geographic *boundaries.*
+  
+--
+
+&lt;br&gt;&lt;br&gt;
+  
+[`US Gross National Product Data`](https://fred.stlouisfed.org/series/GNP)
+
+
+
+---
+layout: false
+class: inverse, middle
+
+# Comparing different countries
+
+
+---
+
+# Comparing different countries
+
+Applying a similar reasoning to the *Real vs. Nominal* GDP, we can also compare the economic performances among .hi[different countries].
+
+--
+
+To that end, given that almost each nation has its own .hi-orange[currency], we use the .hi[exchange rate] as a common denominator.
+
+  &gt; The .hi-orange[exchange rate] is the value of one currency in terms of *another* currency.
+
+
+--
+
+&lt;br&gt;&lt;br&gt;
+
+Economists typically use the .hi[Purchasing Power Parity (PPP)] measure of GDP to compare the size and performance of different economies.
+
+
+
+
+
+---
+
+# Comparing different countries
+
+As an example, suppose we would like to compare two countries: Japan and the United States.
+
+--
+
+Suppose that, in 2021, 1 Japanese *Yen* is equivalent to 0.007 US dollar.
+
+  - Thus, the exchange rate Yen/Dollar is 142.85 Yen = US$ 1.
+  
+--
+
+&lt;br&gt;
+
+If we wish to .hi-orange[convert] Japan's GDP of 541,473.00 Billions of Yen to US dollars, we simply apply the following formula:
+
+&lt;br&gt;
+
+$$
+`\begin{aligned}
+\text{Japan's GDP in US\$} = \dfrac{\text{Japan's GDP in Yen}}{\text{Yen/Dollar Exchange Rate}} = \dfrac{541,473.00}{142.85} = \text{US\$} \ 3,790.50
+\end{aligned}`
+$$
+
+---
+
+# Comparing different countries
+
+&lt;br&gt;&lt;br&gt;
+
+
+In 2021, the Euro/US Dollar exchange rate was 0.98 Euro = 1 US Dollar. 
+
+Also, Germany's GDP was 3,570.62 billions of Euros.
+
+  - Compute Germany's GDP in terms of Purchasing Power Parity (PPP) in US dollars.
+
+
+
+
+---
+layout: false
+class: inverse, middle
+
+# Next time: Economic growth
+
+---
+exclude: true
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

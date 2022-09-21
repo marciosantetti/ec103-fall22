@@ -1,5 +1,5 @@
 ---
-title: ".b[GDP: different shapes and forms]"
+title: ".b[GDP: Different shapes and forms]"
 subtitle: ".b[.hi[EC 103--02]]"
 author: "Marcio Santetti"
 date: "Fall 2022"
@@ -66,18 +66,259 @@ class: inverse, middle
 
 # Nominal vs. Real
 
+A .hi[crucial] distinction in Economics is between .hi-orange[real] and .hi-orange[nominal] values.
+
+--
+
+For the case of GDP, this is especially important when .hi[inflation] is such an important component of the economy.
+
+--
+
+> .hi-orange[Inflation] is a *sustained* increase in an economy's price level.
+
+--
+  
+<br><br>
+  
+The .hi[nominal] value of any economic measure implies a statistic in terms of .hi-orange[actual prices] that exist at the time. 
+
+--
+  
+On the other hand, .hi[real] values refer to the *same* statistic after it has been .hi-orange[adjusted for inflation]. 
+
+
 
 ---
 
 # Nominal vs. Real
 
 
+Reality check...
+
+
+<br><br>
+
+[`US Nominal Gross Domestic Product`](https://fred.stlouisfed.org/series/GDP#0)
+
+
+
+---
+
+# Nominal vs. Real
+
+Simply looking at *nominal* values when evaluating economic statistics may be .hi[misleading].
+
+--
+  
+Consider the number of .it[cars sold], for instance.
+
+--
+  
+  * Does an SUV have the *same* price today, relative to, say, 1985?
+  
+--
+  
+<br>
+  
+  
+  
+Thus, to have a more .hi-orange[*accurate*] basis for evaluating economic growth, economists prefer .hi[real] measures, as they account for inflation.
+
+--
+  
+For the case of GDP, we use the .hi-orange[GDP deflator] to .hi[*normalize*] nominal GDP values.
+
+--
+
+  > The .hi[GDP deflator] is a price index measuring the average prices of all final goods and services included in the economy.
+
+
+
+---
+
+# Nominal vs. Real
+
+<br>
+
+Before we move on...
+
+--
+
+  * What is a .hi[price index]?
+
+--
+
+An .hi-orange[index] is a number that allows for comparisons across different points in time or different entities.
+
+--
+
+For our purposes, a .hi[price index] is a reference number that allows us to compare economic statistics at different points in time, serving as an *overall average change in relative prices over time*.
+
+--
+
+Over time, the amount of goods and services produced by an economy .hi[increases], and so do .hi-orange[their prices].
+
+--
+
+To that end, the .hi[GDP deflator] is a price index that includes .hi-orange[all] goods and services that are counted in GDP through a *weighted average* methodology.
+
+
+---
+
+# Nominal vs. Real
+
+Suppose a "toy" economy, with .hi[no] government and .hi[no] interactions with the foreign sector, that only produces .hi[apples].
+
+--
+
+In this case, its .hi-orange[GDP] will simply be the price of apples multiplied by the amount of apples sold.
+
+--
+
+And a few periods:
+
+```{r, echo=FALSE}
+toy <- tibble(
+  "Year" = c(2015, 2016, 2017),
+  "Current Price (per unit)" = c(1.00, 1.10, 1.15),
+  "Quantity sold" = c(200, 250, 230),
+  "Nominal GDP" = c(200, 275, 264.5)
+)  
+  
+toy %>% 
+  kable()
+
+
+```
+
+<br>
+
+--
+
+In case we want to calculate this economy's .hi[real GDP], we first need to set a .hi-orange[base year].
+
+  - Meaning: we will select a year whose .hi[price level] will be the reference for all years.
+
+
+---
+
+# Nominal vs. Real
+
+Suppose we set our .hi[base year] to 2016.
+
+--
+
+What we need to do is multiply the .hi[quantities produced] each year by the .hi[base-year price].
+
+--
+
+
+Then, 
+
+
+```{r, echo=F}
+toy2 <- tibble(
+  "Year" = c(2015, 2016, 2017),
+  "Constant Price (per unit)" = c(1.10, 1.10, 1.10),
+  "Quantity sold" = c(200, 250, 230),
+  "Real GDP" = c(220, 275, 253)
+)  
+  
+toy2 %>% 
+  kable()
+```
+
+---
+# Nominal vs. Real
+
+<br><br>
+
+Comparing:
+
+
+```{r, echo=F}
+toy3 <- tibble(
+  "Nominal GDP" = c(200, 275, 264.5),
+  "Real GDP (Constant 2016 prices)" = c(220, 275, 253)
+)  
+  
+toy3 %>% 
+  kable()
+```
+
+
+---
+
+# Nominal vs. Real
+
+Reality is way more complicated than our "toy" economy from the previous example.
+
+--
+
+However, the intuition about the .hi[indexing] procedure remains the same.
+
+--
+
+What the [`Bureau of Economic Analysis (BEA)`](https://www.bea.gov/) does is computing a GDP deflator with the .hi-orange[average prices] of all goods and services included in the economy.
+
+--
+
+<br>
+
+And we obtain real GDP values applying the formula below:
+
+<br>
+
+
+$$
+\begin{aligned}
+\text{Real GDP} = \dfrac{\text{Nominal GDP}}{\text{GDP Deflator}}
+\end{aligned}
+$$
 
 ---
 
 # Nominal vs. Real
 
 
+Reality check...
+
+
+<br><br><br>
+
+
+[`The US GDP price deflator`](https://fred.stlouisfed.org/series/A191RI1Q225SBEA)
+
+---
+
+# Nominal vs. Real
+
+Consider the following data (in US$ billions) for the US, between 2008q1 and 2009q4 (base year = 2005):
+
+```{r, echo=F}
+real_gdp <- tibble(
+  "Quarter" = c("2008q1", "2008q2", "2008q3", "2008q4", "2009q1", "2009q2", "2009q3", "2009q4"),
+  "Nominal GDP" = c(14373.9, 14497.8, 14546.7, 14347.3, 14178.0, 14151.2, 14242.1, 14453.8), 
+  "Real GDP" = c(13366.9, 13415.3, 13324.6, 13141.9, 12925.4, 12901.5, 12973.0, 13149.5)
+)
+
+real_gdp <- real_gdp %>% 
+  mutate("GDP deflator" = `Nominal GDP`/`Real GDP`)
+
+
+
+real_gdp %>% 
+  select(-`Real GDP`) %>% 
+  kable(digits = 2)
+
+
+```
+
+<br>
+
+--
+
+  - Calculate the .hi[Real GDP] for the US economy over this period.
 
 
 ---
@@ -91,11 +332,95 @@ class: inverse, middle
 
 # Domestic vs. National
 
+A close "cousin" of GDP is the .hi[Gross National Product] (GNP).
+
+--
+
+The main .hi-orange[difference] between the two is that, while GDP only includes what a country produces .hi[within its borders], GNP *adds* what domestic businesses and labor .hi[abroad] produce, and *subtracts* any payments that foreign labor and businesses located in the local country send home to other countries.
+
+--
+
+  - In other words, GNP is based more on what a country's citizens and firms produce, *wherever* they are located, and GDP is based on what happens within a certain country's geographic *boundaries.*
+  
+--
+
+<br><br>
+  
+[`US Gross National Product Data`](https://fred.stlouisfed.org/series/GNP)
+
+
+
+---
+layout: false
+class: inverse, middle
+
+# Comparing different countries
 
 
 ---
 
-# Domestic vs. National
+# Comparing different countries
+
+Applying a similar reasoning to the *Real vs. Nominal* GDP, we can also compare the economic performances among .hi[different countries].
+
+--
+
+To that end, given that almost each nation has its own .hi-orange[currency], we use the .hi[exchange rate] as a common denominator.
+
+  > The .hi-orange[exchange rate] is the value of one currency in terms of *another* currency.
+
+
+--
+
+<br><br>
+
+Economists typically use the .hi[Purchasing Power Parity (PPP)] measure of GDP to compare the size and performance of different economies.
+
+
+
+
+
+---
+
+# Comparing different countries
+
+As an example, suppose we would like to compare two countries: Japan and the United States.
+
+--
+
+Suppose that, in 2021, 1 Japanese *Yen* is equivalent to 0.007 US dollar.
+
+  - Thus, the exchange rate Yen/Dollar is 142.85 Yen = US$ 1.
+  
+--
+
+<br>
+
+If we wish to .hi-orange[convert] Japan's GDP of 541,473.00 Billions of Yen to US dollars, we simply apply the following formula:
+
+<br>
+
+$$
+\begin{aligned}
+\text{Japan's GDP in US\$} = \dfrac{\text{Japan's GDP in Yen}}{\text{Yen/Dollar Exchange Rate}} = \dfrac{541,473.00}{142.85} = \text{US\$} \ 3,790.50
+\end{aligned}
+$$
+
+---
+
+# Comparing different countries
+
+<br><br>
+
+
+In 2021, the Euro/US Dollar exchange rate was 0.98 Euro = 1 US Dollar. 
+
+Also, Germany's GDP was 3,570.62 billions of Euros.
+
+  - Compute Germany's GDP in terms of Purchasing Power Parity (PPP) in US dollars.
+
+
+
 
 ---
 layout: false

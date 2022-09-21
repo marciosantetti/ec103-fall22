@@ -1,30 +1,3 @@
----
-  
-  # The size of the economy
-  
-  One caution when computing GDP is to avoid .hi[double counting].
-
---
-  
-  Counting output more than once is a statistical .hi-orange[mistake], and may overstate the size of an economy.
-
---
-  
-  <br>
-  
-  For instance, suppose a farmer sells oats to a miller by $50. The miller, then, refines it and produces oat flour. A bakery's owner purchases this oat flour by $100. This bakery sells oat cakes adding up to $200 per week. 
-
---
-
-.right[
-Which of these values goes into GDP accounting?
-]
-
---
-
-<br>
-
-.hi[Intermediate, illegal], and .hi[used] goods, as well as .hi[transfer payments] are .hi-orange[not] accounted for in GDP.
 
 ---
 
@@ -35,28 +8,6 @@ class: inverse, middle
 
 
 ---
-
-# Real vs. nominal GDP
-
-A .hi[crucial] distinction in Economics is between .hi-orange[real] and .hi-orange[nominal] values.
-
---
-
-For the case of GDP, this is especially important when .hi[inflation] is such an important component of the economy.
-
---
-
-> .hi-orange[Inflation] is a *sustained* increase in sn economy's price level.
-
---
-  
-  <br>
-  
-  The .hi[nominal] value of any economic measure means implies a statistic in terms of .hi-orange[actual prices] that exist at the time.
-
---
-  
-  On the other hand, .hi[real] values refer to the *same* statistic after it has been .hi-orange[adjusted for inflation].
 
 
 ---
@@ -88,7 +39,6 @@ For the case of GDP, this is especially important when .hi[inflation] is such an
 --
   
   
-  > The .hi[GDP deflator] is a price index measuring the average prices of all final goods and services included in the economy.
 
 ---
   
@@ -127,29 +77,7 @@ class: inverse, middle
   [first grapha again]
 
 
----
-  
-  # GDP over time
-  
-  A .hi[recession] happens whenever significant short-term declines interrupt a general upward long-term trend of GDP.
 
---
-  
-  In cases of *lenghty* and *deep* recessions, the economy experiences a .hi-orange[depression].
-
-
-<br>
-  
-  .right[
-    Do you recall any *examples* of depressions and/or recessions?
-  ]
-
-
---
-  
-  An economy's movement from peak to trough and trough to peak the .hi[business cycle].
-
----
 layout: false
 class: inverse, middle
 

@@ -1,5 +1,5 @@
 ---
-title: "Manipulating data the `tidyverse`"
+title: "Manipulating data in the `tidyverse`"
 subtitle: "EC 103--02"
 author: "Marcio Santetti"
 footer: "EC 103--02"
@@ -37,9 +37,7 @@ For students struggling with installing RStudio, *RStudio cloud* may be an alter
 
 <br>
 
-
 Set up an account and you can start working with RStudio from your browser.
-
 
 # Some important `tidyverse` functions
 

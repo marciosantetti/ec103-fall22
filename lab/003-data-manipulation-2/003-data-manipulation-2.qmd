@@ -1,0 +1,61 @@
+---
+title: "Manipulating economic data in the `tidyverse`"
+subtitle: "EC 103--02"
+author: "Marcio Santetti"
+footer: "EC 103--02"
+format: 
+  revealjs:
+    theme: lab.scss
+    multiplex: true
+    transition: fade
+    slide-number: true
+    incremental: true 
+    chalkboard: true
+editor: visual
+execute:
+  freeze: auto
+---
+
+```{r}
+#| include: false
+# figure options
+knitr::opts_chunk$set(
+  fig.width = 10, fig.asp = 0.618,
+  fig.retina = 3, dpi = 300, fig.align = "center"
+)
+```
+
+# Welcome to Lab 3!
+
+## This week
+
+This week, we will keep working with the `tidyverse` functions we learned about last time, now applying it to **macroeconomic data**.
+
+. . .
+
+We will use the "gdp-data.csv" file, which can be found both in the course *GitHub* repository and on *theSpring.*
+
+. . .
+
+It contains data on GDP at purchasing power parity (PPP, 2017 US dollars) and total population for the United States, Japan, and South Africa, between 1990 and 2021, obtained from the World Bank.
+
+## This week's data
+
+```{r}
+#| echo: true
+library(tidyverse)
+
+macro_data <- read_csv("gdp-data.csv")
+
+macro_data
+
+```
+
+
+## This week's data
+
+<br><br>
+
+Now, we will resume our lab in RStudio.
+
+

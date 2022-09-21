@@ -4,12 +4,12 @@
   <meta name="generator" content="quarto-0.9.318">
 
   <meta name="author" content="Marcio Santetti">
-  <title>Manipulating data in the tidyverse</title>
+  <title>Manipulating economic data in the tidyverse</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="002-data-manipulation_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="002-data-manipulation_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="003-data-manipulation-2_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="003-data-manipulation-2_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -81,20 +81,20 @@
     code span.vs { color: #4070a0; } /* VerbatimString */
     code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="002-data-manipulation_files/libs/revealjs/dist/theme/quarto.css" id="theme">
-  <script src="002-data-manipulation_files/libs/clipboard/clipboard.min.js"></script>
-  <script src="002-data-manipulation_files/libs/quarto-html/tabby.min.js"></script>
-  <script src="002-data-manipulation_files/libs/quarto-html/popper.min.js"></script>
-  <script src="002-data-manipulation_files/libs/quarto-html/tippy.umd.min.js"></script>
-  <link href="002-data-manipulation_files/libs/quarto-html/tippy.css" rel="stylesheet">
-  <link href="002-data-manipulation_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet">
-  <link id="quarto-text-highlighting-styles" href="002-data-manipulation_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
-  <link href="002-data-manipulation_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="002-data-manipulation_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="002-data-manipulation_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="002-data-manipulation_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="002-data-manipulation_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
-  <link href="002-data-manipulation_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="003-data-manipulation-2_files/libs/revealjs/dist/theme/quarto.css" id="theme">
+  <script src="003-data-manipulation-2_files/libs/clipboard/clipboard.min.js"></script>
+  <script src="003-data-manipulation-2_files/libs/quarto-html/tabby.min.js"></script>
+  <script src="003-data-manipulation-2_files/libs/quarto-html/popper.min.js"></script>
+  <script src="003-data-manipulation-2_files/libs/quarto-html/tippy.umd.min.js"></script>
+  <link href="003-data-manipulation-2_files/libs/quarto-html/tippy.css" rel="stylesheet">
+  <link href="003-data-manipulation-2_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet">
+  <link id="quarto-text-highlighting-styles" href="003-data-manipulation-2_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
+  <link href="003-data-manipulation-2_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="003-data-manipulation-2_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="003-data-manipulation-2_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="003-data-manipulation-2_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="003-data-manipulation-2_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="003-data-manipulation-2_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -385,389 +385,56 @@
     <div class="slides">
 
 <section id="title-slide" class="center">
-  <h1 class="title">Manipulating data in the <code>tidyverse</code></h1>
+  <h1 class="title">Manipulating economic data in the <code>tidyverse</code></h1>
   <p class="subtitle">EC 103–02</p>
   <p class="author">Marcio Santetti</p>
 </section>
 
 <section>
-<section id="rstudio-cloud" class="title-slide slide level1 center">
-<h1>RStudio cloud</h1>
+<section id="welcome-to-lab-3" class="title-slide slide level1 center">
+<h1>Welcome to Lab 3!</h1>
 
 </section>
-<section id="rstudio-cloud-1" class="slide level2">
-<h2>RStudio cloud</h2>
-<p>For students struggling with installing RStudio, <em>RStudio cloud</em> may be an alternative:</p>
-<p><br></p>
-<p><a href="https://rstudio.cloud/" class="uri">https://rstudio.cloud/</a></p>
-<p><br></p>
-<p>Set up an account and you can start working with RStudio from your browser.</p>
-</section></section>
-<section>
-<section id="some-important-tidyverse-functions" class="title-slide slide level1 center">
-<h1>Some important <code>tidyverse</code> functions</h1>
-
-</section>
-<section id="some-important-tidyverse-functions-1" class="slide level2">
-<h2>Some important <code>tidyverse</code> functions</h2>
-<p><br></p>
-<p>Data wrangling and manipulation are common tasks when doing empirical work.</p>
+<section id="this-week" class="slide level2">
+<h2>This week</h2>
+<p>This week, we will keep working with the <code>tidyverse</code> functions we learned about last time, now applying it to <strong>macroeconomic data</strong>.</p>
 <div class="fragment">
-<p>Even though it has been easier and easier to access high-quality data, we may need to perform some <em>cleaning</em>, <em>filtering</em>, and <em>organizing</em> before we proceed.</p>
+<p>We will use the “gdp-data.csv” file, which can be found both in the course <em>GitHub</em> repository and on <em>theSpring.</em></p>
 </div>
 <div class="fragment">
-<p>The <code>tidyverse</code> has a wide array of functions, of which we will study a few.</p>
+<p>It contains data on GDP at purchasing power parity (PPP, 2017 US dollars) and total population for the United States, Japan, and South Africa, between 1990 and 2021, obtained from the World Bank.</p>
 </div>
 </section>
-<section id="some-important-tidyverse-functions-2" class="slide level2">
-<h2>Some important <code>tidyverse</code> functions</h2>
-<p><br></p>
-<p>To see these functions in practice, let us keep working on the “toy” data set we saw in the last session.</p>
-<div class="fragment">
-<p><br></p>
-<p>Recall:</p>
-<p><br></p>
+<section id="this-weeks-data" class="slide level2">
+<h2>This week’s data</h2>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(tidyverse)</span>
 <span id="cb1-2"><a href="#cb1-2"></a></span>
-<span id="cb1-3"><a href="#cb1-3"></a>my_data <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"toy_data.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-</section>
-<section id="some-important-tidyverse-functions-3" class="slide level2">
-<h2>Some important <code>tidyverse</code> functions</h2>
-<p><br></p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>my_data</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-3"><a href="#cb1-3"></a>macro_data <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"gdp-data.csv"</span>)</span>
+<span id="cb1-4"><a href="#cb1-4"></a></span>
+<span id="cb1-5"><a href="#cb1-5"></a>macro_data</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 9 × 5
-  name     tip   age weight movie 
-  &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt; 
-1 John    1.5     17    150 drama 
-2 Anna    2.5     17    160 comedy
-3 Xavier  3.5     21    165 drama 
-4 Walter  4       25    140 horror
-5 Bailey  5       21    170 horror
-6 David  10       28    175 drama 
-7 Anna   18       18    160 comedy
-8 Anna    3       19    160 drama 
-9 Walter  1.25    24    140 comedy</code></pre>
-</div>
-</div>
-</section></section>
-<section>
-<section id="the-pipe-operator" class="title-slide slide level1 center">
-<h1>The <strong>pipe</strong> operator</h1>
-
-</section>
-<section id="the-pipe-operator-1" class="slide level2">
-<h2>The <strong>pipe</strong> operator</h2>
-<p><br></p>
-<p>The tidyverse has a very useful operator, known as the <strong>pipe</strong> operator, that facilitates data wrangling.</p>
-<ul>
-<li class="fragment"><code>%&gt;%</code></li>
-</ul>
-<div class="fragment">
-<p>If you are using RStudio, you can use the pipe operator using the following keyboard shortcut:</p>
-<ul>
-<li class="fragment"><code>Cmd+Shift+M</code> (macOS);</li>
-<li class="fragment"><code>Ctrl+Shift+M</code> (Windows).</li>
-</ul>
-</div>
-</section></section>
-<section>
-<section id="the-select-function" class="title-slide slide level1 center">
-<h1>The <code>select()</code> function</h1>
-
-</section>
-<section id="the-select-function-1" class="slide level2">
-<h2>The <code>select()</code> function</h2>
-<p>The first function we will look at is the <code>select()</code> function.</p>
-<p>In practice:</p>
-<p><br></p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>my_data <span class="sc">%&gt;%</span> </span>
-<span id="cb4-2"><a href="#cb4-2"></a>  <span class="fu">select</span>(name, movie)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 9 × 2
-  name   movie 
-  &lt;chr&gt;  &lt;chr&gt; 
-1 John   drama 
-2 Anna   comedy
-3 Xavier drama 
-4 Walter horror
-5 Bailey horror
-6 David  drama 
-7 Anna   comedy
-8 Anna   drama 
-9 Walter comedy</code></pre>
+<pre><code># A tibble: 96 × 4
+    year country       gdp_ppp population
+   &lt;dbl&gt; &lt;chr&gt;           &lt;dbl&gt;      &lt;dbl&gt;
+ 1  1990 United States 1.01e13  249623000
+ 2  1991 United States 1.01e13  252981000
+ 3  1992 United States 1.04e13  256514000
+ 4  1993 United States 1.07e13  259919000
+ 5  1994 United States 1.12e13  263126000
+ 6  1995 United States 1.15e13  266278000
+ 7  1996 United States 1.19e13  269394000
+ 8  1997 United States 1.24e13  272657000
+ 9  1998 United States 1.3 e13  275854000
+10  1999 United States 1.36e13  279040000
+# … with 86 more rows</code></pre>
 </div>
 </div>
 </section>
-<section id="the-select-function-2" class="slide level2">
-<h2>The <code>select()</code> function</h2>
-<p><br></p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>my_data <span class="sc">%&gt;%</span> </span>
-<span id="cb6-2"><a href="#cb6-2"></a>  <span class="fu">select</span>(name, age, weight)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 9 × 3
-  name     age weight
-  &lt;chr&gt;  &lt;dbl&gt;  &lt;dbl&gt;
-1 John      17    150
-2 Anna      17    160
-3 Xavier    21    165
-4 Walter    25    140
-5 Bailey    21    170
-6 David     28    175
-7 Anna      18    160
-8 Anna      19    160
-9 Walter    24    140</code></pre>
-</div>
-</div>
-</section>
-<section id="the-select-function-3" class="slide level2">
-<h2>The <code>select()</code> function</h2>
-<p><br></p>
-<p>When working with a pipeline, R will not automatically update your data set.</p>
-<div class="fragment">
-<p><br></p>
-<p>In case you want to <strong>store</strong> a modified data set, you simply assign your pipeline to a <strong>new object</strong>.</p>
-<p><br></p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a>my_data_subset <span class="ot">&lt;-</span> my_data <span class="sc">%&gt;%</span> </span>
-<span id="cb8-2"><a href="#cb8-2"></a>  <span class="fu">select</span>(name, age, weight)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-</section></section>
-<section>
-<section id="the-filter-function" class="title-slide slide level1 center">
-<h1>The <code>filter()</code> function</h1>
-
-</section>
-<section id="the-filter-function-1" class="slide level2">
-<h2>The <code>filter()</code> function</h2>
-<p><br></p>
-<p>In practice:</p>
-<p><br></p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a>my_data <span class="sc">%&gt;%</span> </span>
-<span id="cb9-2"><a href="#cb9-2"></a>  <span class="fu">filter</span>(movie <span class="sc">%in%</span> <span class="st">"drama"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 4 × 5
-  name     tip   age weight movie
-  &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;
-1 John     1.5    17    150 drama
-2 Xavier   3.5    21    165 drama
-3 David   10      28    175 drama
-4 Anna     3      19    160 drama</code></pre>
-</div>
-</div>
-</section>
-<section id="the-filter-function-2" class="slide level2">
-<h2>The <code>filter()</code> function</h2>
-<p><br></p>
-<p>In practice:</p>
-<p><br></p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a>my_data <span class="sc">%&gt;%</span> </span>
-<span id="cb11-2"><a href="#cb11-2"></a>  <span class="fu">filter</span>(age <span class="sc">&gt;</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 5 × 5
-  name     tip   age weight movie 
-  &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt; 
-1 Xavier  3.5     21    165 drama 
-2 Walter  4       25    140 horror
-3 Bailey  5       21    170 horror
-4 David  10       28    175 drama 
-5 Walter  1.25    24    140 comedy</code></pre>
-</div>
-</div>
-</section>
-<section id="the-filter-function-3" class="slide level2">
-<h2>The <code>filter()</code> function</h2>
-<p><br></p>
-<p>In practice:</p>
-<p><br></p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a>my_data <span class="sc">%&gt;%</span> </span>
-<span id="cb13-2"><a href="#cb13-2"></a>  <span class="fu">filter</span>(tip <span class="sc">&lt;</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 6 × 5
-  name     tip   age weight movie 
-  &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt; 
-1 John    1.5     17    150 drama 
-2 Anna    2.5     17    160 comedy
-3 Xavier  3.5     21    165 drama 
-4 Walter  4       25    140 horror
-5 Anna    3       19    160 drama 
-6 Walter  1.25    24    140 comedy</code></pre>
-</div>
-</div>
-</section>
-<section id="the-filter-function-4" class="slide level2">
-<h2>The <code>filter()</code> function</h2>
-<p><br></p>
-<p>In practice:</p>
-<p><br></p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a>my_data <span class="sc">%&gt;%</span> </span>
-<span id="cb15-2"><a href="#cb15-2"></a>  <span class="fu">filter</span>(name <span class="sc">%in%</span> <span class="st">"Anna"</span> <span class="sc">|</span> name <span class="sc">%in%</span> <span class="st">"David"</span>)   <span class="co"># or</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 4 × 5
-  name    tip   age weight movie 
-  &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt; 
-1 Anna    2.5    17    160 comedy
-2 David  10      28    175 drama 
-3 Anna   18      18    160 comedy
-4 Anna    3      19    160 drama </code></pre>
-</div>
-</div>
-</section>
-<section id="the-filter-function-5" class="slide level2">
-<h2>The <code>filter()</code> function</h2>
-<p><br></p>
-<p>In practice:</p>
-<p><br></p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a>my_data <span class="sc">%&gt;%</span> </span>
-<span id="cb17-2"><a href="#cb17-2"></a>  <span class="fu">filter</span>(name <span class="sc">%in%</span> <span class="st">"Anna"</span> <span class="sc">&amp;</span> tip <span class="sc">&gt;</span> <span class="dv">5</span>)  <span class="co"># and</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 1 × 5
-  name    tip   age weight movie 
-  &lt;chr&gt; &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt; 
-1 Anna     18    18    160 comedy</code></pre>
-</div>
-</div>
-</section>
-<section id="the-filter-function-6" class="slide level2">
-<h2>The <code>filter()</code> function</h2>
-<p><br></p>
-<p>In case you want to store a modified data set, just assign to a new object:</p>
-<p><br></p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1"></a>my_data_filter <span class="ot">&lt;-</span> my_data <span class="sc">%&gt;%</span> </span>
-<span id="cb19-2"><a href="#cb19-2"></a>  <span class="fu">filter</span>(name <span class="sc">%in%</span> <span class="st">"Anna"</span> <span class="sc">&amp;</span> tip <span class="sc">&gt;</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section></section>
-<section>
-<section id="the-mutate-function" class="title-slide slide level1 center">
-<h1>The <code>mutate()</code> function</h1>
-
-</section>
-<section id="the-mutate-function-1" class="slide level2">
-<h2>The <code>mutate()</code> function</h2>
-<p><br></p>
-<p>In practice:</p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a>my_data <span class="sc">%&gt;%</span> </span>
-<span id="cb20-2"><a href="#cb20-2"></a>  <span class="fu">mutate</span>(<span class="at">age_months =</span> age <span class="sc">*</span> <span class="dv">12</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 9 × 6
-  name     tip   age weight movie  age_months
-  &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;       &lt;dbl&gt;
-1 John    1.5     17    150 drama         204
-2 Anna    2.5     17    160 comedy        204
-3 Xavier  3.5     21    165 drama         252
-4 Walter  4       25    140 horror        300
-5 Bailey  5       21    170 horror        252
-6 David  10       28    175 drama         336
-7 Anna   18       18    160 comedy        216
-8 Anna    3       19    160 drama         228
-9 Walter  1.25    24    140 comedy        288</code></pre>
-</div>
-</div>
-</section>
-<section id="the-mutate-function-2" class="slide level2">
-<h2>The <code>mutate()</code> function</h2>
-<p><br></p>
-<p>In practice:</p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a>my_data <span class="sc">%&gt;%</span> </span>
-<span id="cb22-2"><a href="#cb22-2"></a>  <span class="fu">mutate</span>(<span class="at">weight_kg =</span> weight <span class="sc">*</span> <span class="fl">0.453592</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 9 × 6
-  name     tip   age weight movie  weight_kg
-  &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;      &lt;dbl&gt;
-1 John    1.5     17    150 drama       68.0
-2 Anna    2.5     17    160 comedy      72.6
-3 Xavier  3.5     21    165 drama       74.8
-4 Walter  4       25    140 horror      63.5
-5 Bailey  5       21    170 horror      77.1
-6 David  10       28    175 drama       79.4
-7 Anna   18       18    160 comedy      72.6
-8 Anna    3       19    160 drama       72.6
-9 Walter  1.25    24    140 comedy      63.5</code></pre>
-</div>
-</div>
-</section>
-<section id="the-mutate-function-3" class="slide level2">
-<h2>The <code>mutate()</code> function</h2>
-<p>A way of mutating, but adding new columns:</p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a>fav_birds <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"kestrel"</span>, <span class="st">"quail"</span>, <span class="st">"albatross"</span>, <span class="st">"hummingbird"</span>, </span>
-<span id="cb24-2"><a href="#cb24-2"></a>               <span class="st">"american robin"</span>, <span class="st">"eastern bluebird"</span>, <span class="st">"hummingbird"</span>,</span>
-<span id="cb24-3"><a href="#cb24-3"></a>               <span class="st">"california quail"</span>, <span class="st">"blue jay"</span>)</span>
-<span id="cb24-4"><a href="#cb24-4"></a></span>
-<span id="cb24-5"><a href="#cb24-5"></a>my_data <span class="sc">%&gt;%</span> </span>
-<span id="cb24-6"><a href="#cb24-6"></a>  <span class="fu">add_column</span>(fav_birds)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 9 × 6
-  name     tip   age weight movie  fav_birds       
-  &lt;chr&gt;  &lt;dbl&gt; &lt;dbl&gt;  &lt;dbl&gt; &lt;chr&gt;  &lt;chr&gt;           
-1 John    1.5     17    150 drama  kestrel         
-2 Anna    2.5     17    160 comedy quail           
-3 Xavier  3.5     21    165 drama  albatross       
-4 Walter  4       25    140 horror hummingbird     
-5 Bailey  5       21    170 horror american robin  
-6 David  10       28    175 drama  eastern bluebird
-7 Anna   18       18    160 comedy hummingbird     
-8 Anna    3       19    160 drama  california quail
-9 Walter  1.25    24    140 comedy blue jay        </code></pre>
-</div>
-</div>
-</section>
-<section id="a-pipeline" class="slide level2">
-<h2>A pipeline</h2>
-<p><br></p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1"></a>my_data <span class="sc">%&gt;%</span> </span>
-<span id="cb26-2"><a href="#cb26-2"></a>  <span class="fu">add_column</span>(fav_birds) <span class="sc">%&gt;%</span> </span>
-<span id="cb26-3"><a href="#cb26-3"></a>  <span class="fu">filter</span>(fav_birds <span class="sc">%in%</span> <span class="st">"hummingbird"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb26-4"><a href="#cb26-4"></a>  <span class="fu">select</span>(name)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 2 × 1
-  name  
-  &lt;chr&gt; 
-1 Walter
-2 Anna  </code></pre>
-</div>
-</div>
-</section></section>
-<section>
-<section id="the-group_by-function" class="title-slide slide level1 center">
-<h1>The <code>group_by()</code> function</h1>
-
-</section>
-<section id="the-group_by-function-1" class="slide level2">
-<h2>The <code>group_by()</code> function</h2>
-<p><br></p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1"></a>my_data <span class="sc">%&gt;%</span> </span>
-<span id="cb28-2"><a href="#cb28-2"></a>  <span class="fu">group_by</span>(name) <span class="sc">%&gt;%</span> </span>
-<span id="cb28-3"><a href="#cb28-3"></a>  <span class="fu">summarize</span>(<span class="at">mean_tip =</span> <span class="fu">mean</span>(tip)) <span class="co"># compute average tip ($) given</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 6 × 2
-  name   mean_tip
-  &lt;chr&gt;     &lt;dbl&gt;
-1 Anna       7.83
-2 Bailey     5   
-3 David     10   
-4 John       1.5 
-5 Walter     2.62
-6 Xavier     3.5 </code></pre>
-</div>
-</div>
+<section id="this-weeks-data-1" class="slide level2">
+<h2>This week’s data</h2>
+<p><br><br></p>
+<p>Now, we will resume our lab in RStudio.</p>
 <div class="footer footer-default">
 <p>EC 103–02</p>
 </div>
@@ -776,22 +443,22 @@
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="002-data-manipulation_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="003-data-manipulation-2_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="002-data-manipulation_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="002-data-manipulation_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="002-data-manipulation_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="002-data-manipulation_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="002-data-manipulation_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
-  <script src="002-data-manipulation_files/libs/revealjs/plugin/multiplex/socket.io.js"></script>
-  <script src="002-data-manipulation_files/libs/revealjs/plugin/multiplex/multiplex.js"></script>
-  <script src="002-data-manipulation_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="003-data-manipulation-2_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="003-data-manipulation-2_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="003-data-manipulation-2_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="003-data-manipulation-2_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="003-data-manipulation-2_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="003-data-manipulation-2_files/libs/revealjs/plugin/multiplex/socket.io.js"></script>
+  <script src="003-data-manipulation-2_files/libs/revealjs/plugin/multiplex/multiplex.js"></script>
+  <script src="003-data-manipulation-2_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="002-data-manipulation_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="002-data-manipulation_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="002-data-manipulation_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="002-data-manipulation_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="003-data-manipulation-2_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="003-data-manipulation-2_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="003-data-manipulation-2_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="003-data-manipulation-2_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -808,7 +475,7 @@
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
 'chalkboard': {"buttons":true},
-'multiplex': {"secret":null,"id":"3e1ff1ab9cdc605f","url":"https://reveal-multiplex.glitch.me/"},
+'multiplex': {"secret":"16637924476595959975","id":"ed6cf8c779aaf4b3","url":"https://reveal-multiplex.glitch.me/"},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -982,7 +649,7 @@
         plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
 
           RevealMath,
-          
+          RevealNotes,
           RevealSearch,
           RevealZoom
         ]

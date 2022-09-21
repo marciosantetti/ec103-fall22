@@ -12,6 +12,9 @@ macro_data <- read_csv("gdp-data.csv")
 
 #---
 
+macro_data %>% 
+  slice_max(gdp_ppp)
+
 
 
 macro_data %>% 

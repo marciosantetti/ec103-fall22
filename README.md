@@ -76,7 +76,7 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
 
 ### Long Assignments
 
-  - [`Long Assignment 1`](https://raw.githack.com/marciosantetti/ec103-fall22/main/long-assignments/long-1-f22.pdf) (due 09/26, before class)
+  - [`Long Assignment 1`](https://raw.githack.com/marciosantetti/ec103-fall22/main/long-assignments/long-1-f22.pdf) (due 09/26, before class) | sumbission through `theSpring`
 
 
 

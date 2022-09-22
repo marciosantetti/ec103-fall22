@@ -53,19 +53,23 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
 
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/001-tidyverse/001-tidyverse.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/001-tidyverse/001-tidyverse.pdf)
   - Data: [`toy_data.csv`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/001-tidyverse/toy_data.csv) | Data can also be downloaded on `theSpring`
+  - [`Video lecture`](https://youtu.be/SCOCBd1t7Ew)
   
  **Lab 2**: Manipulating data in the `tidyverse`
  
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/002-data-manipulation/002-data-manipulation.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/002-data-manipulation/002-data-manipulation.pdf)
+  - [`Video lecture`](https://youtu.be/h8em0bYRgvY)
 
 **Lab 3**: Computing economic aggregates in the `tidyverse`
 
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/003-data-manipulation-2/003-data-manipulation-2.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/003-data-manipulation-2/003-data-manipulation-2.pdf)
   - Data: [`gdp-data.csv`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/003-data-manipulation-2/gdp-data.csv) | Data can also be downloaded on `theSpring`
+  - [`Video lecture`](https://youtu.be/z5ON3xXREiA)
 
 **Lab 4**: The "grammar of graphics"
   
    - Slides: `html` | `pdf`
+   - `Video lecture`
 
 ## Assignments
 

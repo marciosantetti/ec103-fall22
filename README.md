@@ -52,7 +52,7 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
 **Lab 1**: Introduction to `R`, `RStudio`, and the `tidyverse`
 
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/001-tidyverse/001-tidyverse.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/001-tidyverse/001-tidyverse.pdf)
-  - Data: [`toy_data.csv`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/001-tidyverse/toy_data.csv) | Data can also be downloaded at `theSpring`
+  - Data: [`toy_data.csv`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/001-tidyverse/toy_data.csv) | Data can also be downloaded on `theSpring`
   
  **Lab 2**: Manipulating data in the `tidyverse`
  
@@ -60,7 +60,8 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
 
 **Lab 3**: Computing economic aggregates in the `tidyverse`
 
-  - Slides: `html` | `pdf`
+  - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/003-data-manipulation-2/003-data-manipulation-2.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/003-data-manipulation-2/003-data-manipulation-2.pdf)
+  - Data: [`gdp-data.csv`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/003-data-manipulation-2/gdp-data.csv) | Data can also be downloaded on `theSpring`
 
 **Lab 4**: The "grammar of graphics"
   

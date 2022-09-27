@@ -77,6 +77,8 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
 
 ### Short Problem Sets
 
+  - [`Problem Set 1`](https://raw.githack.com/marciosantetti/ec103-fall22/main/problem-sets/ps1-f22.pdf) (due 10/10, before class) | submission through `theSpring`
+
 
 
 ### Long Assignments

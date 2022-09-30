@@ -40,7 +40,12 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
   
  **Lecture 6: Economic growth**
 
-  - Slides: `html` | `pdf`
+  - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/004-growth/004-growth.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/004-growth/004-growth.pdf)
+  
+  
+ **Lecture 7: Economic growth discussions**
+
+  - Slides/instructions: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/004-growth/005-growth-discussions.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/004-growth/005-growth-discussions.pdf)
 
 
 ## Lab Session notes/slides

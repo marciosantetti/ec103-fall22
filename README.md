@@ -74,7 +74,7 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
 **Lab 4**: The "grammar of graphics"
   
    - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/004-graphics/004-ggraphics.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/004-graphics/004-graphics.pdf)
-   - `Video lecture`
+   - [`Video lecture`](https://www.youtube.com/watch?v=u2DRXvWXAPQ&ab_channel=MarcioSantetti)
 
 ## Assignments
 

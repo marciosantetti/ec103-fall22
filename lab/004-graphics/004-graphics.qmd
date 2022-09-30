@@ -1,0 +1,90 @@
+---
+title: "The *grammar of graphics*"
+subtitle: "EC 103--02"
+author: "Marcio Santetti"
+footer: "EC 103--02"
+format: 
+  revealjs:
+    theme: lab.scss
+    multiplex: true
+    transition: fade
+    slide-number: true
+    incremental: true 
+    chalkboard: true
+editor: visual
+execute:
+  freeze: auto
+---
+
+```{r}
+#| include: false
+# figure options
+knitr::opts_chunk$set(
+  fig.width = 10, fig.asp = 0.618,
+  fig.retina = 3, dpi = 300, fig.align = "center"
+)
+```
+
+# The `ggplot2` package
+
+
+## The `ggplot2` package
+
+<br>
+
+The `ggplot2` package is an R package developed by [Hadley Wickham](https://hadley.nz/), based on the "grammar of graphics."
+
+. . .
+
+![](gg.png){width=20%}
+
+
+
+## The `ggplot2` package
+
+<br>
+
+
+One of the most appealing aspects of `ggplot2` is that is maps (*tidy*) *data* to **aesthetics**.
+
+<br>
+
+. . .
+
+It works by adding **layers** to an initial blank "canvas."
+
+<br>
+
+. . .
+
+Instead of working with pre-made graphics (as in Excel), we are able to build custom plots by adding incremental pieces of information.
+
+
+## The `ggplot2` package
+
+<br>
+
+
+The main pieces of information that go into a *ggplot* are:
+
+<br>
+
+  1. Your variables (the *aesthetics*);
+
+  2. The selected *geometries* (`geom_`);
+
+  3. Subsequent formatting options (scales, themes, titles, subtitles, etc.)
+  
+
+
+## The `ggplot2` package
+
+<br>
+
+The `ggplot2` package is part of the tidyverse (no need to install anything new).
+
+. . .
+
+<br>
+
+Let us make sense of these first concepts by working with the `gapminder` package.

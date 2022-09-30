@@ -27,7 +27,6 @@ knitr::opts_chunk$set(
 
 # The `ggplot2` package
 
-
 ## The `ggplot2` package
 
 <br>
@@ -36,14 +35,11 @@ The `ggplot2` package is an R package developed by [Hadley Wickham](https://hadl
 
 . . .
 
-![](gg.png){width=20%}
-
-
+![](gg.png){width="20%"}
 
 ## The `ggplot2` package
 
 <br>
-
 
 One of the most appealing aspects of `ggplot2` is that is maps (*tidy*) *data* to **aesthetics**.
 
@@ -59,23 +55,19 @@ It works by adding **layers** to an initial blank "canvas."
 
 Instead of working with pre-made graphics (as in Excel), we are able to build custom plots by adding incremental pieces of information.
 
-
 ## The `ggplot2` package
 
 <br>
-
 
 The main pieces of information that go into a *ggplot* are:
 
 <br>
 
-  1. Your variables (the *aesthetics*);
+1.  Your variables (the *aesthetics*);
 
-  2. The selected *geometries* (`geom_`);
+2.  The selected *geometries* (`geom_`);
 
-  3. Subsequent formatting options (scales, themes, titles, subtitles, etc.)
-  
-
+3.  Subsequent formatting options (scales, themes, titles, subtitles, etc.)
 
 ## The `ggplot2` package
 

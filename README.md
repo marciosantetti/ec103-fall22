@@ -89,6 +89,12 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
 ### Long Assignments
 
   - [`Long Assignment 1`](https://raw.githack.com/marciosantetti/ec103-fall22/main/long-assignments/long-1-f22.pdf) (due 09/26, before class) | submission through `theSpring`
+  
+  - [`Long Assignment 2`](https://raw.githack.com/marciosantetti/ec103-fall22/main/long-assignments/long-2-f22.pdf) | submission through `theSpring`
+    - Data file: [`epwt_data.csv`](https://raw.githack.com/marciosantetti/ec103-fall22/main/long-assignments/epwt_data.csv)
+    - Data description: [[`epwt_description.pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/long-assignments/epwt_description.pdf)
+    
+  - [`Long Assignment 3`](https://raw.githack.com/marciosantetti/ec103-fall22/main/long-assignments/long-3-f22.pdf) | submission through `theSpring`
 
 
 

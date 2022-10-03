@@ -46,6 +46,11 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
  **Lecture 7: Economic growth discussions**
 
   - Slides/instructions: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/004-growth/005-growth-discussions.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/004-growth/005-growth-discussions.pdf)
+  
+  
+ **Lecture 8: Unemployment**
+ 
+  - Slides: `html` | `pdf`
 
 
 ## Lab Session notes/slides
@@ -75,6 +80,18 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
   
    - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/004-graphics/004-ggraphics.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/004-graphics/004-graphics.pdf)
    - [`Video lecture`](https://www.youtube.com/watch?v=u2DRXvWXAPQ&ab_channel=MarcioSantetti)
+   
+   
+ **Lab 5**: Making plots informative
+ 
+  - Slides: `html` | `pdf`
+  - `Video lecture`
+  
+ **Lab 6**: Customizing and saving plots
+ 
+   - Slides: `html` | `pdf`
+   - `Video lecture`
+  
 
 ## Assignments
 

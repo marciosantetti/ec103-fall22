@@ -48,7 +48,7 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
   - Slides/instructions: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/004-growth/005-growth-discussions.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/004-growth/005-growth-discussions.pdf)
   
   
- **Lecture 8: Unemployment**
+ **Lecture 8: Unemployment: Basic definitions**
  
   - Slides: `html` | `pdf`
 

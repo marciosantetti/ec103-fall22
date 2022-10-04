@@ -1,0 +1,394 @@
+---
+title: ".b[Unemployment, pt. I]"
+subtitle: ".b[.green[EC 103--002]]"
+author: "Marcio Santetti"
+date: "Fall 2022"
+output:
+  xaringan::moon_reader:
+    css: ['default', 'metropolis', 'metropolis-fonts', 'skid-css.css']
+    # self_contained: true
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      ratio: "16:9"
+      countIncrementalSlides: false
+---
+class: inverse, middle
+
+```{r Setup, include = F}
+options(htmltools.dir.version = FALSE)
+library(pacman)
+p_load(broom, latex2exp, ggplot2, ggthemes, ggforce, viridis, dplyr, magrittr, knitr, parallel, xaringanExtra, tidyverse, sjPlot, showtext, mathjaxr, ggforce, furrr, kableExtra, wooldridge, hrbrthemes, scales, ggeasy, patchwork)
+
+
+
+
+# Knitr options
+opts_chunk$set(
+  comment = "#>",
+  fig.align = "center",
+  fig.height = 7,
+  fig.width = 10.5,
+  warning = F,
+  message = F,
+  dpi=300
+)
+
+theme_set(theme_ipsum_rc())
+
+```
+
+
+
+# Motivation
+
+
+
+---
+
+# Housekeeping
+
+<br>
+
+.b[Required readings]:
+
+  * [`OpenStax, ch. 8`](https://openstax.org/books/principles-macroeconomics-2e/pages/8-introduction-to-unemployment)
+    
+      * Sections 8.1 and 8.2.
+      
+<br>
+
+  * [`How the Government Measures Unemployment (BLS)`](https://www.bls.gov/cps/cps_htgm.htm)
+  
+  
+---
+
+# A look at the data
+
+<br><br><br>
+
+[`Offical US unemployment data`](https://fred.stlouisfed.org/series/UNRATE)
+
+
+
+---
+
+# A plural phenomenon
+
+<br>
+
+Unemployment is much .hi[more] than an *economic* statistic.
+
+--
+
+Not only do its consequences affect one's .hi-orange[financial] provision, but also .hi[familiar] relations, and .hi-orange[mental] and .hi[physical] health.
+
+--
+
+<br>
+
+An .hi[analogy] to understand unemployment is to compare it with a functional, but unused *factory*.
+
+--
+
+Thus unemployment is a .hi-orange[signaling] measure that output (i.e., GDP) may be falling short of .hi[potential] output&mdash;that is, the *maximum* the economy can produce without rising inflation or completely depleting raw materials.
+
+
+---
+
+# A plural phenomenon
+
+<br><br><br>
+
+[`Potential GDP for the US economy`](https://fred.stlouisfed.org/series/GDPPOT)
+
+
+---
+
+layout: false
+class: inverse, middle
+
+# Basic definitions
+
+---
+
+# Basic definitions
+
+
+In the US, the .hi[Bureau of Labor Statistics] tracks and reports all unemployment-related data over time.
+
+  * [`BLS website`](https://www.bls.gov/bls/unemployment.htm)
+  
+--
+
+<br>
+
+Defining who is unemployed is more .hi-orange[complex] than just calculating the share of the total population that is currently not working.
+
+--
+
+<br>
+
+  * A person is considered .hi[unemployed] if they do not have a job, but are currently available to work, and actively looking for work in the previous .green[four] weeks;
+  
+  * A person is .hi-orange[employed] if currently working for pay.
+
+
+---
+
+# Basic definitions
+
+Every month, the US government carries out the .hi-orange[Current Population Survey] (CPS), off of which the unemployment rate for the previous month is based.
+
+--
+
+  - It began in 1940, and in 1942 the US Census Bureau took over the CPS.
+  
+--
+
+There are about .hi[60,000] eligible sample households, and the Bureau employees ask several labor-market-related questions regarding the reference week (which usually includes the 12th day of the month). 
+
+--
+
+<br>
+
+Every *first* Friday of each month, the unemployment rate for the previous month is announced.
+
+  * [`See the latest numbers`](https://www.bls.gov/cps/home.htm)
+  
+---
+
+# Basic definitions
+
+<br><br>
+
+Despite being incredibly complex and representative, measuring the unemployment rate is *not* free from .hi[criticism].
+
+  
+  * What about care work? Cleaning? House chores? (Both paid and unpaid)
+
+
+  
+
+---
+
+# Basic definitions
+
+For unemployment computing purposes, a useful concept is the .hi[labor force].
+
+--
+
+The labor force includes all individuals that are .hi-orange[currently] employed *and* the .hi[unemployed] (i.e., actively looking for a job).
+
+--
+
+  * To be considered .hi[out of the labor force], one has to have either .hi-orange[given up] looking for work *or* or not been currently available to work (due to a parental leave, injury, etc.).
+  * Also, full-time students, retirees, institutionalized individuals, those staying home to take care of children, and discouraged job seekers are considered .hi[out] of the labor force.
+
+
+--
+
+
+Furthermore, unemployment statistics only include the .hi-orange[adult] population (16-and-over).
+
+--
+
+Thus, the .hi[unemployment rate] is the percentage (%) of adults who are in the labor force but who .hi-orange[do not] have jobs:
+
+$$
+\begin{aligned}
+\text{Unemployment rate} = \dfrac{\text{Unemployed}}{\text{Total labor force}} 
+\end{aligned}
+$$
+
+---
+
+# Basic definitions
+
+```{r, echo=FALSE, message=FALSE, dev = "svg", fig.height=5.5}
+un_data <- read_csv("unemp-data.csv")
+
+cols1 <- c("Employed" = "#30845e", "Unemployed" = "#c76161")
+
+
+un_data <- un_data %>% 
+  mutate(emp_pop_ratio = (employed / non_inst_pop) * 100,
+         unemp_rate = (unemployed / labor_force) * 100,
+         pct_lf = (labor_force / non_inst_pop) * 100)
+
+un_data %>% 
+  ggplot() +
+  geom_line(aes(x = period, y = employed, color = "Employed"), size = 0.8) +
+  geom_line(aes(x = period, y = unemployed, color = "Unemployed"), size = 0.8) +
+  labs(y = "Number of persons", x = "", color = "Measure",
+       title = "Labor market data: US, 1950–2021") +
+  easy_legend_at("bottom") +
+  easy_y_axis_title_size(13) +
+  easy_plot_legend_size(13) +
+  scale_color_manual(values = cols1) +
+  scale_y_continuous(labels = scales::comma)
+
+```
+
+---
+
+# Basic definitions
+
+```{r, echo=FALSE, message=FALSE, dev = "svg", fig.height=5.5}
+
+cols <- c("Employed" = "#30845e", "Unemployed" = "#c76161", "Labor force" = "#528ff5")
+
+un_data %>% 
+  ggplot() +
+  geom_line(aes(x = period, y = employed, color = "Employed"), size = 0.8) +
+  geom_line(aes(x = period, y = unemployed, color = "Unemployed"), size = 0.8) +
+  geom_line(aes(x = period, y = employed + unemployed, color = "Labor force"), size = 0.8) +
+  labs(y = "Number of persons", x = "", color = "Measure",
+       title = "Labor market data: US, 1950–2021") +
+  easy_legend_at("bottom") +
+  easy_y_axis_title_size(13) +
+  easy_plot_legend_size(13) +
+  scale_color_manual(values = cols) +
+  scale_y_continuous(labels = scales::comma)
+
+
+```
+
+
+
+
+---
+
+# Basic definitions
+
+<br><br>
+
+
+Along with the unemployment rate, another important labor market statistic is the labor force .hi[participation rate].
+
+--
+
+This rate is obtained by *dividing* the total labor force by the adult population:
+
+<br>
+
+$$
+\begin{aligned}
+\text{LF participation rate} = \dfrac{\text{Labor force}}{\text{Total adult population}} 
+\end{aligned}
+$$
+
+---
+
+# Basic definitions
+
+<br><br>
+
+Finally, we have the .hi[employment-to-population ratio].
+
+--
+
+As the name suggests, it is the .hi-orange[ratio] of individuals with paid work&mdash;of any kind&mdash;to the total population.
+
+--
+
+<br>
+
+This measure is convenient when the goal is to .hi[compare] (un)employment statistics across countries.
+
+  * Also keep in mind that each country has its *own* methodology to compute unemployment statistics.
+
+---
+
+# Basic definitions
+
+```{r, echo=FALSE, message=FALSE, dev = "svg", fig.height=5.5}
+colors = c("Employment to population ratio" = "#30845e", "Labor force participation rate" = "#c76161")
+
+un_data %>% 
+  ggplot(aes(x = period)) +
+  geom_point(aes(y = emp_pop_ratio, color = "Employment to population ratio")) +
+  geom_line(aes(y = emp_pop_ratio, color = "Employment to population ratio")) +
+  geom_point(aes(y = pct_lf, col = "Labor force participation rate")) +
+  geom_line(aes(y = pct_lf, color = "Labor force participation rate")) +
+  scale_color_manual(values = colors) +
+  labs(y = "Percent", x = "", color = "Measure",
+       title = "Labor market data: US, 1950–2021") +
+  easy_legend_at("bottom") +
+  easy_y_axis_title_size(13) +
+  easy_plot_legend_size(13) +
+  labs(color = "Measure") +
+  easy_legend_at("bottom")
+
+```
+
+---
+
+# Basic definitions
+
+We have already talked about how unemployment can be considered a .hi[waste of potential].
+
+  * Both from  *individual* and *aggregate* points of view!
+  
+--
+
+<br>
+
+When someone is .hi-orange[stuck] in a lower-paid, less productive job, they are considered .hi[underemployed] (*aka* disguisedly unemployed).
+
+--
+
+  * This situation may come about due to periods of *low demand* for jobs in general, or more specifically in a person's area of specialization.
+  
+  * There is .hi-orange[no] actual *data* on underemployment.
+
+
+
+--
+
+.right[Examples?]
+
+---
+
+# Applications
+
+<br>
+
+```{r, echo=FALSE}
+
+ex <- read_csv("example.csv")
+
+ex %>% 
+  select(Year, `Adult Population`, Employed, Unemployed) %>% 
+  mutate(Year = as.character(Year)) %>% 
+  kable(format.args = list(big.mark = ","), caption = "Employment data for the US: 2017–2021") %>% 
+  kable_styling(font_size = 22)
+
+
+```
+
+--
+
+
+.small[
+
+Calculate the following statistics:
+
+  - (a) The *total labor force*;
+  - (b) The number of persons *not in the labor force*;
+  - (c) The *unemployment rate*;
+  - (d) The *employment-to-population ratio*;
+  - (e) The *labor force participation rate*.
+]
+
+---
+
+
+layout: false
+class: inverse, middle
+
+# Next time: Unemployment *vs.* other aggregates; types of unemployment
+
+
+---
+exclude: true

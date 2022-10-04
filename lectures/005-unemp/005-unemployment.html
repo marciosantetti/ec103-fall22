@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>.b[Unemployment, pt. I]</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Marcio Santetti" />
+    <script src="005-unemployment_files/header-attrs/header-attrs.js"></script>
+    <link href="005-unemployment_files/remark-css/default.css" rel="stylesheet" />
+    <link href="005-unemployment_files/remark-css/metropolis.css" rel="stylesheet" />
+    <link href="005-unemployment_files/remark-css/metropolis-fonts.css" rel="stylesheet" />
+    <script src="005-unemployment_files/kePrint/kePrint.js"></script>
+    <link href="005-unemployment_files/lightable/lightable.css" rel="stylesheet" />
+    <link rel="stylesheet" href="skid-css.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# .b[Unemployment, pt. I]
+]
+.subtitle[
+## .b[.green[EC 103–002]]
+]
+.author[
+### Marcio Santetti
+]
+.date[
+### Fall 2022
+]
+
+---
+
+class: inverse, middle
+
+
+
+
+
+# Motivation
+
+
+
+---
+
+# Housekeeping
+
+&lt;br&gt;
+
+.b[Required readings]:
+
+  * [`OpenStax, ch. 8`](https://openstax.org/books/principles-macroeconomics-2e/pages/8-introduction-to-unemployment)
+    
+      * Sections 8.1 and 8.2.
+      
+&lt;br&gt;
+
+  * [`How the Government Measures Unemployment (BLS)`](https://www.bls.gov/cps/cps_htgm.htm)
+  
+  
+---
+
+# A look at the data
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+[`Offical US unemployment data`](https://fred.stlouisfed.org/series/UNRATE)
+
+
+
+---
+
+# A plural phenomenon
+
+&lt;br&gt;
+
+Unemployment is much .hi[more] than an *economic* statistic.
+
+--
+
+Not only do its consequences affect one's .hi-orange[financial] provision, but also .hi[familiar] relations, and .hi-orange[mental] and .hi[physical] health.
+
+--
+
+&lt;br&gt;
+
+An .hi[analogy] to understand unemployment is to compare it with a functional, but unused *factory*.
+
+--
+
+Thus unemployment is a .hi-orange[signaling] measure that output (i.e., GDP) may be falling short of .hi[potential] output&amp;mdash;that is, the *maximum* the economy can produce without rising inflation or completely depleting raw materials.
+
+
+---
+
+# A plural phenomenon
+
+&lt;br&gt;&lt;br&gt;&lt;br&gt;
+
+[`Potential GDP for the US economy`](https://fred.stlouisfed.org/series/GDPPOT)
+
+
+---
+
+layout: false
+class: inverse, middle
+
+# Basic definitions
+
+---
+
+# Basic definitions
+
+
+In the US, the .hi[Bureau of Labor Statistics] tracks and reports all unemployment-related data over time.
+
+  * [`BLS website`](https://www.bls.gov/bls/unemployment.htm)
+  
+--
+
+&lt;br&gt;
+
+Defining who is unemployed is more .hi-orange[complex] than just calculating the share of the total population that is currently not working.
+
+--
+
+&lt;br&gt;
+
+  * A person is considered .hi[unemployed] if they do not have a job, but are currently available to work, and actively looking for work in the previous .green[four] weeks;
+  
+  * A person is .hi-orange[employed] if currently working for pay.
+
+
+---
+
+# Basic definitions
+
+Every month, the US government carries out the .hi-orange[Current Population Survey] (CPS), off of which the unemployment rate for the previous month is based.
+
+--
+
+  - It began in 1940, and in 1942 the US Census Bureau took over the CPS.
+  
+--
+
+There are about .hi[60,000] eligible sample households, and the Bureau employees ask several labor-market-related questions regarding the reference week (which usually includes the 12th day of the month). 
+
+--
+
+&lt;br&gt;
+
+Every *first* Friday of each month, the unemployment rate for the previous month is announced.
+
+  * [`See the latest numbers`](https://www.bls.gov/cps/home.htm)
+  
+---
+
+# Basic definitions
+
+&lt;br&gt;&lt;br&gt;
+
+Despite being incredibly complex and representative, measuring the unemployment rate is *not* free from .hi[criticism].
+
+  
+  * What about care work? Cleaning? House chores? (Both paid and unpaid)
+
+
+  
+
+---
+
+# Basic definitions
+
+For unemployment computing purposes, a useful concept is the .hi[labor force].
+
+--
+
+The labor force includes all individuals that are .hi-orange[currently] employed *and* the .hi[unemployed] (i.e., actively looking for a job).
+
+--
+
+  * To be considered .hi[out of the labor force], one has to have either .hi-orange[given up] looking for work *or* or not been currently available to work (due to a parental leave, injury, etc.).
+  * Also, full-time students, retirees, institutionalized individuals, those staying home to take care of children, and discouraged job seekers are considered .hi[out] of the labor force.
+
+
+--
+
+
+Furthermore, unemployment statistics only include the .hi-orange[adult] population (16-and-over).
+
+--
+
+Thus, the .hi[unemployment rate] is the percentage (%) of adults who are in the labor force but who .hi-orange[do not] have jobs:
+
+$$
+`\begin{aligned}
+\text{Unemployment rate} = \dfrac{\text{Unemployed}}{\text{Total labor force}} 
+\end{aligned}`
+$$
+
+---
+
+# Basic definitions
+
+&lt;img src="005-unemployment_files/figure-html/unnamed-chunk-1-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Basic definitions
+
+&lt;img src="005-unemployment_files/figure-html/unnamed-chunk-2-1.svg" style="display: block; margin: auto;" /&gt;
+
+
+
+
+---
+
+# Basic definitions
+
+&lt;br&gt;&lt;br&gt;
+
+
+Along with the unemployment rate, another important labor market statistic is the labor force .hi[participation rate].
+
+--
+
+This rate is obtained by *dividing* the total labor force by the adult population:
+
+&lt;br&gt;
+
+$$
+`\begin{aligned}
+\text{LF participation rate} = \dfrac{\text{Labor force}}{\text{Total adult population}} 
+\end{aligned}`
+$$
+
+---
+
+# Basic definitions
+
+&lt;br&gt;&lt;br&gt;
+
+Finally, we have the .hi[employment-to-population ratio].
+
+--
+
+As the name suggests, it is the .hi-orange[ratio] of individuals with paid work&amp;mdash;of any kind&amp;mdash;to the total population.
+
+--
+
+&lt;br&gt;
+
+This measure is convenient when the goal is to .hi[compare] (un)employment statistics across countries.
+
+  * Also keep in mind that each country has its *own* methodology to compute unemployment statistics.
+
+---
+
+# Basic definitions
+
+&lt;img src="005-unemployment_files/figure-html/unnamed-chunk-3-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Basic definitions
+
+We have already talked about how unemployment can be considered a .hi[waste of potential].
+
+  * Both from  *individual* and *aggregate* points of view!
+  
+--
+
+&lt;br&gt;
+
+When someone is .hi-orange[stuck] in a lower-paid, less productive job, they are considered .hi[underemployed] (*aka* disguisedly unemployed).
+
+--
+
+  * This situation may come about due to periods of *low demand* for jobs in general, or more specifically in a person's area of specialization.
+  
+  * There is .hi-orange[no] actual *data* on underemployment.
+
+
+
+--
+
+.right[Examples?]
+
+---
+
+# Applications
+
+&lt;br&gt;
+
+&lt;table class="table" style="font-size: 22px; margin-left: auto; margin-right: auto;"&gt;
+&lt;caption style="font-size: initial !important;"&gt;Employment data for the US: 2017–2021&lt;/caption&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Year &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Adult Population &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Employed &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Unemployed &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 2017 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 255,079 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 153,337 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6,982 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 2018 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 257,791 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 155,761 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6,314 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 2019 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 259,175 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 157,538 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 6,001 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 2020 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 260,329 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 147,795 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 12,947 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; 2021 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 261,445 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 152,581 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 8,623 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+--
+
+
+.small[
+
+Calculate the following statistics:
+
+  - (a) The *total labor force*;
+  - (b) The number of persons *not in the labor force*;
+  - (c) The *unemployment rate*;
+  - (d) The *employment-to-population ratio*;
+  - (e) The *labor force participation rate*.
+]
+
+---
+
+
+layout: false
+class: inverse, middle
+
+# Next time: Unemployment *vs.* other aggregates; types of unemployment
+
+
+---
+exclude: true
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

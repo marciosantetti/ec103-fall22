@@ -1,0 +1,220 @@
+period,country,population,employment
+1950,Italy,"47,105","19,966"
+1951,Italy,"47,418","19,993"
+1952,Italy,"47,666","20,160"
+1953,Italy,"47,957","20,374"
+1954,Italy,"48,299","20,652"
+1955,Italy,"48,633","20,643"
+1956,Italy,"48,921","20,713"
+1957,Italy,"49,182","20,804"
+1958,Italy,"49,476","20,877"
+1959,Italy,"49,832","20,907"
+1960,Italy,"50,198","20,991"
+1961,Italy,"50,523","21,125"
+1962,Italy,"50,843","21,063"
+1963,Italy,"51,198","20,714"
+1964,Italy,"51,600","20,642"
+1965,Italy,"51,987","20,138"
+1966,Italy,"52,332","19,810"
+1967,Italy,"52,667","20,056"
+1968,Italy,"52,987","20,046"
+1969,Italy,"53,317","19,902"
+1970,Italy,"53,661","19,995"
+1971,Italy,"54,006","20,001"
+1972,Italy,"54,366","19,949"
+1973,Italy,"54,797","20,232"
+1974,Italy,"55,226","20,546"
+1975,Italy,"55,572","20,562"
+1976,Italy,"55,839","20,770"
+1977,Italy,"56,059","20,834"
+1978,Italy,"56,240","20,903"
+1979,Italy,"56,368","21,135"
+1980,Italy,"56,451","21,441"
+1981,Italy,"56,502","21,423"
+1982,Italy,"56,536","21,467"
+1983,Italy,"56,630","21,536"
+1984,Italy,"56,697","21,535"
+1985,Italy,"56,731","21,739"
+1986,Italy,"56,734","21,889"
+1987,Italy,"56,730","21,939"
+1988,Italy,"56,734","22,174"
+1989,Italy,"56,738","22,325"
+1990,Italy,"56,743","22,681"
+1991,Italy,"56,744","23,106"
+1992,Italy,"56,939","22,938"
+1993,Italy,"57,116","22,322"
+1994,Italy,"57,228","21,955"
+1995,Italy,"57,324","21,910"
+1996,Italy,"57,340","22,045"
+1997,Italy,"57,371","22,116"
+1998,Italy,"57,387","22,341"
+1999,Italy,"57,397","22,585"
+2000,Italy,"57,423","23,029"
+2001,Italy,"57,461","23,481"
+2002,Italy,"57,572","23,875"
+2003,Italy,"57,884","24,226"
+2004,Italy,"58,317","24,373"
+2005,Italy,"58,658","24,511"
+2006,Italy,"58,893","24,994"
+2007,Italy,"59,252","25,304"
+2008,Italy,"59,711","25,360"
+2009,Italy,"60,058","24,942"
+2010,Italy,"60,325","24,783"
+2011,Italy,"60,534","24,850"
+2012,Italy,"60,699","24,783"
+2013,Italy,"60,821","24,339"
+2014,Italy,"60,830","24,357"
+2015,Italy,"60,738","24,516"
+2016,Italy,"60,623","24,849"
+2017,Italy,"60,509","25,138"
+2018,Italy,"60,383","25,371"
+2019,Italy,"60,233","25,504"
+2020,Italy,"59,941","24,976"
+2021,Italy,"59,609","25,125"
+2022,Italy,"59,510","25,552"
+1950,United Kingdom,,
+1951,United Kingdom,,
+1952,United Kingdom,,
+1953,United Kingdom,,
+1954,United Kingdom,,
+1955,United Kingdom,,
+1956,United Kingdom,,
+1957,United Kingdom,,
+1958,United Kingdom,,
+1959,United Kingdom,,
+1960,United Kingdom,,
+1961,United Kingdom,,
+1962,United Kingdom,,
+1963,United Kingdom,,
+1964,United Kingdom,,
+1965,United Kingdom,,
+1966,United Kingdom,,
+1967,United Kingdom,,
+1968,United Kingdom,,
+1969,United Kingdom,,
+1970,United Kingdom,,
+1971,United Kingdom,,
+1972,United Kingdom,,
+1973,United Kingdom,,
+1974,United Kingdom,,
+1975,United Kingdom,,
+1976,United Kingdom,,
+1977,United Kingdom,,
+1978,United Kingdom,,
+1979,United Kingdom,,
+1980,United Kingdom,,
+1981,United Kingdom,,
+1982,United Kingdom,,
+1983,United Kingdom,,
+1984,United Kingdom,,
+1985,United Kingdom,,
+1986,United Kingdom,,
+1987,United Kingdom,,
+1988,United Kingdom,,
+1989,United Kingdom,,
+1990,United Kingdom,,
+1991,United Kingdom,,
+1992,United Kingdom,,
+1993,United Kingdom,,
+1994,United Kingdom,,
+1995,United Kingdom,,
+1996,United Kingdom,,
+1997,United Kingdom,,
+1998,United Kingdom,,
+1999,United Kingdom,,
+2000,United Kingdom,,
+2001,United Kingdom,,
+2002,United Kingdom,,
+2003,United Kingdom,,
+2004,United Kingdom,,
+2005,United Kingdom,,
+2006,United Kingdom,,
+2007,United Kingdom,,
+2008,United Kingdom,,
+2009,United Kingdom,,
+2010,United Kingdom,,
+2011,United Kingdom,,
+2012,United Kingdom,,
+2013,United Kingdom,,
+2014,United Kingdom,,
+2015,United Kingdom,,
+2016,United Kingdom,,
+2017,United Kingdom,,
+2018,United Kingdom,,
+2019,United Kingdom,,
+2020,United Kingdom,,
+2021,United Kingdom,,
+2022,United Kingdom,,
+1950,China,,
+1951,China,,
+1952,China,,
+1953,China,,
+1954,China,,
+1955,China,,
+1956,China,,
+1957,China,,
+1958,China,,
+1959,China,,
+1960,China,,
+1961,China,,
+1962,China,,
+1963,China,,
+1964,China,,
+1965,China,,
+1966,China,,
+1967,China,,
+1968,China,,
+1969,China,,
+1970,China,,
+1971,China,,
+1972,China,,
+1973,China,,
+1974,China,,
+1975,China,,
+1976,China,,
+1977,China,,
+1978,China,,
+1979,China,,
+1980,China,,
+1981,China,,
+1982,China,,
+1983,China,,
+1984,China,,
+1985,China,,
+1986,China,,
+1987,China,,
+1988,China,,
+1989,China,,
+1990,China,,
+1991,China,,
+1992,China,,
+1993,China,,
+1994,China,,
+1995,China,,
+1996,China,,
+1997,China,,
+1998,China,,
+1999,China,,
+2000,China,,
+2001,China,,
+2002,China,,
+2003,China,,
+2004,China,,
+2005,China,,
+2006,China,,
+2007,China,,
+2008,China,,
+2009,China,,
+2010,China,,
+2011,China,,
+2012,China,,
+2013,China,,
+2014,China,,
+2015,China,,
+2016,China,,
+2017,China,,
+2018,China,,
+2019,China,,
+2020,China,,
+2021,China,,
+2022,China,,

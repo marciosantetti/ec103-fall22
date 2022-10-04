@@ -1,0 +1,296 @@
+---
+title: ".b[Unemployment, pt. 2]"
+subtitle: ".b[.green[EC 103--002]]"
+author: "Marcio Santetti"
+date: "Fall 2022"
+output:
+  xaringan::moon_reader:
+    css: ['default', 'metropolis', 'metropolis-fonts', 'skid-css.css']
+    # self_contained: true
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      ratio: "16:9"
+      countIncrementalSlides: false
+---
+class: inverse, middle
+
+```{r Setup, include = F}
+options(htmltools.dir.version = FALSE)
+library(pacman)
+p_load(broom, latex2exp, ggplot2, ggthemes, ggforce, viridis, dplyr, magrittr, knitr, parallel, xaringanExtra, tidyverse, sjPlot, showtext, mathjaxr, ggforce, furrr, kableExtra, wooldridge, hrbrthemes, scales, ggeasy, patchwork)
+
+
+
+
+# Knitr options
+opts_chunk$set(
+  comment = "#>",
+  fig.align = "center",
+  fig.height = 7,
+  fig.width = 10.5,
+  warning = F,
+  message = F,
+  dpi=300
+)
+
+theme_set(theme_ipsum_rc())
+
+```
+
+
+
+# Motivation
+
+
+
+---
+
+# Housekeeping
+
+<br>
+
+* .b[Required reading]:
+
+  * Any?
+  
+  
+---
+
+# Last time
+
+<br>
+
+Last time, we looked at some official US data on unemployment, as well as some basic definitions.
+
+--
+
+
+<br><br>
+
+Now it is time to investigate some of the most relevant .hi[relationships] unemployment shares with other .hi-orange[macroeconomic] variables.
+
+--
+
+<br><br>
+
+Lastly, we will also study some of the main .hi[explanations for] unemployment, since this may come from different phenomena.
+
+
+
+
+---
+
+
+layout: false
+class: inverse, middle
+
+# Unemployment and other aggregates
+
+---
+
+
+# Unemployment and other aggregates
+
+When output grows *quickly*, unemployment .hi[falls].
+
+--
+
+When output grows *more slowly* or *falls*, unemployment .hi[rises].
+
+--
+
+This association is known as .hi-orange[Okun's law].
+
+--
+
+<br>
+
+In more detail, it claims that there is a stable relationship between the .hi[change in the unemployment rate] $(\Delta u)$ and .hi-orange[real GDP growth] $(y)$.
+
+$$
+\begin{aligned}
+\Delta u = -a(y - b)
+\end{aligned}
+$$
+
+<br>
+
+where $a$ is called the .hi[Okun coefficient], and $b$ is the growth rate of real GDP that keeps .hi-orange[unemployment constant] (i.e., there is no change in unemployment).
+
+---
+
+
+# Unemployment and other aggregates
+
+[plot Okun's law for the US]
+
+---
+
+
+# Unemployment and other aggregates
+
+In the US, the Okun coefficient has been fairly .hi[stable] around 0.6 and $b$ is around 2. 
+
+--
+
+  * What does this mean?
+
+--
+
+It would take 2 points of real GDP growth just to keep unemployment constant $(\Delta u = 0)$, implying that
+
+  * .hi[Population] is still growing;
+  
+  * hi[Labor productivity] is rising over time.
+  
+--
+
+In other words, each year there are more individuals *looking for jobs* (due to population growth), while technology keeps improving, so that *less people* are needed to produce the same amount of output over time (productivity growth).
+
+--
+
+Therefore, GDP has to grow to keep the change in unemployment .hi[steady] over time.
+
+---
+
+
+
+# Unemployment and other aggregates
+
+How does unemployment relate with the .hi[price level]?
+
+--
+
+In other words, when *less* people are unemployed, does this affect .hi-orange[inflation]?
+
+
+--
+
+<br><br>
+
+This will be next week's topic.
+
+---
+
+
+layout: false
+class: inverse, middle
+
+# Explaining unemployment
+
+
+---
+
+# Explaining unemployment
+
+<br>
+
+The reasons for high unemployment are .hi[manifold].
+
+--
+
+<br>
+
+Some of the main .hi-orange[causes] of unemployment may be classified by:
+
+  * .hi[Demand];
+  
+  * .hi[Structural];
+  
+  * .hi[Frictional] factors.
+
+
+
+---
+
+# Explaining unemployment
+
+
+Some people may be unemployed because .hi[not enough] goods or services that *require* their labor is being currently produced.
+
+--
+
+  * Thus there is a .hi[lack of demand] for these workers.
+
+
+--
+
+When the available jobs in the economy are .hi[not matched] by the current candidates (i.e., there is a a *mismatch* between jobs and workers), unemployed is classified as .hi-orange[structural].
+
+--
+
+  * As potential reasons, there may be a lack of the necessary skills for the job, or perhaps the necessary workers are located in different parts of the country.
+  
+--
+
+Throughout a person's worklife, they may be *transitioning* between jobs, moving to a new area, entering the job market after graduating, etc.
+
+--
+
+  * This kind of unemployment is considered .hi[frictional], comprehending just a "looking" period.
+
+---
+
+# Explaining unemployment
+
+<br>
+
+Different .hi-orange[causes], different .hi[solutions].
+
+--
+
+Depending on what we believe the cause of current unemployment is, we may work with different .hi[policies/solutions].
+
+--
+
+
+<br><br>
+
+.right[
+What are some .hi-orange[procedures] for each cause of unemployment?  ((JW mason, p. 29))
+]
+
+---
+
+# Explaining unemployment
+
+
+Whether unemployment is demand-driven or structural, it is a matter of policy discussion.
+
+--
+
+However, looking at the available .hi[data] always helps.
+
+--
+
+<br>
+
+The .hi[Beveridge curve] is a relationship that puts together the number of .hi-orange[unemployed] workers and the number of .hi-orange[job vacancies]. 
+
+--
+
+  * In a scenario with *low* vacancies but *high* unemployment, the latter is probably due to the .hi[lack of demand].
+
+--
+
+  * Conversely, with *low* unemployment and a *high* number of job vacancies, unemployment will likely be .hi[structural].
+
+---
+
+# Explaining unemployment
+
+[put Beveridge curve here]
+
+
+---
+
+
+layout: false
+class: inverse, middle
+
+# Next time: Inflation `r emo::ji("ghost")`
+
+
+---
+exclude: true

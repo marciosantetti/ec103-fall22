@@ -46,6 +46,11 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
  **Lecture 7: Economic growth discussions**
 
   - Slides/instructions: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/004-growth/005-growth-discussions.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/004-growth/005-growth-discussions.pdf)
+  
+  
+ **Lecture 8: Unemployment: Basic definitions**
+ 
+  - Slides: `html` | `pdf`
 
 
 ## Lab Session notes/slides
@@ -75,6 +80,18 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
   
    - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/004-graphics/004-ggraphics.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/004-graphics/004-graphics.pdf)
    - [`Video lecture`](https://www.youtube.com/watch?v=u2DRXvWXAPQ&ab_channel=MarcioSantetti)
+   
+   
+ **Lab 5**: Making plots informative
+ 
+  - Slides: `html` | `pdf`
+  - `Video lecture`
+  
+ **Lab 6**: Customizing and saving plots
+ 
+   - Slides: `html` | `pdf`
+   - `Video lecture`
+  
 
 ## Assignments
 
@@ -89,6 +106,12 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
 ### Long Assignments
 
   - [`Long Assignment 1`](https://raw.githack.com/marciosantetti/ec103-fall22/main/long-assignments/long-1-f22.pdf) (due 09/26, before class) | submission through `theSpring`
+  
+  - [`Long Assignment 2`](https://raw.githack.com/marciosantetti/ec103-fall22/main/long-assignments/long-2-f22.pdf) (due 11/07, before class) | submission through `theSpring`
+    - Data file: [`epwt_data.csv`](https://raw.githack.com/marciosantetti/ec103-fall22/main/long-assignments/epwt_data.csv)
+    - Data description: [`epwt_description.pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/long-assignments/epwt_description.pdf)
+    
+  - [`Long Assignment 3`](https://raw.githack.com/marciosantetti/ec103-fall22/main/long-assignments/long-3-f22.pdf) (due 12/09, 10 PM) | submission through `theSpring`
 
 
 

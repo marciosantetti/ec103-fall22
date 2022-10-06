@@ -44,7 +44,6 @@ In the previous lab, we learned how to map data into *aesthetics*, using the "gr
 
 <br>
 
-
 However, that is not enough!
 
 <br>
@@ -52,8 +51,6 @@ However, that is not enough!
 . . .
 
 Always keep in mind that *any* person should be able to **read** and **interpret** what your figure wants to express.
-
-
 
 ## What is your plot about?
 
@@ -76,7 +73,6 @@ unemp_data %>%
 
 ## What is your plot about?
 
-
 ```{r}
 #| echo: false
 #|message: false
@@ -89,10 +85,7 @@ unemp_data %>%
   theme_gray(base_size=16)
 ```
 
-
-
 ## What is your plot about?
-
 
 ```{r}
 #| echo: false
@@ -107,9 +100,7 @@ unemp_data %>%
   theme_gray(base_size=16)
 ```
 
-
 ## What is your plot about?
-
 
 ```{r}
 #| echo: false
@@ -125,10 +116,7 @@ unemp_data %>%
   theme_gray(base_size=16)
 ```
 
-
-
 ## What is your plot about?
-
 
 ```{r}
 #| echo: false
@@ -145,10 +133,7 @@ unemp_data %>%
   theme_gray(base_size=16)
 ```
 
-
-
 ## What is your plot about?
-
 
 ```{r}
 #| echo: false
@@ -166,9 +151,7 @@ unemp_data %>%
   theme_gray(base_size=16)
 ```
 
-
 ## What is your plot about?
-
 
 <br><br>
 
@@ -180,10 +163,7 @@ In a plot, **labels** matter.
 
 And also do **scales**.
 
-
-
 ## What is your plot about?
-
 
 ```{r}
 #| echo: false
@@ -202,9 +182,7 @@ unemp_data %>%
   
 ```
 
-
 ## What is your plot about?
-
 
 ```{r}
 #| echo: false
@@ -228,7 +206,6 @@ unemp_data %>%
 
 ## What is your plot about?
 
-
 ```{r}
 #| echo: false
 #| message: false
@@ -250,9 +227,7 @@ unemp_data %>%
   
 ```
 
-
 ## What is your plot about?
-
 
 ```{r}
 #| echo: false
@@ -277,4 +252,3 @@ unemp_data %>%
 ```
 
 # RStudio time!
-

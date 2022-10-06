@@ -1,5 +1,5 @@
 ---
-title: ".b[Unemployment, pt. 2]"
+title: ".b[Unemployment, pt. II]"
 subtitle: ".b[.green[EC 103--002]]"
 author: "Marcio Santetti"
 date: "Fall 2022"
@@ -18,7 +18,7 @@ class: inverse, middle
 ```{r Setup, include = F}
 options(htmltools.dir.version = FALSE)
 library(pacman)
-p_load(broom, latex2exp, ggplot2, ggthemes, ggforce, viridis, dplyr, magrittr, knitr, parallel, xaringanExtra, tidyverse, sjPlot, showtext, mathjaxr, ggforce, furrr, kableExtra, wooldridge, hrbrthemes, scales, ggeasy, patchwork)
+p_load(broom, latex2exp, ggplot2, ggthemes, ggforce, viridis, dplyr, magrittr, knitr, parallel, xaringanExtra, tidyverse, sjPlot, showtext, mathjaxr, ggforce, furrr, kableExtra, wooldridge, hrbrthemes, scales, ggeasy, patchwork, janitor)
 
 
 
@@ -52,7 +52,7 @@ theme_set(theme_ipsum_rc())
 
 * .b[Required reading]:
 
-  * Any?
+  * [`CORE, ch. 13, section 13.2`](https://www.core-econ.org/the-economy/book/text/13.html#132-output-growth-and-changes-in-unemployment)
   
   
 ---
@@ -61,20 +61,20 @@ theme_set(theme_ipsum_rc())
 
 <br>
 
-Last time, we looked at some official US data on unemployment, as well as some basic definitions.
+Last time, we looked at some official US .hi[data] on unemployment, as well as some basic .hi-orange[definitions].
 
 --
 
 
 <br><br>
 
-Now it is time to investigate some of the most relevant .hi[relationships] unemployment shares with other .hi-orange[macroeconomic] variables.
+Now it is time to investigate some of the most relevant .hi[relationships] that unemployment shares with other .hi-orange[macroeconomic] variables.
 
 --
 
 <br><br>
 
-Lastly, we will also study some of the main .hi[explanations for] unemployment, since this may come from different phenomena.
+Lastly, we will also study some of the main .hi[explanations for] unemployment, since it may come from different phenomena.
 
 
 
@@ -92,45 +92,113 @@ class: inverse, middle
 
 # Unemployment and other aggregates
 
-When output grows *quickly*, unemployment .hi[falls].
+
+When output grows *quickly*, unemployment tends to .hi[fall].
 
 --
 
-When output grows *more slowly* or *falls*, unemployment .hi[rises].
+When output grows *more slowly* or *falls*, unemployment tends to .hi[rise].
 
 --
 
-This association is known as .hi-orange[Okun's law].
+  - Why would this happen?
+  
+  - .smaller[Lower unemployment &rarr; higher wages &rarr; increased workers' bargaining power &rarr; better income distribution.]
 
 --
 
 <br>
 
-In more detail, it claims that there is a stable relationship between the .hi[change in the unemployment rate] $(\Delta u)$ and .hi-orange[real GDP growth] $(y)$.
+[`How do the data look?`](https://fred.stlouisfed.org/series/GDPC1)
+
+--
+
+<br>
+
+
+This association is known as .hi-orange[Okun's law].
+
+---
+
+# Unemployment and other aggregates
+
+<br>
+
+In more detail, Okun's law claims that there is a stable relationship between the .hi[change in the unemployment rate] $(\Delta u)$ and .hi-orange[real GDP growth] $(g_y)$.
+
+<br>
 
 $$
 \begin{aligned}
-\Delta u = -a(y - b)
+\Delta u = a + b \times (g_y)
 \end{aligned}
 $$
 
 <br>
 
-where $a$ is called the .hi[Okun coefficient], and $b$ is the growth rate of real GDP that keeps .hi-orange[unemployment constant] (i.e., there is no change in unemployment).
+where $b$ is called the .hi[Okun coefficient], and $a$ is the change in unemployment when the economy does not grow in a given period (i.e., $g_y = 0$).
 
 ---
 
 
 # Unemployment and other aggregates
 
-[plot Okun's law for the US]
+```{r, echo=FALSE, dev = "svg", fig.height = 5.5, warning=FALSE}
+dat <- read_csv("unrate_annual.csv")
+
+
+dat <- dat %>% 
+  clean_names() %>% 
+  mutate(delta_u = c(NA, diff(unrate)),
+         gdp_growth = ( ( gdp - lag(gdp, n = 1) ) / lag(gdp, n = 1) ) * 100 )
+
+
+dat %>% 
+  ggplot(aes(x = gdp_growth, y = delta_u)) + 
+  geom_point(size = 2, color = "#800000", shape = 5) +
+  geom_hline(yintercept = 0) +
+  geom_vline(xintercept = 0) +
+  labs(x = "GDP growth (%)",
+       y = "Change in unemployment (p.p.)",
+       title = "Okun's law: United States, 1949–2021") +
+  easy_y_axis_title_size(13) +
+  easy_x_axis_title_size(13)
+
+```
+
 
 ---
 
 
 # Unemployment and other aggregates
 
-In the US, the Okun coefficient has been fairly .hi[stable] around 0.6 and $b$ is around 2. 
+```{r, echo=FALSE, dev = "svg", fig.height = 5.5, warning=FALSE}
+
+dat %>% 
+  mutate(years = as.character(period)) %>% 
+  filter(years %in% c("1970", "2008", "2019", "2000", "2007", "2021")) %>% 
+  ggplot(aes(x = gdp_growth, y = delta_u)) + 
+  geom_point(size = 3, color = "#800000", shape = 5) +
+  geom_hline(yintercept = 0) +
+  geom_vline(xintercept = 0) +
+  labs(x = "GDP growth (%)",
+       y = "Change in unemployment (p.p.)",
+       title = "Okun's law: United States, selected years") +
+  easy_y_axis_title_size(13) +
+  easy_x_axis_title_size(13) +
+  geom_text_repel(aes(label = years))
+
+
+
+```
+
+
+---
+
+
+# Unemployment and other aggregates
+
+Based on these data, the *Okun coefficient* (*b*) equals -0.4, and *a*, 1.33. 
 
 --
 
@@ -138,11 +206,19 @@ In the US, the Okun coefficient has been fairly .hi[stable] around 0.6 and $b$ i
 
 --
 
-It would take 2 points of real GDP growth just to keep unemployment constant $(\Delta u = 0)$, implying that
+<br>
 
-  * .hi[Population] is still growing;
+And what if one wants to keep unemployment constant (meaning $\Delta u = 0$)? How much would the economy have to grow?
+
+---
+
+# Unemployment and other aggregates
+
+It would take this amount of real GDP growth just to keep unemployment constant $(\Delta u = 0)$ for two main reasons:
+
+  * .hi[Population] (and, consequently, the labor force) is still growing;
   
-  * hi[Labor productivity] is rising over time.
+  * .hi[Labor productivity] is rising over time (implying that output per worker grows faster than employment).
   
 --
 
@@ -207,7 +283,7 @@ Some of the main .hi-orange[causes] of unemployment may be classified by:
 # Explaining unemployment
 
 
-Some people may be unemployed because .hi[not enough] goods or services that *require* their labor is being currently produced.
+Some people may be unemployed because .hi[not enough] goods or services that *require* their labor are being currently produced.
 
 --
 
@@ -248,7 +324,7 @@ Depending on what we believe the cause of current unemployment is, we may work w
 <br><br>
 
 .right[
-What are some .hi-orange[procedures] for each cause of unemployment?  ((JW mason, p. 29))
+What are some .hi-orange[procedures] for each cause of unemployment?
 ]
 
 ---
@@ -280,7 +356,38 @@ The .hi[Beveridge curve] is a relationship that puts together the number of .hi-
 
 # Explaining unemployment
 
-[put Beveridge curve here]
+```{r, echo=FALSE, dev = "svg", fig.height = 5.5, warning=FALSE}
+unrate <- read_csv("unrate.csv")
+open <- read_csv("job-openings-rate.csv")
+
+
+unrate <- unrate %>% 
+  filter(DATE >= "2000-12-01" & DATE <= "2022-06-01")
+
+
+unrate <- unrate %>% select(UNRATE)
+
+open <- open %>% 
+  add_column(unrate) %>% 
+  rename(openings = JTSJOR,
+         unrate = UNRATE)
+
+
+open %>% 
+  filter(DATE >= "2020-05-01") %>% 
+  ggplot(aes(y = openings, x = unrate)) +
+  geom_point(alpha = 0.8, size = 1.7) +
+  labs(title = "The US Beveridge Curve", 
+       subtitle = "May 2020 - June 2022",
+       x = "Unemployment rate",
+       y = "Job openings rate") +
+  easy_y_axis_title_size(13) +
+  easy_x_axis_title_size(13)
+
+
+
+```
+
 
 
 ---

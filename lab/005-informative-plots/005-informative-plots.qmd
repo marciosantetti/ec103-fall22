@@ -1,0 +1,280 @@
+---
+title: "Making plots informative"
+subtitle: "<br>EC 103--02"
+author: "Marcio Santetti"
+footer: "EC 103--02"
+format: 
+  revealjs:
+    theme: lab.scss
+    multiplex: true
+    transition: fade
+    slide-number: true
+    incremental: true 
+    chalkboard: true
+editor: visual
+knitr:
+  opts_chunk:
+#    dev: "ragg_png"
+    retina: 3
+    dpi: 200
+execute:
+  freeze: auto
+  fig-width: 5
+  fig-height: 6
+---
+
+```{r}
+#| include: false
+# figure options
+knitr::opts_chunk$set(
+  fig.width = 10, fig.asp = 0.618,
+  fig.retina = 3, dpi = 300, fig.align = "center"
+)
+```
+
+# What is your plot about?
+
+## What is your plot about?
+
+<br>
+
+In the previous lab, we learned how to map data into *aesthetics*, using the "grammar of graphics" with the `ggplot2` package.
+
+. . .
+
+<br>
+
+
+However, that is not enough!
+
+<br>
+
+. . .
+
+Always keep in mind that *any* person should be able to **read** and **interpret** what your figure wants to express.
+
+
+
+## What is your plot about?
+
+<br>
+
+```{r}
+#| echo: false
+
+
+library(tidyverse)
+library(ggeasy)
+
+unemp_data <- read_csv("https://raw.githubusercontent.com/marciosantetti/ec103-fall22/main/lectures/005-unemp/unemp-data.csv")
+unemp_data %>% 
+  ggplot(aes(y = unemployed, x = period)) +
+  geom_line() +
+  labs(x = "", y = "u") +
+  theme_gray(base_size=16)
+```
+
+## What is your plot about?
+
+
+```{r}
+#| echo: false
+#|message: false
+
+unemp_data %>% 
+  ggplot(aes(y = unemployed, x = period)) +
+  geom_line() +
+  labs(x = "", y = "u") +
+  labs(title = "A title") +
+  theme_gray(base_size=16)
+```
+
+
+
+## What is your plot about?
+
+
+```{r}
+#| echo: false
+#|message: false
+
+unemp_data %>% 
+  ggplot(aes(y = unemployed, x = period)) +
+  geom_line() +
+  labs(x = "", y = "u") +
+  labs(title = "A title",
+       subtitle = "Maybe a subtitle?") +
+  theme_gray(base_size=16)
+```
+
+
+## What is your plot about?
+
+
+```{r}
+#| echo: false
+#|message: false
+
+unemp_data %>% 
+  ggplot(aes(y = unemployed, x = period)) +
+  geom_line() +
+  labs(x = "", y = "u") +
+  labs(title = "A title",
+       subtitle = "Maybe a subtitle?",
+       x = "What variable is here?") +
+  theme_gray(base_size=16)
+```
+
+
+
+## What is your plot about?
+
+
+```{r}
+#| echo: false
+#|message: false
+
+unemp_data %>% 
+  ggplot(aes(y = unemployed, x = period)) +
+  geom_line() +
+  labs(x = "", y = "u") +
+  labs(title = "A title",
+       subtitle = "Maybe a subtitle?",
+       x = "What variable is here?",
+       y = "What variable is here?") +
+  theme_gray(base_size=16)
+```
+
+
+
+## What is your plot about?
+
+
+```{r}
+#| echo: false
+#|message: false
+
+unemp_data %>% 
+  ggplot(aes(y = unemployed, x = period)) +
+  geom_line() +
+  labs(x = "", y = "u") +
+  labs(title = "A title",
+       subtitle = "Maybe a subtitle?",
+       x = "What variable is here?",
+       y = "What variable is here?",
+       caption = "What is the data source?") +
+  theme_gray(base_size=16)
+```
+
+
+## What is your plot about?
+
+
+<br><br>
+
+In a plot, **labels** matter.
+
+. . .
+
+<br>
+
+And also do **scales**.
+
+
+
+## What is your plot about?
+
+
+```{r}
+#| echo: false
+#|message: false
+
+
+library(scales)
+
+unemp_data %>% 
+  ggplot(aes(y = unemployed, x = period)) +
+  geom_line() +
+  labs(x = "", y = "") +
+  labs(title = "A title") +
+  theme_gray(base_size=16) +
+  scale_y_continuous(labels = comma)
+  
+```
+
+
+## What is your plot about?
+
+
+```{r}
+#| echo: false
+#| message: false
+#| dev: "svg"
+
+
+library(scales)
+
+unemp_data %>% 
+  mutate(un_rate = unemployed / labor_force) %>% 
+  ggplot(aes(y = un_rate, x = period)) +
+  geom_line() +
+  labs(x = "", y = "") +
+  labs(title = "A title") +
+  theme_gray(base_size=16) +
+  scale_y_continuous(labels = percent_format(scale = 100))
+
+  
+```
+
+## What is your plot about?
+
+
+```{r}
+#| echo: false
+#| message: false
+#| dev: "svg"
+
+
+library(scales)
+
+unemp_data %>% 
+  mutate(un_rate = unemployed / labor_force) %>% 
+  ggplot(aes(y = un_rate, x = period)) +
+  geom_line() +
+  labs(x = "", y = "") +
+  labs(title = "A title") +
+  theme_gray(base_size=16) +
+  scale_y_continuous(breaks = seq(0.02, 0.10, by = 0.01),
+                     labels = percent_format(scale = 100))
+
+  
+```
+
+
+## What is your plot about?
+
+
+```{r}
+#| echo: false
+#| message: false
+#| dev: "svg"
+
+
+library(scales)
+
+unemp_data %>% 
+  mutate(un_rate = unemployed / labor_force) %>% 
+  ggplot(aes(y = un_rate, x = period)) +
+  geom_line() +
+  labs(x = "", y = "") +
+  labs(title = "A title") +
+  theme_gray(base_size=16) +
+  scale_y_continuous(breaks = seq(0.02, 0.10, by = 0.01),
+                     labels = percent_format(scale = 100)) +
+  scale_x_continuous(breaks = seq(from = 1950, to = 2021, by = 10))
+
+  
+```
+
+# RStudio time!
+

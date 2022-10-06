@@ -2,7 +2,8 @@ library(tidyverse)
 library(hrbrthemes)
 library(ggeasy)
 library(kableExtra)
-
+library(janitor)
+library(ggrepel)
 
 theme_set(theme_ipsum_rc())
 
@@ -119,3 +120,76 @@ ex %>%
          not_lf = `Adult Population` - `Labor Force`,
          emp_pop_ratio = Employed / `Adult Population` * 100,
          part_rate = `Labor Force` / `Adult Population` * 100)
+
+
+
+
+#####
+
+
+dat <- read_csv("unrate_annual.csv")
+
+
+dat <- dat %>% 
+  clean_names() %>% 
+  mutate(delta_u = c(NA, diff(unrate)),
+         gdp_growth = ( ( gdp - lag(gdp, n = 1) ) / lag(gdp, n = 1) ) * 100 )
+
+
+dat %>% 
+  ggplot(aes(x = gdp_growth, y = delta_u)) + 
+  geom_point(size = 2, color = "#800000", shape = 5) +
+  geom_hline(yintercept = 0) +
+  geom_vline(xintercept = 0) +
+  labs(x = "GDP growth (%)",
+       y = "Change in unemployment (p.p.)",
+       title = "Okun's law: United States, 1949-2021") +
+  easy_y_axis_title_size(13) +
+  easy_x_axis_title_size(13)
+
+
+
+###
+
+
+years_num <- c("1970", "2008", "2019", "2000", "2021")
+
+dat %>% 
+  mutate(years = as.character(period)) %>% 
+  filter(years %in% c("1970", "2008", "2019", "2000", "2007", "2021")) %>% 
+  ggplot(aes(x = gdp_growth, y = delta_u)) + 
+  geom_point(size = 2, color = "#800000", shape = 5) +
+  geom_hline(yintercept = 0) +
+  geom_vline(xintercept = 0) +
+  labs(x = "GDP growth (%)",
+       y = "Change in unemployment (p.p.)",
+       title = "Okun's law: United States, selected years") +
+  easy_y_axis_title_size(13) +
+  easy_x_axis_title_size(13) +
+  geom_text_repel(aes(label = years))
+
+
+
+
+
+###
+
+
+
+
+
+
+
+
+
+dat_filter <- dat %>% 
+  filter(period <= 2010)
+
+
+dat_filter %>% 
+  ggplot(aes(x = gdp_growth, y = delta_u)) + 
+  geom_point(size = 2, color = "#800000", shape = 5) +
+  geom_hline(yintercept = 0) +
+  geom_vline(xintercept = 0)
+
+summary(lm(delta_u ~ gdp_growth, data = dat))

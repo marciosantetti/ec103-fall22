@@ -50,7 +50,7 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
   
  **Lecture 8: Unemployment: Basic definitions**
  
-  - Slides: `html` | `pdf`
+  - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/005-unemp/005-unemployment.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/005-unemp/005-unemployment.pdf)
 
 
 ## Lab Session notes/slides

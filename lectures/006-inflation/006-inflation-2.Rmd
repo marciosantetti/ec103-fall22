@@ -1,0 +1,381 @@
+---
+title: ".b[Inflation, pt. 2]"
+subtitle: ".b[.green[EC 103--02]]"
+author: "Marcio Santetti"
+date: "Fall 2022"
+output:
+  xaringan::moon_reader:
+    css: ['default', 'metropolis', 'metropolis-fonts', 'skid-css.css']
+    # self_contained: true
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      ratio: "16:9"
+      countIncrementalSlides: false
+---
+class: inverse, middle
+
+```{r Setup, include = F}
+options(htmltools.dir.version = FALSE)
+library(pacman)
+p_load(broom, latex2exp, ggplot2, ggthemes, ggforce, viridis, dplyr, magrittr, knitr, parallel, xaringanExtra, tidyverse, sjPlot, showtext, mathjaxr, ggforce, furrr, kableExtra, wooldridge, hrbrthemes, scales, ggeasy, patchwork)
+
+
+
+
+# Knitr options
+opts_chunk$set(
+  comment = "#>",
+  fig.align = "center",
+  fig.height = 7,
+  fig.width = 10.5,
+  warning = F,
+  message = F,
+  dpi=300
+)
+
+theme_set(theme_ipsum_rc())
+
+```
+
+
+
+# Motivation
+
+
+
+---
+
+# Housekeeping
+
+<br>
+
+* .b[Required reading]:
+
+  * ???
+  
+  
+
+---
+
+# A trade-off
+
+When thinking about *policy priorities*, economists (and the general population) usually .hi-orange[agree] on the following:
+
+  * .hi[Low employment] and .hi[low inflation] are desirable.
+  
+--
+
+  * However, the .hi-orange[bitter truth] is that, usually, when unemployment is *low*, inflation tends to *rise.*
+  
+  * And when unemployment is *high*, inflation tends to *fall.*
+
+--
+
+Therefore, experiencing a sustainable scenario with both variables at low rates is almost impossible.
+
+--
+
+<br>
+
+Then, we face a .hi[trade-off]:
+
+  * How to balance people's jobs and the price level?
+
+
+---
+
+# A trade-off
+
+This issue is of special importance during .hi[election] times.
+
+--
+
+How the economy is going&mdash;and this has a lot to do with *unemployment* and *inflation*&mdash;may define (re-)election results.
+
+  * This resonates directly with the general public, who directly feels the effect of both variables in their .hi-orange[daily lives].
+  
+--
+
+<br>
+
+That said, how to find the .hi[balance] between unemployment and inflation levels?
+
+--
+
+<br>
+
+The usual belief within economic poiicy is that .hi-orange[a little bit of inflation] *does not hurt*.
+
+  * As long as it remains .hi[stable]!
+
+---
+
+layout: false
+class: inverse, middle
+
+# Inflation *vs.* unemployment
+
+---
+
+# Inflation *vs.* unemployment
+
+In a dynamic economy, increases in .hi[nominal] wages may mask a fall in .hi-orange[real] incomes, when inflation is low and/or stable.
+
+--
+
+However, a .hi[reduction] in nominal wages, on the other hand, will never go unnoticed.
+
+--
+
+<br>
+
+But how does this process *actually* unfold?
+
+<br>
+
+We will study this through a .hi[conflicting claims] approach.
+
+--
+
+First. let us assume an economy with:
+
+  * Several small to medium-sized firms;
+  
+  * And their employees (ignoring Government, for the time being).
+  
+---
+
+
+# Inflation *vs.* unemployment
+
+The firms .hi[set] their market prices based on .hi-orange[costs], plus a .hi[markup] consistent with them making profits.
+
+--
+
+At the same time, firms try to pay *nominal wages* consistent with their targeted profits, but enough to keep workers *motivated.*
+
+  * Moreover, workers .hi-orange[negotiate] each year their target wages.
+  
+--
+
+<br>
+
+The more .hi-orange[market power] a firm has, the more it can charge for its goods and/or services.
+
+  * Resulting in a .hi[decreasing] real wage!
+  
+--
+
+And the more organized workers are (via unions and other labor market institutions and policies), the more they can .hi[bargain] for better nominal wages (and consequently, better real wages).
+
+---
+
+# Inflation *vs.* unemployment
+
+So can we say that .hi[higher employment] will lead to .hi-orange[higher inflation]?
+
+--
+
+In 1958, A. W. Phillips (1914&mdash;1975) .hi-orange[empirically] found that low rates of unemployment were associated with high rates of inflation, and high unemployment with low inflation. 
+
+.right[<img style="border-radius: 30%;" src="phillips.png" width="250px"/>]
+
+--
+
+This relationship has since been referred to as the .hi[Phillips curve].
+
+---
+
+# Inflation *vs.* unemployment
+
+[first just the axes]
+
+
+---
+
+# Inflation *vs.* unemployment
+
+[then the original picture]
+
+
+---
+
+# Inflation *vs.* unemployment
+
+.hi[How much] additional inflation one gets for a one point acceleration in GDP growth, or a one point fall in unemployment, depends on 
+
+  * The .hi-orange[current values] of the variables;
+  
+  * On the country's .hi[historical] period;
+  
+  * And .hi-orange[how long] that period is.
+  
+<br>
+
+
+--
+
+Let us now evaluate the .hi[behavior] of the Phillips curve for the US economy over time.
+
+
+
+
+---
+
+# Inflation *vs.* unemployment
+
+
+[more recent picture for the whole period US]
+
+
+
+---
+
+# Inflation *vs.* unemployment
+
+This first "incarnation" of the Phillips Curve assumed a .hi[stable] inflationary scenario.
+
+--
+
+However, that was .hi-orange[not] the case throughout the 1970s.
+
+--
+
+The price level was steadily rising, and, given the .hi[expected] price level, which workers simply take to be last year’s price level, they began to .hi-orange[incorporate] this inflationary context into wage negotiations.
+
+--
+
+In summary, 
+
+  * *Higher* nominal wages lead to a *higher* price level;
+  * *Lower* unemployment leads to a *higher* price level this year relative to last year’s price level&mdash;that is, to *higher inflation*. 
+  
+  * This mechanism is called the .hi[wage–price spiral].
+  
+---
+
+# Inflation *vs.* unemployment
+
+
+Therefore, .hi[expectations] enter the picture.
+
+--
+
+When economic agents expect higher prices in teh near future, this expectation takes place in price and wage decisions.
+
+--
+
+Over the 1970s, hiigh inflation in one year became .hi-orange[more likely] to be followed by high inflation the next year.
+
+--
+
+<br>
+
+So a simple .hi-orange[modification] was made to the Phillips Curve setup:
+
+  * Instead of looking at the inflation rate *per se*, economists started to looks at its .hi[change] from year to year.
+  
+
+
+
+---
+
+# Inflation *vs.* unemployment
+
+[change in inflation over the ywars, reaching NAIRU]
+
+
+---
+
+# Inflation *vs.* unemployment
+
+<br><br>
+
+From the empirical data, it is possible to see that it is possible to reach a certain .hi[level of unemployment] consistent with an .hi-orange[unchanged] inflation rate over time.
+
+--
+
+<br>
+
+Given that, economists started to accept the notion of a .hi[natural rate of unemployment].
+
+  * This rate is also known as the .hi-orange[Non-Accelerating Inflation Rate of Unemployment] (NAIRU).
+  
+
+
+
+---
+
+
+layout: false
+class: inverse, middle
+
+# Macroeconomic policy
+
+
+---
+
+# Macroeconomic policy
+
+[for fiscal, COVID-related policies and INflation Reduction Act... but need to be more updated by then]
+
+
+---
+
+# Macroeconomic policy
+
+In the 1990s, the policy known as .hi[inflation targeting] by central banks became widely popular in capitalist economies.
+
+--
+
+Governments basically .hi-orange[delegated] to central banks the task of low unemployment consistent with stable inflation.
+
+--
+
+<br>
+
+In a nutshell, inflation targeting implies the central bank changing .hi-orange[interest rates] to influence aggregate demand in order to keep the economy close to an inflation target.
+
+  * Such target is usually specified by the .hi[government].
+  
+  * In the US economy, [`the long-run target for inflation is 2%`](https://www.federalreserve.gov/faqs/economy_14400.htm).
+
+
+---
+
+# Macroeconomic policy
+
+When central banks target an inflation rate of, say, 2%, use changes in the policy .hi[interest rate] as their .hi-orange[monetary policy] instrument to stabilize the economy.
+
+--
+
+Monetary policy relies on the central bank being able to .hi[control interest rates], and on changes in interest rates influencing aggregate demand.
+
+--
+
+Recall that the interest rate is the .hi[price of investment], as well as the .hi-orange[price of credit].
+
+--
+
+If the central bank interprets the current state of the economy as "overheated," making it more costly for economic agents to obtain .hi[financing resources] tends to lower the economy's temperature.
+
+  * This way, this policy tends to .hi-orange[decelerate] the wage-price spiral.
+  
+--
+
+<br>
+
+[`A look at US data`](https://fred.stlouisfed.org/series/DFF)
+
+
+---
+
+layout: false
+class: inverse, middle
+
+# Next time: Globalization
+
+
+---
+exclude: true

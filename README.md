@@ -51,6 +51,10 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
  **Lecture 8: Unemployment: Basic definitions**
  
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/005-unemp/005-unemployment.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/005-unemp/005-unemployment.pdf)
+  
+ **Lecture 9: Unemployment: Relationships**
+ 
+  - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/005-unemp/005-unemp-2.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/005-unemp/005-unemp-2.pdf)
 
 
 ## Lab Session notes/slides
@@ -84,8 +88,9 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
    
  **Lab 5**: Making plots informative
  
-  - Slides: `html` | `pdf`
-  - `Video lecture`
+  - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/005-informative-plots/005-informative-plots.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/005-informative-plots/005-informative-plots.pdf)
+  - Data: [`unemp-data.csv`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/005-informative-plots/unemp-data.csv) | Data can also be downloaded on `theSpring`
+  - [`Video lecture`](https://youtu.be/pMhebKitqqU)
   
  **Lab 6**: Customizing and saving plots
  

@@ -60,6 +60,11 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
  **Lecture 10: Inflation: Introduction**
  
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/006-inflation/006-inflation-1.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/006-inflation/006-inflation-1.pdf)
+  
+ **Lecture 11: Inflation vs. Unemployment**
+ 
+  - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/006-inflation/006-inflation-2.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/006-inflation/006-inflation-2.pdf)
+  - Inflation discussions: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/006-inflation/006-inflation-discussions.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/006-inflation/006-inflation-discussions.pdf)
 
 
 ## Lab Session notes/slides

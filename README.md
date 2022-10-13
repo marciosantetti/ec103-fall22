@@ -104,8 +104,9 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
   
  **Lab 6**: Customizing and saving plots
  
-   - Slides: `html` | `pdf`
-   - `Video lecture`
+   - Slides:  [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/006-custom-plots/006-custom-plots.pdf)
+   - Data: [`lab6_data.csv`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/006-custom-plots/lab6_data.csv) | Data can also be downloaded on `theSpring`
+   - [`Video lecture`](https://youtu.be/HMc9_Zumfa4)
   
 
 ## Assignments

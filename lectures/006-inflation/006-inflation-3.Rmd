@@ -1,0 +1,131 @@
+---
+title: ".b[Inflation, pt. II]"
+subtitle: ".b[.green[EC 103--02]]"
+author: "Marcio Santetti"
+date: "Fall 2022"
+output:
+  xaringan::moon_reader:
+    css: ['default', 'metropolis', 'metropolis-fonts', 'skid-css.css']
+    # self_contained: true
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      ratio: "16:9"
+      countIncrementalSlides: false
+---
+class: inverse, middle
+
+```{r Setup, include = F}
+options(htmltools.dir.version = FALSE)
+library(pacman)
+p_load(broom, latex2exp, ggplot2, ggthemes, ggforce, viridis, dplyr, magrittr, knitr, parallel, xaringanExtra, tidyverse, sjPlot, showtext, mathjaxr, ggforce, furrr, kableExtra, wooldridge, hrbrthemes, scales, ggeasy, patchwork)
+
+
+
+
+# Knitr options
+opts_chunk$set(
+  comment = "#>",
+  fig.align = "center",
+  fig.height = 7,
+  fig.width = 10.5,
+  warning = F,
+  message = F,
+  dpi=300
+)
+
+theme_set(theme_ipsum_rc())
+
+```
+
+
+
+# Motivation
+
+
+
+---
+
+# Housekeeping
+
+<br>
+
+* .b[Required reading]:
+
+
+---
+
+
+layout: false
+class: inverse, middle
+
+# Macroeconomic policy
+
+
+---
+
+# Macroeconomic policy
+
+[for fiscal, COVID-related policies and INflation Reduction Act... but need to be more updated by then]
+
+
+---
+
+# Macroeconomic policy
+
+In the 1990s, the policy known as .hi[inflation targeting] by central banks became widely popular in capitalist economies.
+
+--
+
+Governments basically .hi-orange[delegated] to central banks the task of low unemployment consistent with stable inflation.
+
+--
+
+<br>
+
+In a nutshell, inflation targeting implies the central bank changing .hi-orange[interest rates] to influence aggregate demand in order to keep the economy close to an inflation target.
+
+  * Such target is usually specified by the .hi[government].
+  
+  * In the US economy, [`the long-run target for inflation is 2%`](https://www.federalreserve.gov/faqs/economy_14400.htm).
+
+
+---
+
+# Macroeconomic policy
+
+When central banks target an inflation rate of, say, 2%, use changes in the policy .hi[interest rate] as their .hi-orange[monetary policy] instrument to stabilize the economy.
+
+--
+
+Monetary policy relies on the central bank being able to .hi[control interest rates], and on changes in interest rates influencing aggregate demand.
+
+--
+
+Recall that the interest rate is the .hi[price of investment], as well as the .hi-orange[price of credit].
+
+--
+
+If the central bank interprets the current state of the economy as "overheated," making it more costly for economic agents to obtain .hi[financing resources] tends to lower the economy's temperature.
+
+  * This way, this policy tends to .hi-orange[decelerate] the wage-price spiral.
+  
+--
+
+<br>
+
+[`A look at US data`](https://fred.stlouisfed.org/series/DFF)
+
+
+
+
+---
+
+layout: false
+class: inverse, middle
+
+# Next time: Globalization
+
+
+---
+exclude: true

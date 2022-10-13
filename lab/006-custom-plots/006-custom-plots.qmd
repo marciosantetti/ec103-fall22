@@ -32,11 +32,9 @@ knitr::opts_chunk$set(
 )
 ```
 
-<<<<<<< HEAD
+\<\<\<\<\<\<\< HEAD
 
-=======
->>>>>>> 842ebe6afe9a88fd6946ccfc48cd5d8783dc5d6c
-# Themes
+======= \>\>\>\>\>\>\> 842ebe6afe9a88fd6946ccfc48cd5d8783dc5d6c \# Themes
 
 ## Themes
 
@@ -44,20 +42,21 @@ knitr::opts_chunk$set(
 
 Some useful packages:
 
-<<<<<<< HEAD
+\<\<\<\<\<\<\< HEAD
 
-- [`{ggthemes}`](https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/)
-
-- [`{hrbrthemes}`](https://github.com/hrbrmstr/hrbrthemes)
-
-- [`Nice blog post by David Keyes`](https://rfortherestofus.com/2019/08/themes-to-improve-your-ggplot-figures/)
-=======
 -   [`{ggthemes}`](https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/)
 
 -   [`{hrbrthemes}`](https://github.com/hrbrmstr/hrbrthemes)
 
--   [`Nice blog post by David Keyes`](https://rfortherestofus.com/2019/08/themes-to-improve-your-ggplot-figures/)
->>>>>>> 842ebe6afe9a88fd6946ccfc48cd5d8783dc5d6c
+-   
+
+    # [`Nice blog post by David Keyes`](https://rfortherestofus.com/2019/08/themes-to-improve-your-ggplot-figures/)
+
+-   [`{ggthemes}`](https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/)
+
+-   [`{hrbrthemes}`](https://github.com/hrbrmstr/hrbrthemes)
+
+-   [`Nice blog post by David Keyes`](https://rfortherestofus.com/2019/08/themes-to-improve-your-ggplot-figures/) \>\>\>\>\>\>\> 842ebe6afe9a88fd6946ccfc48cd5d8783dc5d6c
 
 # Fonts
 
@@ -86,16 +85,9 @@ library(showtext) # Make sure to install it first!
 
 And importing fonts from [`Google Fonts`](https://fonts.google.com/).
 
-<<<<<<< HEAD
+\<\<\<\<\<\<\< HEAD
 
-
-
-
-
-
-=======
->>>>>>> 842ebe6afe9a88fd6946ccfc48cd5d8783dc5d6c
-# Colors
+======= \>\>\>\>\>\>\> 842ebe6afe9a88fd6946ccfc48cd5d8783dc5d6c \# Colors
 
 ## Colors
 
@@ -113,20 +105,18 @@ However, you can use any color you want through *hex codes*.
 
 [`https://www.color-hex.com/`](https://www.color-hex.com/)
 
-<<<<<<< HEAD
+\<\<\<\<\<\<\< HEAD
 
-=======
->>>>>>> 842ebe6afe9a88fd6946ccfc48cd5d8783dc5d6c
-# Patchworking
+======= \>\>\>\>\>\>\> 842ebe6afe9a88fd6946ccfc48cd5d8783dc5d6c \# Patchworking
 
 ## Patchworking
 
 <br><br>
 
-<<<<<<< HEAD
+\<\<\<\<\<\<\< HEAD
 
-=======
->>>>>>> 842ebe6afe9a88fd6946ccfc48cd5d8783dc5d6c
+======= \>\>\>\>\>\>\> 842ebe6afe9a88fd6946ccfc48cd5d8783dc5d6c
+
 ```{r}
 #| echo: true
 #| message: false
@@ -136,20 +126,16 @@ library(patchwork) # Make sure to install it first!
 
 ```
 
-<<<<<<< HEAD
+\<\<\<\<\<\<\< HEAD
 
-
-=======
->>>>>>> 842ebe6afe9a88fd6946ccfc48cd5d8783dc5d6c
-# Saving your plots
+======= \>\>\>\>\>\>\> 842ebe6afe9a88fd6946ccfc48cd5d8783dc5d6c \# Saving your plots
 
 ## Saving your plots
 
 <br><br>
 
-<<<<<<< HEAD
+\<\<\<\<\<\<\< HEAD
 
-R allows you to save your plots either as an image or as a PDF file.
-=======
-R allows you to save your plots either as an image or as a PDF file.
->>>>>>> 842ebe6afe9a88fd6946ccfc48cd5d8783dc5d6c
+# R allows you to save your plots either as an image or as a PDF file.
+
+R allows you to save your plots either as an image or as a PDF file. \>\>\>\>\>\>\> 842ebe6afe9a88fd6946ccfc48cd5d8783dc5d6c

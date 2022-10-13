@@ -1,0 +1,115 @@
+---
+title: "Customizing plots"
+subtitle: "<br>EC 103--02"
+author: "Marcio Santetti"
+footer: "EC 103--02"
+format: 
+  revealjs:
+    theme: lab.scss
+    multiplex: true
+    transition: fade
+    slide-number: true
+    incremental: true 
+    chalkboard: true
+editor: visual
+knitr:
+  opts_chunk:
+#    dev: "ragg_png"
+    retina: 3
+    dpi: 200
+execute:
+  freeze: auto
+  fig-width: 5
+  fig-height: 6
+---
+
+```{r}
+#| include: false
+# figure options
+knitr::opts_chunk$set(
+  fig.width = 10, fig.asp = 0.618,
+  fig.retina = 3, dpi = 300, fig.align = "center"
+)
+```
+
+# Themes
+
+## Themes
+
+<br>
+
+Some useful packages:
+
+-   [`{ggthemes}`](https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/)
+
+-   [`{hrbrthemes}`](https://github.com/hrbrmstr/hrbrthemes)
+
+-   [`Nice blog post by David Keyes`](https://rfortherestofus.com/2019/08/themes-to-improve-your-ggplot-figures/)
+
+# Fonts
+
+## Fonts
+
+<br>
+
+The easiest way to use custom fonts is through the {showtext} package.
+
+. . .
+
+<br>
+
+```{r}
+#| echo: true
+#| message: false
+
+library(showtext) # Make sure to install it first!
+
+
+```
+
+. . .
+
+<br>
+
+And importing fonts from [`Google Fonts`](https://fonts.google.com/).
+
+# Colors
+
+## Colors
+
+<br>
+
+R has its own built-in colors:
+
+[`R colors`](https://www.datanovia.com/en/blog/awesome-list-of-657-r-color-names/)
+
+. . .
+
+<br>
+
+However, you can use any color you want through *hex codes*.
+
+[`https://www.color-hex.com/`](https://www.color-hex.com/)
+
+# Patchworking
+
+## Patchworking
+
+<br><br>
+
+```{r}
+#| echo: true
+#| message: false
+
+library(patchwork) # Make sure to install it first!
+
+
+```
+
+# Saving your plots
+
+## Saving your plots
+
+<br><br>
+
+R allows you to save your plots either as an image or as a PDF file.

@@ -1,42 +1,37 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>.b[Inflation, pt. III]</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Marcio Santetti" />
+    <script src="006-inflation-3_files/header-attrs/header-attrs.js"></script>
+    <link href="006-inflation-3_files/remark-css/default.css" rel="stylesheet" />
+    <link href="006-inflation-3_files/remark-css/metropolis.css" rel="stylesheet" />
+    <link href="006-inflation-3_files/remark-css/metropolis-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="skid-css.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# .b[Inflation, pt. III]
+]
+.subtitle[
+## .b[.green[EC 103–02]]
+]
+.author[
+### Marcio Santetti
+]
+.date[
+### Fall 2022
+]
+
 ---
-title: ".b[Inflation, pt. III]"
-subtitle: ".b[.green[EC 103--02]]"
-author: "Marcio Santetti"
-date: "Fall 2022"
-output:
-  xaringan::moon_reader:
-    css: ['default', 'metropolis', 'metropolis-fonts', 'skid-css.css']
-    # self_contained: true
-    nature:
-      highlightStyle: github
-      highlightLines: true
-      ratio: "16:9"
-      countIncrementalSlides: false
----
+
 class: inverse, middle
 
-```{r Setup, include = F}
-options(htmltools.dir.version = FALSE)
-library(pacman)
-p_load(broom, latex2exp, ggplot2, ggthemes, ggforce, viridis, dplyr, magrittr, knitr, parallel, xaringanExtra, tidyverse, sjPlot, showtext, mathjaxr, ggforce, furrr, kableExtra, wooldridge, hrbrthemes, scales, ggeasy, patchwork)
 
-
-
-
-# Knitr options
-opts_chunk$set(
-  comment = "#>",
-  fig.align = "center",
-  fig.height = 7,
-  fig.width = 10.5,
-  warning = F,
-  message = F,
-  dpi=300
-)
-
-theme_set(theme_ipsum_rc())
-
-```
 
 
 
@@ -48,7 +43,7 @@ theme_set(theme_ipsum_rc())
 
 # Housekeeping
 
-<br>
+&lt;br&gt;
 
 .b[Required readings]:
 
@@ -64,11 +59,11 @@ theme_set(theme_ipsum_rc())
 layout: false
 class: inverse, middle
 
-# Central banks & inflation
+# Central banks &amp; inflation
 
 ---
 
-# Central banks & inflation
+# Central banks &amp; inflation
 
 As it is possible to see from the articles, .hi[Central Banks] play a crucial role during an inflationary period.
 
@@ -78,7 +73,7 @@ As it is possible to see from the articles, .hi[Central Banks] play a crucial ro
 
 --
 
-<br>
+&lt;br&gt;
 
 So far, we have studied .hi[how] aggregate output (GDP), unemployment, and inflation are *computed.*
 
@@ -98,11 +93,11 @@ Now, it is time to see what .hi[policy instruments] can bring .hi-orange[stabili
 
 ---
 
-# Central banks & inflation
+# Central banks &amp; inflation
 
 .center[
 
-<img src="chart.png", width = "80%">
+&lt;img src="chart.png", width = "80%"&gt;
 
 ]
 
@@ -112,7 +107,7 @@ Now, it is time to see what .hi[policy instruments] can bring .hi-orange[stabili
 
 ---
 
-# Central banks & inflation
+# Central banks &amp; inflation
 
 
 Over the past four decades, governments have delegated to .hi[Central Banks] the role of *addressing macroeconomic (in)stability*.
@@ -132,13 +127,13 @@ Recall:
 
 
 .center[
-<img src="bc.png", width = "40%">
+&lt;img src="bc.png", width = "40%"&gt;
 ]
 
 
 ---
 
-# Central banks & inflation
+# Central banks &amp; inflation
 
 
 Depending on the .hi-orange[state] of the economy, aggregate spending (mostly via aggregate *consumption* and *business investment*) will either over or underwhelm the economy's productive capacity.
@@ -155,22 +150,22 @@ Conversely, when there is excess .hi[supply] of goods and services, more people 
 
 --
 
-<br>
+&lt;br&gt;
 
 In both scenarios, .hi[central banks] are the those in charge of adjusting .hi-orange[observed GDP] to its .hi[potential] level.
 
 ---
 
-# Central banks & inflation
+# Central banks &amp; inflation
 
-<br><br>
+&lt;br&gt;&lt;br&gt;
 
 
 [`Potential GDP vs. actual GDP`](https://fred.stlouisfed.org/series/GDPPOT)
 
 ---
 
-# Central banks & inflation
+# Central banks &amp; inflation
 
 There are .hi-orange[several] ways in which central banks can act as to either .hi[encourage] consumers and firms to spend more, or to .hi-orange[cool down] aggregate demand.
 
@@ -180,11 +175,11 @@ This way, central banks basically employ .hi[countercyclical] policies to manage
 
 --
 
-> .hi[Countercyclical] policies are measures that aim to either *boost* aggregate demand in recession periods, or *hit the brakes* on demand when the economy is overheated.
+&gt; .hi[Countercyclical] policies are measures that aim to either *boost* aggregate demand in recession periods, or *hit the brakes* on demand when the economy is overheated.
 
 --
 
-<br>
+&lt;br&gt;
 
 Economic policies conducted by central banks fall under the category of .hi[monetary policy].
 
@@ -224,7 +219,7 @@ These three categories go hand-in-hand via the .hi-orange[interest rate].
 
 --
 
-> In .hi[macroeconomic] terms, .hi[interest rates] are the *price of credit*. In addition, interest rates can be thought of as the price of *current* money in terms of *future* money.
+&gt; In .hi[macroeconomic] terms, .hi[interest rates] are the *price of credit*. In addition, interest rates can be thought of as the price of *current* money in terms of *future* money.
 
 
 ---
@@ -237,15 +232,15 @@ Central banks usually .hi[do not] have .hi-orange[power] over private banking in
 
 Instead, what central banks .hi-orange[can do] is creating .hi[incentives] for these banks to to either *rise* or *lower* their rates, depending on the state of the economy.
 
-<br>
+&lt;br&gt;
 
 --
 
 In the case of the US economy, the interest rate that the US Federal Reserve (FED) controls is the .hi[federal funds rate].
 
-<br>
+&lt;br&gt;
 
-> The .hi[federal funds rate] is the interest rate large banks charge each other for *short-term* (usually overnight) reserve loans.
+&gt; The .hi[federal funds rate] is the interest rate large banks charge each other for *short-term* (usually overnight) reserve loans.
 
 
 
@@ -254,11 +249,11 @@ In the case of the US economy, the interest rate that the US Federal Reserve (FE
 
 # Monetary policy
 
-<br><br>
+&lt;br&gt;&lt;br&gt;
 
 Central banks may change their *policy rate* (i.e., the interest rate) through:
 
-<br>
+&lt;br&gt;
 
   1. .hi[Open market] operations;
   
@@ -271,7 +266,7 @@ Central banks may change their *policy rate* (i.e., the interest rate) through:
 
 # Monetary policy
 
-<br><br>
+&lt;br&gt;&lt;br&gt;
 
 Board time.
 
@@ -279,19 +274,19 @@ Board time.
 
 # Monetary policy
 
-<br><br>
+&lt;br&gt;&lt;br&gt;
 
 .hi[Open market operations] involve the central bank buying (selling) government treasuries, thus increasing (decreasing) the amount of reserves banks have to borrow.
 
 --
 
-<br>
+&lt;br&gt;
 
 Changes in the interest rate through the so-called .hi-orange[discount window] work in a similar way, but involve loans made directly by the central bank to other banks.
 
 --
 
-<br>
+&lt;br&gt;
 
 Lastly, the central bank may also pay .hi[interest on banks' reserves].
 
@@ -310,7 +305,7 @@ However, there are .hi[several different] interest rates practiced in financial 
   - 30-year mortgage...
 
 
-<br>
+&lt;br&gt;
 
 --
 
@@ -325,7 +320,7 @@ Another way of applying monetary policy is, instead of changing interest rates, 
 
 --
 
-> The .hi[credit channel] affects the *availability* of loans, even if interest rates remain unchanged.
+&gt; The .hi[credit channel] affects the *availability* of loans, even if interest rates remain unchanged.
 
   
 --
@@ -334,7 +329,7 @@ This can be made concrete by banks being more .hi-orange[selective] in their len
 
 --
 
-<br>
+&lt;br&gt;
 
 At the end of the day...
 
@@ -360,7 +355,7 @@ The *pipeline* goes as follows:
 
 --
 
-- How these interest rates change will affect households and businesses, especially in their consumption of durable goods (e.g., cars), and investment decisions (higher price of credit &rarr; less willingness to invest);
+- How these interest rates change will affect households and businesses, especially in their consumption of durable goods (e.g., cars), and investment decisions (higher price of credit &amp;rarr; less willingness to invest);
 
 --
 
@@ -382,7 +377,7 @@ The *pipeline* goes as follows:
   
 --
 
-<br>
+&lt;br&gt;
 
 This pipeline is .hi[not] assumed to happen in the very short-run.
 
@@ -397,7 +392,7 @@ Instead, the FED engages in monetary policy expecting results in a .hi[one- to t
 
 .center[
 
-<img src="chart.png", width = "80%">
+&lt;img src="chart.png", width = "80%"&gt;
 
 ]
 
@@ -418,14 +413,14 @@ class: inverse, middle
 
 # The current scenario
 
-<br><br>
+&lt;br&gt;&lt;br&gt;
 
 [`Board of Governors of the Federal Reserve System`](https://www.federalreserve.gov/monetarypolicy/fomc.htm)
 
 
 --
 
-<br><br>
+&lt;br&gt;&lt;br&gt;
 
 [`The US Federal Funds Rate`](https://fred.stlouisfed.org/series/DFF)
 
@@ -439,3 +434,140 @@ class: inverse, middle
 
 ---
 exclude: true
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

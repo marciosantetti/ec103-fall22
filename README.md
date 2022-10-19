@@ -67,6 +67,10 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
   - Inflation discussions: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/006-inflation/006-inflation-discussions.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/006-inflation/006-inflation-discussions.pdf)
 
 
+ **Lecture 12: Inflation & monetary policy**
+ 
+  - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/006-inflation/006-inflation-3.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/006-inflation/006-inflation-3.pdf)
+
 ## Lab Session notes/slides
 
 *Note*: Lab session slides created using [Quarto](https://quarto.org/), with templates mainly inspired by [Mine Çetinkaya-Rundel](https://mine-cr.com/)'s SCSS file.

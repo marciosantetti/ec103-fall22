@@ -1,0 +1,113 @@
+---
+title: "Dealing with dates"
+subtitle: "EC 103--02"
+author: "Marcio Santetti"
+footer: "EC 103--02"
+format: 
+  revealjs:
+    theme: lab.scss
+    multiplex: true
+    transition: fade
+    slide-number: true
+    incremental: true 
+    chalkboard: true
+editor: visual
+execute:
+  freeze: auto
+---
+
+```{r}
+#| include: false
+# figure options
+knitr::opts_chunk$set(
+  fig.width = 10, fig.asp = 0.618,
+  fig.retina = 3, dpi = 300, fig.align = "center"
+)
+```
+
+# Frequencies
+
+## Frequencies
+
+
+<br>
+
+In Macroeconomics, the most common **type** of data used are ***time-series data***.
+
+. . .
+
+<br>
+
+***Time-series data*** denote a class of data where one (or more) variables are observed *over time*.
+
+. . .
+
+<br>
+
+And the **frequency** of the data may change depending on the variable we are studying.
+
+## Frequencies
+
+<br>
+
+For instance, Gross Domestic Product (GDP) data are released on a **quarterly** basis.
+
+. . .
+
+<br>
+
+Unemployment and inflation data are released on a **monthly** basis.
+
+. . .
+
+<br>
+
+The FED's policy interest rate (federal funds rate) has a **daily** availability.
+
+
+## Frequencies
+
+<br>
+
+Many times, our data are in a frequency **higher** tha the one we need.
+
+<br>
+
+Fortunately, there are several methods we can use to **aggregate** the data to a *lower* frequency.
+
+. . .
+
+<br>
+
+For example, converting *inflation* to a quarterly or yearly frequency.
+
+
+# The FRED Database
+
+## The FRED Database
+
+<br>
+
+We have used data from the St. Louis FED Economic Database (FRED) several times in class.
+
+. . .
+
+<br>
+
+Not only does it have great *visualization* tools, but it also allows us to **download** the data.
+
+
+## The FRED Database
+
+<br>
+
+Let us download some series and use some *new* R packages:
+
+<br>
+
+- [{janitor}](https://cran.r-project.org/web/packages/janitor/vignettes/janitor.html)
+- [{lubridate}](https://lubridate.tidyverse.org/)
+- [{tsibble}](https://tsibble.tidyverts.org/)
+
+
+

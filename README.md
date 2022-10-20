@@ -116,7 +116,7 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
  **Lab 7**: Dealing with dates
  
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/007-dates/007-dates.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/007-dates/007-dates.pdf)
-  - [`Video lecture`]
+  - [`Video lecture`](https://youtu.be/h0jWmgYe3zI)
   
 
 ## Assignments

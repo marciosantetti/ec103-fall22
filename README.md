@@ -13,6 +13,8 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
 
 *Note*: Slides and assignment files created with the `xaringan` *R* package, with templates mainly inspired by [Ed Rubin](https://github.com/edrubin)'s CSS file.
 
+Several lecture notes have also benefitted from [JW Mason](http://jwmason.org/)'s excellent Macro teaching materials.
+
 <br>
 
 **Lecture 1: What are we doing here?**

@@ -3,6 +3,18 @@ library(ggthemes)
 library(janitor)
 library(lubridate)
 library(tsibble)
+library(showtext)
+
+
+font_add_google(name = "Ubuntu", family = "ubuntu")
+
+
+showtext_auto()
+
+
+
+theme_set(theme_light(base_family = "ubuntu"))
+
 
 
 eff <- read_csv("fedfunds.csv")

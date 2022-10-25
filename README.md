@@ -70,6 +70,11 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
  **Lecture 12: Inflation & monetary policy**
  
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/006-inflation/006-inflation-3.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/006-inflation/006-inflation-3.pdf)
+  
+  
+**Lecture 13: Exchange rates**
+
+  - Slides: [`html`]() | [`pdf`]()
 
 ## Lab Session notes/slides
 

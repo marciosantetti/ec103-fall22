@@ -72,11 +72,16 @@ Several lecture notes have also benefitted from [JW Mason](http://jwmason.org/)'
  **Lecture 12: Inflation & monetary policy**
  
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/006-inflation/006-inflation-3.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/006-inflation/006-inflation-3.pdf)
+
   
   
 **Lecture 13: Exchange rates**
 
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/007-international/007-international-1.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/007-international/007-international-1.pdf)
+  
+**Lecture 14: Balance of payments**
+
+  - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/007-international/007-international-2.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/007-international/007-international-2.pdf)
 
 ## Lab Session notes/slides
 

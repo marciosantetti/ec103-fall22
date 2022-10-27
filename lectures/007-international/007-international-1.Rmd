@@ -368,7 +368,7 @@ For instance, in the .hi[goods/services] market, a country whose goods and/or se
 
 Thus, consumers look at .hi-orange[relative prices].
 
-  - More .hi[demand] for its currency, to purchase it products &rarr; higher .hi-orange[value] &rarr; currency .hi[appreciation].
+  - More .hi[demand] for its currency, to purchase its products &rarr; higher .hi-orange[value] &rarr; currency .hi[appreciation].
   
 --
 

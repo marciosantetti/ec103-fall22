@@ -13,6 +13,8 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
 
 *Note*: Slides and assignment files created with the `xaringan` *R* package, with templates mainly inspired by [Ed Rubin](https://github.com/edrubin)'s CSS file.
 
+Several lecture notes have also benefitted from [JW Mason](http://jwmason.org/)'s excellent Macro teaching materials.
+
 <br>
 
 **Lecture 1: What are we doing here?**
@@ -74,7 +76,7 @@ Welcome to EC 103&mdash;002: Introduction to Macroeconomics!<br>
   
 **Lecture 13: Exchange rates**
 
-  - Slides: [`html`]() | [`pdf`]()
+  - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/007-international/007-international-1.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/007-international/007-international-1.pdf)
 
 ## Lab Session notes/slides
 

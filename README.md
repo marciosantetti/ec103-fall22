@@ -130,6 +130,12 @@ Several lecture notes have also benefitted from [JW Mason](http://jwmason.org/)'
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/007-dates/007-dates.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/007-dates/007-dates.pdf)
   - [`Video lecture`](https://youtu.be/h0jWmgYe3zI)
   
+  
+**Lab 8**: Variable classes
+
+  - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/008-variable-classes/008-variable-classes.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/008-variable-classes/008-variable-classes.pdf)
+  - [`Video lecture`](https://youtu.be/ZJ-AyQC4OOs)
+  
 
 ## Assignments
 

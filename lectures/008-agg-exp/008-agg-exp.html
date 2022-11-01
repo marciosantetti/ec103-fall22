@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>.b[Aggregate expenditures]</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Marcio Santetti" />
+    <script src="008-agg-exp_files/header-attrs/header-attrs.js"></script>
+    <link href="008-agg-exp_files/remark-css/default.css" rel="stylesheet" />
+    <link href="008-agg-exp_files/remark-css/metropolis.css" rel="stylesheet" />
+    <link href="008-agg-exp_files/remark-css/metropolis-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="skid-css.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# .b[Aggregate expenditures]
+]
+.subtitle[
+## .b[.green[EC 103–02]]
+]
+.author[
+### Marcio Santetti
+]
+.date[
+### Fall 2022
+]
+
+---
+
+class: inverse, middle
+
+
+
+
+
+# Motivation
+
+
+
+---
+
+# Housekeeping
+
+&lt;br&gt;
+
+.b[Required readings]:
+
+  - Case, Fair, &amp; Oster (2012), ch. 8.
+  
+    - See *Extra Readings* module on `theSpring`.
+  
+---
+
+# Macroeconomic modeling
+
+&lt;br&gt;
+
+Over the past weeks, we have studied the main .hi[macroeconomic measures]:
+
+  - *Output* (GDP, GNP);
+  
+  - *(Un)employment* (unemployment rate, labor force, ...);
+  
+  - *Inflation* (CPI, Core CPI, GDP deflator, ...);
+  
+  - *Monetary policy* (interest rates, the role played by central banks, ...);
+  
+  - *International trade* (exchange rates, current account, balance of payments, ...). 
+  
+
+
+
+
+
+---
+
+# Macroeconomic modeling
+
+
+&lt;br&gt;
+
+We have also studied how these variables are .hi-orange[connected]:
+
+  - *Okun's law*;
+  
+  - *Phillips curve*;
+  
+  - The FED setting a target *federal funds rate*;
+  
+  - The trade balance and *debtor/creditor* status.
+
+---
+
+
+
+# Macroeconomic modeling
+
+
+&lt;br&gt;
+
+Now, we have enough background to put these pieces together and start .hi[modeling] the macroeconomy.
+
+--
+
+&lt;br&gt;
+
+We will start .hi-orange[slowly].
+
+  - First, we will focus on .hi[aggregate consumption and investment].
+  
+  - That is, expenditures made by .hi-orange[households and firms]. 
+  
+--
+
+&lt;br&gt;
+
+.center[
+*GDP = .b[C + I] + G + (X - M)*
+]
+
+
+---
+
+layout: false
+class: inverse, middle
+
+# Aggregate consumption
+
+
+---
+
+# Aggregate consumption
+
+Starting off with .hi-orange[households], their expenditures on *goods* and *services* represent almost .b[70%] of total US GDP.
+
+--
+
+[`Official data`](https://fred.stlouisfed.org/series/DPCERE1Q156NBEA)
+
+--
+
+&lt;br&gt;
+
+For you as a household, what is the .hi[most important economic factor] determining your *how much* you consume?
+
+--
+
+&lt;br&gt;
+
+- And what are some .it[secondary] factors?
+
+
+---
+
+# Aggregate consumption
+
+.pull-left[
+John Maynard Keynes (1883&amp;mdash;1946) formalized the idea that .hi[personal income] is the most relevant factor determining one's consumption, thus being important at the .hi-orange[aggregate level] as well.
+]
+
+
+.pull-right[
+&lt;img src="jmk.jpeg", width = "80%"&gt;
+]
+
+
+---
+
+# Aggregate consumption
+
+
+.pull-left[
+In *The General Theory of Employment, Interest, and Money* (1936), Keynes wrote:
+
+&gt; *"The fundamental psychological law, upon which we are entitled to depend with great confidence both a priori from our knowledge of human nature and from the detailed facts of experience, is that men [and women, too] are disposed, as a rule and on average, to __increase their consumption as their incomes increase, but not by as much as the increase in their income__."*
+]
+
+.pull-right[
+&lt;img src="gt.jpeg", width = "60%"&gt;
+]
+
+
+---
+
+# Aggregate consumption
+
+
+&lt;br&gt;&lt;br&gt;
+
+Keynes is pointing out .hi-orange[two] main things:
+
+  1. Consumption tends to *increase* with income;
+  
+  2. Their relationship is positive, but consumption does not increase by the *same proportion* as one's income.
+
+
+
+--
+
+&lt;br&gt;
+
+And this applies both at the .hi[micro] and at the .hi-orange[macroeconomic] levels!
+
+---
+
+# Aggregate consumption
+
+With Keynes' idea in mind, how do we .hi[formalize] this theory?
+
+--
+
+  - In other words, how do we .hi-orange[model] this situation *mathematically*?
+
+--
+
+Let us start by thinking in graphical terms.
+
+&lt;img src="008-agg-exp_files/figure-html/unnamed-chunk-1-1.svg" style="display: block; margin: auto;" /&gt;
+
+---
+
+
+# Aggregate consumption
+
+Since we are assuming that aggregate consumption only depends on aggregate income, we may call the .hi[consumption function] *C(Y)*.
+
+--
+
+And put in an equation form:
+
+.center[
+*C = a + bY*
+]
+
+
+--
+
+&lt;br&gt;
+
+- What do *a* and *b* represent here?
+
+
+
+---
+
+
+# Aggregate consumption
+
+Every time income *increases* (call it *&amp;Delta;Y*), consumption will *also increase* (call it *&amp;Delta;C*).
+
+--
+
+Thus, .hi-orange[how much] consumption changes when income changes can be given by
+
+&lt;br&gt;
+
+$$
+`\begin{aligned}
+\dfrac{\Delta C}{\Delta Y}
+\end{aligned}`
+$$
+
+&lt;br&gt;
+
+In other words, this is the .hi-orange[fraction] of a change in aggregate income that is spent on consumption.
+
+--
+
+
+In economic terms, this fraction is called the .hi[marginal propensity to consume] (*MPC*).
+
+
+--
+
+As an example, if income increases by $200 (*&amp;Delta;Y = 200*), an .hi[MPC] of .5 means that consumption increases by _0.5 * 200 = 100_.
+
+---
+
+
+# Aggregate consumption
+
+
+From a graphical perspective, the .hi[marginal propensity to consume] is equivalent to the consumption function's .hi-orange[slope].
+
+If its value is *less than* .b[1], Keynes' claim is .it[verified]: individuals spend less than 100 percent of their income increase in consumption.
+
+&lt;img src="008-agg-exp_files/figure-html/unnamed-chunk-2-1.svg" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+
+layout: false
+class: inverse, middle
+
+# Aggregate saving
+
+
+---
+
+
+# Aggregate saving
+
+
+The portion of one's income that is .b[not] spent on consumption is .hi-orange[saved].
+
+--
+
+From an .hi[aggregate] perspective, the part of aggregate income (*Y*) that is not consumed (*C*) becomes .hi-orange[aggregate saving] (*S*).
+
+
+
+.center[
+*S &amp;equiv; Y - C*
+]
+
+&lt;br&gt;
+
+--
+
+Notice that the "equivalent to" sign (*&amp;equiv;*) means an .hi[identity] (something that is always true).
+
+--
+
+Thus, the .hi-orange[marginal propensity to save] (MPS) is equal to
+
+.center[
+*MPS &amp;equiv; 1 - MPC*
+]
+
+--
+
+MPS is the fraction of an increase in income that is *saved* (or the fraction of a decrease in income that comes out of saving).
+
+---
+
+
+# Aggregate saving
+
+
+&lt;br&gt;
+
+Using the aggregate .hi[consumption] (vertical) and aggregate .hi[income] (horizontal) plane, do the following:
+
+- Draw a 45&lt;sup&gt;o&lt;/sup&gt; line;
+
+- Then, assume an aggregate consumption function *C = 100 + .75Y*.
+
+--
+  - *Add* this consumption function to the graph;
+  
+  - What are the *marginal propensities to consume* for both lines?
+  
+  - Compare consumption and saving values when the lines *intersect* and when one is *above* (*below*) the other.
+
+---
+
+layout: false
+class: inverse, middle
+
+# Planned investment
+
+
+---
+
+# Planned investment
+
+.hi-orange[Consumption] of goods and services are a major part of aggregate expenditures.
+
+--
+
+However, .hi[investments] made by *firms* are also part of the economy's output.
+
+--
+
+Recall that .hi-orange[aggregate investment] includes
+
+  - Purchases of machinery, equipment;
+  
+  - Structures;
+  
+  - Software, research &amp; development;
+  
+  - Residential investment.
+
+
+--
+
+[`Official US data`](https://fred.stlouisfed.org/series/A006RE1Q156NBEA)
+
+--
+
+In addition to these items, aggregate investment also includes .hi[changes in inventories].
+
+
+
+
+---
+
+# Planned investment
+
+A firm’s .hi-orange[inventory] is the stock of goods that it has *awaiting* *sale.*
+
+--
+
+There are several .hi[reasons] for firms wanting to hold inventories:
+
+  - Cheaper to produce in larger volumes;
+  
+  - Unexpected changes in consumer behavior;
+  
+  - The current economic scenario.
+
+
+--
+
+&lt;br&gt;
+
+That being said, while the firm's decisions to purchase new machinery or to hold inventories are .hi[deliberate], sometimes inventories build up (or decline) .hi-orange[without any deliberate plan] by firms.
+
+--
+
+For this reason, there can be a difference between .hi[planned] and .hi-orange[actual] investment.
+
+---
+
+# Planned investment
+
+For simplicity's sake, we will assume for now that aggregate investment equals .hi[planned] investment.
+
+--
+
+Thus, we will .b[not] account for differences between actual and planned investment.
+
+  - Later on, we will *relax* this assumption.
+
+
+--
+
+
+In practice, this means that firms’ planned investment is .hi[fixed] and .b[does not] depend on income.
+
+--
+
+&lt;img src="008-agg-exp_files/figure-html/unnamed-chunk-3-1.svg" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+layout: false
+class: inverse, middle
+
+# Next time: Equilibrium; the multiplier
+
+---
+exclude: true
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

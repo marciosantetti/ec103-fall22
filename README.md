@@ -83,6 +83,11 @@ Several lecture notes have also benefitted from [JW Mason](http://jwmason.org/)'
 
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/007-international/007-international-2.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/007-international/007-international-2.pdf)
 
+
+**Lecture 15: Aggregate expenditures**
+
+  - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/008-agg-exp/008-agg-exp.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/008-agg-exp/008-agg-exp.pdf)
+
 ## Lab Session notes/slides
 
 *Note*: Lab session slides created using [Quarto](https://quarto.org/), with templates mainly inspired by [Mine Çetinkaya-Rundel](https://mine-cr.com/)'s SCSS file.

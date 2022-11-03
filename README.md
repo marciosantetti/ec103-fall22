@@ -140,7 +140,12 @@ Several lecture notes have also benefitted from [JW Mason](http://jwmason.org/)'
 
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/008-variable-classes/008-variable-classes.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/008-variable-classes/008-variable-classes.pdf)
   - [`Video lecture`](https://youtu.be/ZJ-AyQC4OOs)
-  
+ 
+ **Lab 9**: Beautiful tables with `{gt}`
+ 
+  - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/009-gt-tables/009-gt-tables.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/009-gt-tables/009-gt-tables.pdf)
+  - Data: [`agg_exp_us.csv`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/009-gt-tables/agg_exp_us.csv) | Data can also be downloaded on `theSpring`
+  - [`Video lecture`]
 
 ## Assignments
 

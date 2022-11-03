@@ -1,0 +1,56 @@
+---
+title: "Beautiful tables with {gt}"
+subtitle: "EC 103--02"
+author: "Marcio Santetti"
+footer: "EC 103--02"
+format: 
+  revealjs:
+    theme: lab.scss
+    multiplex: true
+    transition: fade
+    slide-number: true
+    incremental: true 
+    chalkboard: true
+editor: visual
+execute:
+  freeze: auto
+---
+
+```{r}
+#| include: false
+# figure options
+knitr::opts_chunk$set(
+  fig.width = 10, fig.asp = 0.618,
+  fig.retina = 3, dpi = 300, fig.align = "center"
+)
+```
+
+# The {gt} package
+
+## The {gt} package
+
+<br>
+
+In most situations, visualizing data through plots is exactly what we need.
+
+. . .
+
+However, using **tables** may be a great complement/substitute in a given situation.
+
+<br>
+
+The `{gt}` package can help us produce beautiful, high-quality tables using tidyverse language.
+
+
+
+## The {gt} package
+
+<br><br>
+
+Some useful links:
+
+<br>
+
+  - [{gt} package website](https://gt.rstudio.com/)
+  
+  - [More comprehensive tutorial by Rich Iannone](https://www.youtube.com/watch?v=z0UGmMOxl-c&ab_channel=PositPBC)

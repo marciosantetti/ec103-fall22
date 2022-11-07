@@ -103,13 +103,13 @@ In Economics, the notion of an .hi-orange[equilibrium] comes up whenever there i
 
 --
 
-Let is take the market for *goods and services*, for instance.
+Let us take the market for *goods and services*, for instance.
 
   - Thus involving .hi[aggregate household consumption].
   
 --
 
-Whenever total production of a good (e.g., cars) is matched by planned expenditures on these goods. 
+Whenever *total production* of a good (e.g., cars) is matched by *planned expenditures* on these goods, we are in .hi[equilibrium]. 
 
 --
 
@@ -216,7 +216,7 @@ Suppose the following aggregate consumption and planned investment functions, re
 
 --
 
-  1. Is the economy in *equilibrium* when aggregate output (*Y*) equals $250?
+  1. Is the economy in *equilibrium* when aggregate output (*Y*) equals $ 250?
 
   2. Is the economy in *equilibrium* when aggregate output (*Y*) equals $ 1,000?
 
@@ -314,7 +314,7 @@ From this, we can ask:
 
 <br>
 
-Now, aggregate planned expenditures exceed total output (*C + I > Y*), and firms will have heir inventories reduced.
+Now, aggregate planned expenditures exceed total output (*C + I > Y*), and firms will have their inventories reduced.
 
   - For instance, less unsold cars, computers, equipment, ...
   
@@ -380,7 +380,7 @@ Repeating:
   
 --
 
-The marginal propensity to save definition is, by definition:
+The marginal propensity to save is, by definition:
 
 $$
 \begin{aligned}
@@ -426,7 +426,7 @@ $$
 $$
 
 
-Thus, the change in equilibrium income (*&Delta;Y*) is equal to the initial change in planned investment (*&Delta;I*) times 1/MPS.
+Thus, the change in equilibrium income (*&Delta;Y*) is equal to the initial change in planned investment (*&Delta;I*) times *1/MPS*.
 
 --
 
@@ -437,6 +437,24 @@ $$
 \dfrac{1}{\text{MPS}} \ \ \text{or} \ \ \dfrac{1}{1 - \text{MPC}}
 \end{aligned}
 $$
+
+
+---
+
+
+# From a few weeks ago...
+
+.center[
+
+<img src="chart.png", width = "80%">
+
+]
+
+
+.smallest[.left[By [`JW Mason`](http://jwmason.org/)]]
+
+
+
 
 ---
 

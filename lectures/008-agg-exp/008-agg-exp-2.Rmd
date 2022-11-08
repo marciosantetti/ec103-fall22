@@ -132,7 +132,7 @@ Then, we can define these .hi[planned aggregate expenditures] (*AE*) as:
 # Equilibrium output
 
 
-In a closed economy with no foreign sector, an economy will be in .hi-orange[equilibrium] whenever aggregate output (*Y*) equals planned aggregate expenditures.
+In a closed economy with no government, an economy will be in .hi-orange[equilibrium] whenever aggregate output (*Y*) equals planned aggregate expenditures.
 
 .center[
 _Y = AE_

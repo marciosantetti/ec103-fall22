@@ -59,6 +59,325 @@ theme_set(theme_ipsum_rc())
   
 ---
 
+# Government: Good or bad for the economy?
+
+
+The .hi[role of the government] in a country's economy is a matter of great *debate.*
+
+--
+
+<br>
+
+Regardless of one's view abut the role of the government, it performs several .hi-orange[functions], including:
+
+  - Setting *minimum wages*;
+  
+  - Regulating *product quality*;
+  
+  - Providing and maintaining public *schools*, *parks*, etc.
+  
+--
+
+From a .hi[macroeconomic] perspective, the government (be that *local*, *state*, or *federal* instances) acts in the economy through two main channels:
+
+  1. .hi-orange[Fiscal] policy;
+  
+  2. .hi[Monetary] policy.
+  
+---
+
+# Government: Good or bad for the economy?
+
+.hi[Fiscal] policy refers to a government's *spending* and *taxing* practices.
+
+--
+
+  - In other words, how the government manages its own .hi-orange[budget].
+
+
+--
+
+We may divide fiscal policy into three main categories:
+
+  1. Government *expenditures* on goods and services;
+  
+  2. *Tax* policies;
+  
+  3. *Transfer* payments (veteran benefits, Social Security, unemployment compensation,...).
+  
+--
+
+<br>
+
+On the other hand, .hi-orange[monetary] policy involves how the government, through its cenytral bank, manages a country's .hi[supply of money].
+
+---
+
+layout: false
+class: inverse, middle
+
+# Government variables
+
+---
+
+# Government variables
+
+
+From now on, we will add the .hi[government] to our formal analysis of an economy.
+
+--
+
+In other words, we are now treating a still *closed* economy, but *with* government.
+
+--
+
+<br>
+
+Thus, its .hi[aggregate expenditures] (*AE*) are defined by:
+
+<br>
+
+.center[
+*AE &equiv; C + I + G*
+]
+
+<br>
+
+where *G* includes government purchases of goods and services.
+
+
+
+---
+
+# Government variables
+
+Now, turning to .hi-orange[aggregate output] (*Y*), we will define a new variable, called .hi[net taxes] (*T*).
+
+  - Accounting for taxes collected by the government and its transfer payments.
+
+
+--
+
+<br>
+
+Since now we are considering the role of government in the macroeconomy, it takes a .hi-orange[portion] of household income flows in the form of taxes.
+
+--
+
+Therefore, the income that *ultimately* gets to households is known as .hi[disposable (after-tax)] income, *Y<sub>d</sub>*:
+
+.center[
+*Y<sub>d</sub> &equiv; Y - T*
+]
+
+<br>
+
+where *Y<sub>d</sub>* *subtracts* taxes paid by households and *includes* any transfer payments that these receive from the government.
+---
+
+# Government variables
+
+Now, households' *disposable income* must be either spent on .hi[consumption] or .hi-orange[saved].
+
+<br>
+
+.center[
+*Y<sub>d</sub> &equiv; C + S*
+]
+
+<br>
+
+And since *Y<sub>d</sub> &equiv; Y - T*,
+
+
+.center[
+*Y - T &equiv; C + S*
+]
+
+--
+
+Rearranging,
+
+.center[
+*Y &equiv; C + S + T*
+]
+
+--
+
+This last identity says that aggregate output is .hi[split] between *net taxes*, household *consumption*, and *savings.*
+
+---
+
+# Government variables
+
+Whenever a government's expenditures (*G*) are .hi-orange[larger] than what it collects in net taxes (*T*), the government runs a .hi[budget deficit].
+
+--
+
+.center[
+*Budget deficit = G - T*
+]
+
+--
+
+  - If *G > T*, budget *deficit*;
+  
+  - If *G < T*, budget *surplus.*
+  
+  
+--
+
+<br>
+
+In case *G* exceeds *T*, the government must finance this deficit by .hi-orange[borrowing] from the public.
+
+  - Via Treasury bonds, bills,...
+--
+
+  - This way, part of .hi[aggregate savings] (*S*) goes to financing budget deficits.
+
+---
+
+# Government variables
+
+Before considering the government, our aggregate consumption function looked like:
+
+.center[
+*C = a + bY*
+]
+
+--
+
+Now, we simply replace total income (*Y*) by .hi-orange[disposable income], *Y<sub>d</sub>*:
+
+.center[
+*C = a + bY<sub>d</sub>*
+]
+
+--
+
+or
+
+.center[
+*C = a + b(Y - T)*
+]
+
+--
+
+<br>
+
+For now, we still consider that .hi[aggregate investment] (*I*) *does not* depend on income (meaning that *planned* investment equals *actual* investment.)
+
+
+---
+
+layout: false
+class: inverse, middle
+
+# Equilibrium
+
+---
+
+# Equilibrium
+
+<br>
+
+From our previous lectures, we saw that a .hi[macroeconomic equilibrium] happens when
+
+.center[
+*Y = AE*
+]
+
+<br>
+
+That is, when .it[aggregate output] (*Y*) is .hi-orange[equal] to planned .it[aggregate expenditures] (*AE*).
+
+--
+
+<br>
+
+And this is equivalent to 
+
+.center[
+*Y = C + I + G*
+]
+
+---
+
+# Equilibrium
+
+Assume the following:
+
+  - An aggregate consumption function *C = 180 + .70Y<sub>d</sub>*;
+  - Government expenditures *G = 200*;
+  - The government has a *balanced budget*, meaning that its spending is fully financed by taxes (*T*);
+  - Planned investment *I = 150*.
+
+--
+
+Now, we can ask some .hi[questions]:
+
+- What is the level of disposable income of this economy?
+
+- When output (*Y*) is $ 500, is the economy in equilibrium?
+
+- When output (*Y*) is $ 1,500, is the economy in equilibrium?
+
+- What is the equilibrium level of output for this economy?
+
+
+---
+
+layout: false
+class: inverse, middle
+
+# *Saving = Investment* revisited
+
+---
+
+# *Saving = Investment* revisited
+
+In previous lectures, we saw that the *equality* between aggregate saving and investment is a .hi[necessary condition] for equilibrium.
+
+--
+
+Now that *government expenditures* and *taxes* play a role in the economy, we may .hi-orange[revisit] this condition.
+
+--
+
+Consider the .hi[income flow] in the economy as the amount of money households, firms, and the government spend.
+
+--
+
+  - For consumption, we have assumed that household spending is guided by the .hi[marginal propensity to consume] (a fixed value between 0 and 1).
+  - And new .hi-orange[injections] in the economy come either from planned .hi[investment] (*I*) or .hi[government expenditures] (*G*).
+  - However, the government also takes out .hi[taxes] (*T*) from this flow of income, and households usually .hi[save] some of their income.
+  - Thus, taxes and saving can be considered .hi-orange[leakages] from the flow of income.
+    
+
+---
+
+# *Saving = Investment* revisited
+
+Therefore, the equilibrium condition when there is government in the economy becomes
+
+.center[
+*S + T = I + G*
+]
+
+--
+
+In words, the volume of .hi-orange[leakages] (*S + T*) must be .hi[compensated] with planned .hi-orange[injections] (*I + G*) in the economy to achieve .hi[equilibrium].
+
+<br>
+
+Notice that equilibrium .hi[does not] require a balanced government budget (*G = T*) or an equality between aggregate saving and investment (*S = I*) to be achieved. 
+
+  - The equality must be between .hi[leakages] and .hi[injections]!
+
+---
+
+# *Saving = Investment* revisited
 
 
 ---

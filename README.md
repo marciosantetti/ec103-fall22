@@ -87,6 +87,10 @@ Several lecture notes have also benefitted from [JW Mason](http://jwmason.org/)'
 **Lecture 15: Aggregate expenditures**
 
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/008-agg-exp/008-agg-exp.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/008-agg-exp/008-agg-exp.pdf)
+  
+**Lecture 16: Equilibrium and the basic multiplier**
+
+  - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/008-agg-exp/008-agg-exp-2.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/008-agg-exp/008-agg-exp-2.pdf)
 
 ## Lab Session notes/slides
 

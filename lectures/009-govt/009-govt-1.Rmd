@@ -56,6 +56,13 @@ theme_set(theme_ipsum_rc())
   - Case, Fair, & Oster (2012), ch. 9.
   
     - See *Extra Readings* module on `theSpring`.
+    
+    
+.b[For the next lecture]:
+
+  - Yahoo! Finance on the "*Inflation Reduction Act*"
+  
+    - [`Youtube link here (watch the "key moments"`)](https://www.youtube.com/watch?v=UJ-vP063Yww&ab_channel=YahooFinance)
   
 ---
 
@@ -74,7 +81,7 @@ Regardless of one's view abut the role of the government, it performs several .h
   
   - Regulating *product quality*;
   
-  - Providing and maintaining public *schools*, *parks*, etc.
+  - Providing and maintaining public *schools*, *parks*, *health programs*, etc.
   
 --
 
@@ -109,7 +116,7 @@ We may divide fiscal policy into three main categories:
 
 <br>
 
-On the other hand, .hi-orange[monetary] policy involves how the government, through its cenytral bank, manages a country's .hi[supply of money].
+On the other hand, .hi-orange[monetary] policy involves how the government, through its central bank, manages a country's .hi[supply of money].
 
 ---
 
@@ -143,7 +150,7 @@ Thus, its .hi[aggregate expenditures] (*AE*) are defined by:
 
 <br>
 
-where *G* includes government purchases of goods and services.
+where *G* includes government expenditures.
 
 
 
@@ -153,7 +160,7 @@ where *G* includes government purchases of goods and services.
 
 Now, turning to .hi-orange[aggregate output] (*Y*), we will define a new variable, called .hi[net taxes] (*T*).
 
-  - Accounting for taxes collected by the government and its transfer payments.
+  - *T* accounts for taxes collected by the government and its transfer payments.
 
 
 --
@@ -186,6 +193,8 @@ Now, households' *disposable income* must be either spent on .hi[consumption] or
 ]
 
 <br>
+
+--
 
 And since *Y<sub>d</sub> &equiv; Y - T*,
 
@@ -308,8 +317,8 @@ And this is equivalent to
 
 Assume the following:
 
-  - An aggregate consumption function *C = 180 + .70Y<sub>d</sub>*;
-  - Government expenditures *G = 200*;
+  - An aggregate consumption function *C = 150 + .80Y<sub>d</sub>*;
+  - Government expenditures *G = 100*;
   - The government has a *balanced budget*, meaning that its spending is fully financed by taxes (*T*);
   - Planned investment *I = 150*.
 
@@ -317,13 +326,13 @@ Assume the following:
 
 Now, we can ask some .hi[questions]:
 
-- What is the level of disposable income of this economy?
+- If aggregate output (*Y*) is $ 500, what is the level of .b[disposable income] of this economy?
 
-- When output (*Y*) is $ 500, is the economy in equilibrium?
+- When output (*Y*) is $ 500, is the economy in .b[equilibrium]?
 
-- When output (*Y*) is $ 1,500, is the economy in equilibrium?
+- When output (*Y*) is $ 1,800, is the economy in .b[equilibrium]?
 
-- What is the equilibrium level of output for this economy?
+- What is the .b[equilibrium level] of output for this economy?
 
 
 ---
@@ -359,7 +368,7 @@ Consider the .hi[income flow] in the economy as the amount of money households, 
 
 # *Saving = Investment* revisited
 
-Therefore, the equilibrium condition when there is government in the economy becomes
+Therefore, the .hi-orange[equilibrium condition] when there is government in the economy becomes
 
 .center[
 *S + T = I + G*
@@ -371,21 +380,216 @@ In words, the volume of .hi-orange[leakages] (*S + T*) must be .hi[compensated] 
 
 <br>
 
-Notice that equilibrium .hi[does not] require a balanced government budget (*G = T*) or an equality between aggregate saving and investment (*S = I*) to be achieved. 
+Notice that, now, equilibrium .hi[does not] require a balanced government budget (*G = T*) or an equality between aggregate saving and investment (*S = I*) to be achieved. 
 
   - The equality must be between .hi[leakages] and .hi[injections]!
+  
+--
 
----
+<br>
 
-# *Saving = Investment* revisited
-
+From our previous example, is this condition satisfied in .hi-orange[equilibrium]?
 
 ---
 
 layout: false
 class: inverse, middle
 
-# Next time: 
+# Fiscal policy & multiplier effects
+
+---
+
+# Fiscal policy & multiplier effects
+
+When we consider the .hi[government] in the macroeconomy, we see that output can be changed by either changing the levels of .hi-orange[government expenditures] (*G*) or .hi-orange[net taxes] (*T*) (or both simultaneously).
+
+--
+
+Whenever changing .hi[any] of these variables, the government is engaging in .hi-orange[fiscal policy].
+
+--
+
+<br>
+
+Fiscal policy can generate .hi[three] types of .hi-orange[multiplier] effects in the economy, namely:
+
+  1. The .b[government spending] multiplier;
+  
+  2. The .b[tax] multiplier;
+  
+  3. And the .b[balanced-budget] multiplier.
+
+---
+
+# Fiscal policy & multiplier effects
+
+Suppose .hi[policymakers] are faced with the following situation:
+
+--
+
+  - The economy must be .hi[stimulated] (i.e., aggregate output must grow to reduce unemployment, for example).
+  
+  - Taxes .hi-orange[cannot] be changed (due to a recent tax reform package, for example).
+  
+--
+
+
+How can the government increase aggregate spending .hi-orange[without] changing the tax regime?
+
+
+--
+
+Say that we have the same setup from before:
+
+  - *C = 150 + 0.8Y<sub>d</sub>*;
+  - *I = 150*
+  - *G = 100*
+  - *T = 100*
+
+--
+
+The goal is to increase output by $ 200 (*&Delta;Y = 200*).
+
+---
+
+# Fiscal policy & multiplier effects
+
+With aggregate investment and the tax regime remaining unchanged, .hi[government expenditures] are capable of generating .hi-orange[multiplier] effects.
+
+--
+
+
+This is the .hi[government expenditures multiplier].
+
+--
+
+> The .hi[government expenditures multiplier] is the ratio of the change in the equilibrium level of output to a change in .hi-orange[government spending].
+
+
+--
+
+<br>
+
+
+$$
+\begin{aligned}
+\text{Government expenditures multplier} = \dfrac{1}{\text{MPS}} \ \ \text{or} \ \ \dfrac{1}{1 - \text{MPC}}
+\end{aligned}
+$$
+
+
+--
+
+<br><br>
+
+From our example, what is the government expenditures multiplier?
+
+---
+
+# Fiscal policy & multiplier effects
+
+Now, assume that a policymaker has the task of increasing aggregate output by $ 200 (as before), but .hi-orange[without] increasing government expenditures (*G*).
+
+
+--
+
+The remaining fiscal policy instrument is .hi[taxation].
+
+
+--
+
+  - Thus, a .hi[tax cut] takes place.
+  
+--
+
+<br><br>
+
+
+Using our example economy, what tax cut is necessary to increase aggregate output by $ 200?
+
+
+
+
+
+---
+
+# Fiscal policy & multiplier effects
+
+> The .hi[tax multplier] is the ratio of change in the equilibrium level of output to a change in taxes.
+
+--
+
+<br>
+
+$$
+\begin{aligned}
+\text{Tax multplier} = -\bigg(\dfrac{\text{MPC}}{\text{MPS}}\bigg)
+\end{aligned}
+$$
+
+--
+
+<br>
+
+Given that a tax *cut* will cause an *increase* in consumption expenditures and output and a tax *increase* will cause a *reduction* in consumption expenditures and output, the tax multiplier is a negative number.
+
+
+---
+
+# Fiscal policy & multiplier effects
+
+Now, what happens if government spending and taxes are increased .hi[by the same amount]?
+
+--
+
+In other words, the government decides to pay for its extra spending by increasing taxes by the same amount, thus keeping the government's budget .hi-orange[deficit unchanged].
+
+--
+
+  - What is the effect on the equilibrium level of output, in case the goal is to increase output by $ 200?
+
+
+---
+
+# Fiscal policy & multiplier effects
+
+
+> The .hi[balanced-budget multiplier] is the ratio of change in the equilibrium level of output to a change in government spending where the change in government spending is balanced by a change in taxes so as .hi-orange[not to create any deficit].
+
+--
+
+<br>
+
+$$
+\begin{aligned}
+\text{Balanced-budget multplier} = 1
+\end{aligned}
+$$
+
+--
+
+<br>
+
+In words, the change in *Y* resulting from the change in *G* and the equal change in *T* are exactly the same size as the initial change in *G* or *T.*
+
+---
+
+# Fiscal policy & multiplier effects
+
+A nice summary:
+
+.center[
+
+<img src="bb.png", width = "80%">
+
+]
+
+---
+
+layout: false
+class: inverse, middle
+
+# Next time: Recent fiscal policies in the US
 
 ---
 exclude: true

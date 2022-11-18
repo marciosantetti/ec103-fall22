@@ -160,6 +160,10 @@ Several lecture notes have also benefitted from [JW Mason](http://jwmason.org/)'
  
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/010-navigating-la3/010-navigating-la3.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/010-navigating-la3/010-navigating-la3.pdf)
   - [`Video lecture`](https://youtu.be/gIewMO6lqfs)
+  
+**Lab 11**: Interactive plots with `{plotly}`
+
+  - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/011-interactive-plots/011-interactive.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/011-interactive-plots/011-interactive.pdf)
  
 
 ## Assignments

@@ -1,0 +1,62 @@
+---
+title: "Interactive plots with {plotly}"
+subtitle: "EC 103--02"
+author: "Marcio Santetti"
+footer: "EC 103--02"
+format: 
+  revealjs:
+    theme: lab.scss
+    multiplex: true
+    transition: fade
+    slide-number: true
+    incremental: true 
+    chalkboard: true
+editor: visual
+execute:
+  freeze: auto
+---
+
+```{r}
+#| include: false
+# figure options
+knitr::opts_chunk$set(
+  fig.width = 10, fig.asp = 0.618,
+  fig.retina = 3, dpi = 300, fig.align = "center"
+)
+```
+
+# Interactivity
+
+## Interactivity
+
+<br>
+
+So far, we have been dealing with so-called *static* plots.
+
+<br>
+
+. . .
+
+But many times, it would be better to present our data in a more *dynamic* and *interactive* way.
+
+<br>
+
+. . .
+
+We thus can complement our {ggplot} knowledge with the [{plotly}](https://plotly.com/r/) R package.
+
+## Interactivity
+
+<br><br>
+
+The basic idea is that we can transform any *static* ggplot into an *interactive* chart by using the *ggplotly()* function on top of our existing plotting code.
+
+## Interactivity
+
+<br>
+
+Before we head over to RStudio, here are some useful resources:
+
+-   [Interactive web-based data visualization with R, plotly, and shiny (book)](https://plotly-r.com/)
+
+-   ["Step-by-Step Data Visualization Guideline with Plotly in R," by Yigit Erol](https://medium.com/swlh/step-by-step-data-visualization-guideline-with-plotly-in-r-fbd212640de2)

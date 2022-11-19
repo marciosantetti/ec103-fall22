@@ -164,7 +164,7 @@ Several lecture notes have also benefitted from [JW Mason](http://jwmason.org/)'
 **Lab 11**: Interactive plots with `{plotly}`
 
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/011-interactive-plots/011-interactive.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lab/011-interactive-plots/011-interactive.pdf)
-  - `Video lecture`
+  - [`Video lecture`](https://youtu.be/J7e96dvjstc)
  
 
 ## Assignments

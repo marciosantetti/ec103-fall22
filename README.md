@@ -179,6 +179,8 @@ Several lecture notes have also benefitted from [JW Mason](http://jwmason.org/)'
     - Data set: [`ps2_data.csv`](https://raw.githack.com/marciosantetti/ec103-fall22/main/problem-sets/ps2_data.csv) | Data can also be downloaded on `theSpring`
     
   - [`Problem Set 3`](https://raw.githack.com/marciosantetti/ec103-fall22/main/problem-sets/ps3-f22.pdf) (due 11/21, before class) | submission through `theSpring`
+  
+  -[`Problem Set 4`](https://raw.githack.com/marciosantetti/ec103-fall22/main/problem-sets/ps4-f22.pdf) (due 12/05, before class) | submission through `theSpring`
 
 
 

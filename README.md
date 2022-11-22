@@ -98,7 +98,7 @@ Several lecture notes have also benefitted from [JW Mason](http://jwmason.org/)'
   
 **Lecture 18: Money supply and multiplier effects**
 
-  - Slides: [`html`]() | [`pdf`]()
+  - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/010-money-supply/010-money.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/010-money-supply/010-money.pdf)
 
 ## Lab Session notes/slides
 

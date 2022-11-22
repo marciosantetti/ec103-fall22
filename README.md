@@ -95,6 +95,10 @@ Several lecture notes have also benefitted from [JW Mason](http://jwmason.org/)'
 **Lecture 17: Government expenditures and fiscal policy**
 
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/009-govt/009-govt-1.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/009-govt/009-govt-1.pdf)
+  
+**Lecture 18: Money supply and multiplier effects**
+
+  - Slides: [`html`]() | [`pdf`]()
 
 ## Lab Session notes/slides
 

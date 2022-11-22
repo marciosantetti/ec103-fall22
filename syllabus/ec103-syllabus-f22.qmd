@@ -199,17 +199,17 @@ In case you test positive for COVID-19, the *priority* is for you to recover wel
 
 * **Week 7**:  Unemployment II |  Visualizing time series II
 
-* **Week 8**:  Inflation I |  Visualizing time series II 
+* **Week 8**:  Inflation I |  Visualizing time series III
 
-* **Week 9**:  Inflation II |  Trends + Seasonality 
+* **Week 9**:  Inflation II |  Visualizing relationships I 
 
-* **Week 10**: Globalization and protectionism  |  Visualizing relationships I 
+* **Week 10**: Globalization and protectionism  |  Visualizing relationships II
 
-* **Week 11**:  International trade |  Visualizing relationships II 
+* **Week 11**:  International trade |  Visualizing relationships III 
 
-* **Week 12**:  Money and banking  |  Visualizing financial data 
+* **Week 12**:  Money and banking  |  Producing summary tables 
 
-* **Week 13**: The Macroeconomics of climate change   |  Term project Q&A I 
+* **Week 13**: Aggregate supply and demand in open economies   |  Interactivity
 
 * **Week 14**:  Final thoughts and course wrap-up  |  Term project Q&A II 
 

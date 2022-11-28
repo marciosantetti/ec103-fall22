@@ -100,6 +100,12 @@ Several lecture notes have also benefitted from [JW Mason](http://jwmason.org/)'
 
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/010-money-supply/010-money.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/010-money-supply/010-money.pdf)
 
+**Lecture 19: Money demand and interest rates**
+
+  - Slides: `html` | `pdf`
+  - `Video lecture`
+
+
 ## Lab Session notes/slides
 
 *Note*: Lab session slides created using [Quarto](https://quarto.org/), with templates mainly inspired by [Mine Çetinkaya-Rundel](https://mine-cr.com/)'s SCSS file.

@@ -102,7 +102,7 @@ Several lecture notes have also benefitted from [JW Mason](http://jwmason.org/)'
 
 **Lecture 19: Money demand and interest rates**
 
-  - Slides: `html` | `pdf`
+  - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/010-money-supply/010-money-2.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/010-money-supply/010-money-2.pdf)
   - `Video lecture`
 
 

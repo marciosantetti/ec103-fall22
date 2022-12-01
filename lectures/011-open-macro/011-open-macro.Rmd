@@ -1,0 +1,454 @@
+---
+title: ".b[Open-economy macroeconomics]"
+subtitle: ".b[.green[EC 103--02]]"
+author: "Marcio Santetti"
+date: "Fall 2022"
+output:
+  xaringan::moon_reader:
+    css: ['default', 'metropolis', 'metropolis-fonts', 'skid-css.css']
+    # self_contained: true
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      ratio: "16:9"
+      countIncrementalSlides: false
+---
+class: inverse, middle
+
+```{r Setup, include = F}
+options(htmltools.dir.version = FALSE)
+library(pacman)
+p_load(broom, latex2exp, ggplot2, ggthemes, ggforce, viridis, dplyr, magrittr, knitr, parallel, xaringanExtra, tidyverse, sjPlot, showtext, mathjaxr, ggforce, furrr, kableExtra, wooldridge, hrbrthemes, scales, ggeasy, patchwork,
+       ggrepel)
+
+
+
+
+# Knitr options
+opts_chunk$set(
+  comment = "#>",
+  fig.align = "center",
+  fig.height = 7,
+  fig.width = 10.5,
+  warning = F,
+  message = F,
+  dpi=300
+)
+
+theme_set(theme_ipsum_rc())
+
+```
+
+
+
+# Motivation
+
+
+
+---
+
+# Housekeeping
+
+<br>
+
+.b[Required readings]:
+
+  - Case, Fair, & Oster, ch. 20
+  
+    - See *Extra Readings* module on `theSpring`. 
+  
+  - [`What Forces Drive International Trade, Finance, and the External Deficit? (Peterson Institute for International Economics)`](https://www.piie.com/publications/chapters_preview/47/2iie2644.pdf)
+
+
+  
+---
+
+layout: false
+class: inverse, middle
+
+# Aggregate expenditures & the foreign sector
+
+
+---
+
+# Aggregate expenditures & the foreign sector
+
+To complete our analysis of .hi[output determination], we have *one* (or *two*) pieces left:
+
+--
+
+<br>
+
+.center[
+*Output (Y) &equiv; Aggregate Expenditures (AE)*
+]
+
+<br>
+
+.center[
+*AE = C + I + G + __(X - M)__*
+]
+
+--
+
+<br>
+
+where *(X - M)* is the .hi-orange[trade balance] (*aka* .hi[net exports]), the difference between exports (*X*) and imports (*M*).
+
+
+---
+
+# Aggregate expenditures & the foreign sector
+
+In previous weeks, we saw that an increase in .hi[aggregate planned investment] is capable of increasing output *more than proportionally*.
+
+--
+
+  - Through the .hi[multiplier effect]:
+  
+.center[
+*multiplier = 1/MPS or 1/(1 - MPC)*
+]
+
+--
+
+<br>
+
+Also, in the *absence* of new private investment, the .hi-orange[government] can generate these multiplier effects in .hi[3] ways:
+
+  - Government spending multiplier: *1/MPS or 1/(1 - MPC)*;
+  
+  - Tax multiplier: *-(MPC/MPS)*;
+  
+  - Balanced-budget multiplier: *1*
+  
+---
+
+# Aggregate expenditures & the foreign sector
+
+When the .hi-orange[foreign sector] is included, we bring:
+
+  - The goods and services it .hi[exports] to the rest of the world;
+  
+  - The goods and services it .hi[imports] from the rest of the world.
+
+
+--
+
+<br>
+
+Then, for the time being, we assume:
+
+  - *Exports (X)* are .hi[not] affected by the state of the local economy;
+  
+  - When the local country's economy improves, its *Imports (M)* rise:
+  
+.center[
+*M = mY*
+]
+
+--
+
+where *m (m > 0)* is the country's .hi[marginal propensity to import] (*MPM*).
+
+---
+
+# Aggregate expenditures & the foreign sector
+
+Now that our economy does business with the *rest of the world*, we may .hi[improve] the example from previous weeks:
+
+  - Aggregate consumption: *C = 150 + 0.8Y<sub>d</sub>*;
+  - Aggregate planned investment: *I = $150*;
+  - Government expenditures: *G = $100*;
+  - Taxes on consumption: *T = $100*;
+  - Exports: *X = $500*;
+  - Imports: *M = 0.3Y*
+
+
+--
+
+<br>
+
+*(a)* What is the .hi[equilibrium] level of output in this economy?
+
+*(b)* Suppose the government wants to *boost* GDP by $260. By how much should it increase its expenditures, without changing taxes?
+
+
+---
+
+# Aggregate expenditures & the foreign sector
+
+The .hi[open-economy multiplier] is given by
+
+<br>
+
+$$
+\begin{aligned}
+\text{Open-economy multiplier} = \dfrac{1}{1 - \text{MPC} - \text{MPM}}
+\end{aligned}
+$$
+
+--
+
+<br>
+
+where *(MPC - MPM)* is the *marginal propensity to consume* .hi[domestic goods and services].
+
+--
+
+<br><br><br>
+
+Is the open-economy multiplier *smaller* or *larger* than the (closed-economy) multiplier?
+
+
+
+---
+
+# Aggregate expenditures & the foreign sector
+
+
+In J.M. Keynes's (1936, ch. 10) words:
+
+> *"In an open system with foreign-trade relations, some part of the multiplier of the
+increased investment will accrue to the benefit of employment in foreign countries, since
+a proportion of the increased consumption will diminish our own country's favourable
+foreign balance; so that, if we consider only the effect on domestic employment as
+distinct from world employment, we must diminish the full figure of the multiplier. On
+the other hand our own country may recover a portion of this leakage through favourable
+repercussions due to the action of the multiplier in the foreign country in increasing its
+economic activity."*
+
+--
+
+<br>
+
+Therefore, when .hi[government spending] (or .hi[investment]) increases and income and consumption rise, some of the extra consumption spending that results is on *foreign products* and not on *domestically produced* goods and services.
+
+
+
+
+---
+
+layout: false
+class: inverse, middle
+
+# *Savings = Investment* re-revisited
+
+
+---
+
+# *Savings = Investment* re-revisited
+
+In a .hi-orange[*closed*] economy context, we had
+
+.center[
+*S + T = I + G*
+]
+
+--
+
+Meaning that any new .hi[injection] (*G* or *I*) must come out of .hi-orange[leakages], i.e., resources that have not been consumed (*S* or *T*).
+
+--
+
+<br><br>
+
+In an .hi[*open*] economy, *Imports (M)* are another source of .hi-orange[leakages] of domestic income.
+
+--
+
+And *Exports (X)*, on the other hand, are new .hi[injections].
+
+---
+
+# *Savings = Investment* re-revisited
+
+We can thus .hi[rewrite] the previous condition as 
+
+.center[
+*S + T + M = G + I + X*
+]
+
+--
+
+
+
+Rearranging,
+
+
+.center[
+*(S - I) = (X - M) + (G - T)*
+]
+
+<br>
+
+--
+
+- If *(X - M) < 0*, the country has a .hi[trade deficit].
+
+--
+
+- If *(G - T) > 0*, the country has a .hi[budget deficit].
+
+--
+
+When both happen simultaneously, the country experiences .hi-orange[twin deficits].<sup>1</sup>.footnote[<sup>1</sup>The term *"twin deficits"* was coined by [Martin Feldstein](https://en.wikipedia.org/wiki/Martin_Feldstein) (1939&mdash;2019).]
+
+---
+
+# *Savings = Investment* re-revisited
+
+
+<br><br><br>
+
+
+[`Twin deficits in the United States?`](https://fred.stlouisfed.org/series/A019RE1Q156NBEA#0)
+
+---
+
+
+# *Savings = Investment* re-revisited
+
+
+Another way of looking at the previous relationship is:
+
+.center[
+*(S - I) = (X - M) + (G - T)*
+]
+
+.center[
+*I = S + (M - X) + (T - G)*
+]
+
+
+--
+
+<br>
+
+where *S* are .hi[private] savings; *(M - X)* are .hi[foreign] savings; and *(T - G)* are .hi[public] savings.
+
+--
+
+
+
+This implies that any private investment has .hi-orange[three] sources of *financing* in an open economy:
+
+  - *Private* debt;
+  
+  - *Budget* deficits;
+  
+  - *Trade balance* deficits.
+
+
+---
+
+# *Savings = Investment* re-revisited
+
+From our example, .hi[after] the increase in government spending, does the 
+
+<br>
+
+.center[
+*(S - I) = (X - M) + (G - T)*
+]
+
+
+relationship .hi-orange[hold]?
+
+<br>
+
+Also, how was private investment .hi[financed]?
+
+
+---
+
+layout: false
+class: inverse, middle
+
+# Trade barriers
+
+---
+
+# Trade barriers
+
+
+Albeit expanding the possibilities for growth and trade, doing business with the rest of the world may face some .hi[barriers].
+
+--
+
+Some of the most common are:
+
+  - Trade .hi-orange[tariffs];
+  
+  - Export .hi[subsidies];
+  
+  - .hi-orange[Dumping];
+  
+  - Import .hi[quotas].
+  
+  
+---
+
+# Trade barriers
+
+Trade .hi[tariffs] are *taxes* on imports.
+
+--
+
+These can be used either as a source of government *revenue*, or as a *protection* device for local industries.
+
+
+--
+
+<br><br>
+
+[`Did Trump’s tariffs benefit American workers and national security?, by Brookings Institute`](https://www.brookings.edu/policy2020/votervital/did-trumps-tariffs-benefit-american-workers-and-national-security/).
+
+---
+
+# Trade barriers
+
+Export .hi[subsidies] are government *payments* made to domestic businesses to encourage exports.
+
+
+--
+
+<br>
+
+
+.hi-orange[Dumping] occurs when a firm or industry sells products abroad at prices *lower* than its production costs.
+
+  - It is seen as "unfair competition."
+  
+<br>
+  
+[`Antidumping and Countervailing Duties (AD/CVD) Frequently Asked Questions, by the U.S. Customs and Border Protection`](https://www.cbp.gov/trade/priority-issues/adcvd/antidumping-and-countervailing-duties-adcvd-frequently-asked-questions)
+
+---
+
+# Trade barriers
+
+<br><br>
+
+Lastly, import .hi[quotas] are *limits* imposed (either voluntarily or through legislation) on the quantity of imports made by a country.
+
+
+
+
+--
+
+
+<br><br>
+
+[`A	Review	of	U.S.	Tariff	Rate	Quotas	for Beef	Imports, by the USDA's Foreign Agricultural Service`](https://www.fas.usda.gov/sites/default/files/2016-04/2016-04_iatr_beef_trq.pdf)
+
+
+---
+
+layout: false
+class: inverse, middle
+
+# Next time: Long Assignment 3 Q&A
+
+---
+exclude: true

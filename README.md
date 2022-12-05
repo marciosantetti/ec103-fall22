@@ -108,6 +108,10 @@ Several lecture notes have also benefitted from [JW Mason](http://jwmason.org/)'
 **Lecture 20: Open-economy macro**
 
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/011-open-macro/011-open-macro.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/011-open-macro/011-open-macro.pdf)
+  
+**Final Week: Long Assignment 3 Q&A**
+
+  - Instructions for the Final Exam Day: [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/long-assignments/la3-final-day.pdf)
 
 
 ## Lab Session notes/slides
@@ -207,6 +211,8 @@ Several lecture notes have also benefitted from [JW Mason](http://jwmason.org/)'
     - Data description: [`epwt_description.pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/long-assignments/epwt_description.pdf)
     
   - [`Long Assignment 3`](https://raw.githack.com/marciosantetti/ec103-fall22/main/long-assignments/long-3-f22.pdf) (due 12/09, 10 PM) | submission through `theSpring`
+  
+    - Instructions for the Final Exam Day: [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/long-assignments/la3-final-day.pdf)
 
 
 

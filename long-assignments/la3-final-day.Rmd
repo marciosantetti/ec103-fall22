@@ -1,0 +1,96 @@
+---
+title: ".hi[EC 103--002]"
+subtitle: ".b[Long Assignment 3 <br> Instructions for Final Exam day]"
+author: ".b[Marcio Santetti] <br> Fall 2022"
+output:
+  xaringan::moon_reader:
+    css: ['default', 'metropolis', 'metropolis-fonts', 'a-css.css']
+    # self_contained: true
+    nature:
+      ratio: '8.5:11'
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+layout: true
+class: clear
+---
+
+<br><br><br><br><br><br><br><br>
+
+.hi[.mono[INSTRUCTIONS]]: For the Final Exam day (12/15, 09:00 AM&mdash;12:00 PM), students will briefly describe how their Long Assignment 3 submissions were organized. Be prepared to discuss your motivations to dive deeper in the *variables/countries/issues* you have chosen either individually or in groups.
+
+<br>
+
+After everyone has submitted their files on 12/09, I will make .hi[all] submissions available on `theSpring` (See `LA 3 Submissions` module). Then, each student is asked to evaluate .hi[2] submissions, which will help me throughout the assignment's grading process.
+
+<br>
+
+Your evaluations will consist of writing *one* page for each submission you will talk about. (Thus, your file should contain at least .hi[2] pages.)
+
+<br>
+
+You are asked to put yourself in the instructor's shoes, and go about the grading process. Highlight (*i*) the submissions' main *strengths*; (*ii*) what could have been done *better*; (*iii*) how the problem at hand was *addressed*; (*iv*) the *format* chosen by the student/group; and (*v*) how *easy* it was to understand the macroeconomic problem addressed. 
+
+<br>
+
+Be *honest* in your evaluations. Only the instructor will have access to your feedback.
+
+<br><br>
+
+
+
+- Your feedback must be submitted through `theSpring` until the Final Exam day and starting time (2/15, 09:00 AM). In case you do not submit this part, you (and your entire group, in case you are working collectively) will lose .hi[10] points.
+
+- At the beginning of each page, make sure to inform the assignment you will be evaluating. 
+
+- *Each student* must submit a single `pdf` file through `theSpring` (see `LA 3 Feedback` assignment). 
+
+
+<br><br>
+
+See the next page for one example of what *not* to do.
+
+
+---
+class: clear
+
+<br><br><br><br><br><br><br><br>
+
+In case your feedback looks somewhat like the one below, you (and your entire group, in case you are working collectively), will lose .hi[10] points.
+
+
+<br>
+
+.pseudocode[
+
+- .b[Strengths]
+
+    - The group did a great job.
+
+
+- .b[What could be better]
+
+    - Nothing. It is perfect.
+    
+- .b[How the problem was addressed]
+
+    - Looking at data and showing charts.
+    
+- .b[Format chosen]
+
+    - Essay/podcast/video.
+    
+- .b[How easy is it to understand the macroeconomic problem at hand?]
+
+    - Very easy.
+]   
+    
+<br><br>
+
+
+Therefore, make sure to provide an *honest* and *thorough* feedback for the submissions you have chosen. 
+
+
+---
+exclude:true

@@ -104,6 +104,10 @@ Several lecture notes have also benefitted from [JW Mason](http://jwmason.org/)'
 
   - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/010-money-supply/010-money-2.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/010-money-supply/010-money-2.pdf)
   - [`Video lecture`](https://youtu.be/RphjBvQ3SQA)
+  
+**Lecture 20: Open-economy macro**
+
+  - Slides: [`html`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/011-open-macro/011-open-macro.html) | [`pdf`](https://raw.githack.com/marciosantetti/ec103-fall22/main/lectures/011-open-macro/011-open-macro.pdf)
 
 
 ## Lab Session notes/slides
